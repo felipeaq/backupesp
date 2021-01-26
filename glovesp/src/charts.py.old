@@ -1,0 +1,47 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import time
+from collections import deque
+from read_routine import *
+import random
+fig,ax = plt.subplots(2,3)
+#ax = fig.add_subplot(111)
+
+# some X and Y data
+x = deque(maxlen=1000)
+y = deque(maxlen=1000)
+y2=deque(maxlen=1000)
+la, =ax[0][0].plot(x,y)
+li, = ax[0][1].plot(x, y2)
+
+# draw and show it
+ax[0][0].relim() 
+ax[0][0].set_ylim(-3,3)
+ax[0][0].set_xlim(0,1000)
+ax[0][1].relim() 
+ax[0][1].autoscale_view(True,True,True)
+fig.canvas.draw()
+plt.show(block=False)
+i=0
+
+# loop to update the data
+while True:
+    try:
+        y.append(random.random())
+        y2.append(random.random())
+        x.append(i)
+        #y[-10:] = np.random.randn(10)
+        #y2[:-10] = y2[10:]
+        #y2[-10:] = np.random.randn(10)
+
+        # set the new data
+        li.set_ydata(y)
+        li.set_xdata(x)
+        la.set_ydata(y2)
+        la.set_xdata(x)
+        fig.canvas.draw()
+        print ("a")
+        plt.pause(0.03)
+        i+=1
+    except KeyboardInterrupt:
+        break

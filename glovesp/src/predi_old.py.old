@@ -1,0 +1,123 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'predi.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+#main import for the QT window
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+#imports to the graph works with the QT window
+import sys
+import time
+import numpy as np
+from matplotlib.backends.backend_qt5agg import FigureCanvas
+from matplotlib.figure import Figure
+
+#imports to update the graph with the data from sensors
+import os
+import threading
+from kpredictor import *
+from read_routine import *
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(800, 600)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 60, 781, 491))
+        self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setObjectName("verticalLayout")
+
+        dynamic_canvas = FigureCanvas(Figure(figsize=(5, 3)))
+        self.verticalLayout.addWidget(dynamic_canvas)
+        self.la = []
+        self.lg = []
+        self._dynamic_ax = dynamic_canvas.figure.subplots()
+        self._timer = dynamic_canvas.new_timer(
+            0.001, [(self._update_canvas, (), {})])
+        self._timer.start()
+
+        self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(230, 0, 561, 51))
+        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        
+        self.dose_label = QtWidgets.QLabel(self.horizontalLayoutWidget)
+        self.dose_label.setObjectName("dose_label")
+        self.horizontalLayout.addWidget(self.dose_label)
+        self.dose_btn = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        self.dose_btn.setObjectName("dose_btn")
+        self.horizontalLayout.addWidget(self.dose_btn)
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem)
+        self.predi_label = QtWidgets.QLabel(self.horizontalLayoutWidget)
+        self.predi_label.setObjectName("predi_label")
+        self.horizontalLayout.addWidget(self.predi_label)
+        self.predi_btn = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        self.predi_btn.setObjectName("predi_btn")
+        self.horizontalLayout.addWidget(self.predi_btn)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem1)
+        self.state_label = QtWidgets.QLabel(self.centralwidget)
+        self.state_label.setGeometry(QtCore.QRect(20, 20, 58, 16))
+        self.state_label.setObjectName("state_label")
+        MainWindow.setCentralWidget(self.centralwidget)
+        #self.menubar = QtWidgets.QMenuBar(MainWindow)
+        #self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 22))
+        #self.menubar.setObjectName("menubar")
+        #MainWindow.setMenuBar(self.menubar)
+        #self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        #self.statusbar.setObjectName("statusbar")
+        #MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def _update_canvas(self):
+        #for j in range(3):
+        #    for i in range(1):
+        #        if ReadRoutine().active_sensors[i]:
+        #            self.la[j][i].set_xdata(ReadRoutine().sensors.rtc)
+        #            self.la[j][i].set_ydata(ReadRoutine().sensors.list_s[i].a[j])
+#
+            #self.ax[1][j].set_xlim(ReadRoutine().sensors.rtc[0], ReadRoutine().sensors.rtc[-1])
+        self._dynamic_ax.clear()
+        #t = np.linspace(0, 10, 101)
+        # Shift the sinusoid as a function of time.
+
+        t, x = ReadRoutine().sensors.list_s[0].a[0].getxyFFT(ReadRoutine().sensors.rtc)
+        #t, y = ReadRoutine().sensors.list_s[0].a[1].getxyFFT()
+        #t, z = ReadRoutine().sensors.list_s[0].a[2].getxyFFT()
+
+
+        self._dynamic_ax.plot(t, x)
+        self._dynamic_ax.figure.canvas.draw()
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.dose_label.setText(_translate("MainWindow", "Dose:"))
+        self.dose_btn.setText(_translate("MainWindow", "Acessar"))
+        self.predi_label.setText(_translate("MainWindow", "Predição:"))
+        self.predi_btn.setText(_translate("MainWindow", "Acessar"))
+        self.state_label.setText(_translate("MainWindow", "OK"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
+

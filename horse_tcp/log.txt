@@ -1,0 +1,7280 @@
+Toolchain path: /home/felipeaq/.espressif/tools/xtensa-esp32-elf/esp-2019r2-8.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc
+Toolchain version: esp-2019r2
+Compiler version: 8.2.0
+Python requirements from /home/felipeaq/esp/esp-idf/requirements.txt are satisfied.
+MONITOR
+[0;32mI (49938) exaÿets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0018,len:4
+load:0x3fff001c,len:6884
+load:0x40078000,len:14284
+load:0x40080400,len:4304
+entry 0x400806e8
+[0;32mI (71) boot: Chip Revision: 1[0m
+[0;32mI (71) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (39) boot: ESP-IDF v4.0-dirty 2nd stage bootloader[0m
+[0;32mI (39) boot: compile time 11:11:33[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (48) boot: SPI Speed      : 40MHz[0m
+[0;32mI (48) boot: SPI Mode       : DIO[0m
+[0;32mI (52) boot: SPI Flash Size : 4MB[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (74) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (89) boot: End of partition table[0m
+[0;32mI (93) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (101) esp_image: segment 0: paddr=0x00010020 vaddr=0x3f400020 size=0x191ec (102892) map[0m
+[0;32mI (146) esp_image: segment 1: paddr=0x00029214 vaddr=0x3ffb0000 size=0x032b4 ( 12980) load[0m
+[0;32mI (152) esp_image: segment 2: paddr=0x0002c4d0 vaddr=0x40080000 size=0x00400 (  1024) load[0m
+[0;32mI (154) esp_image: segment 3: paddr=0x0002c8d8 vaddr=0x40080400 size=0x03738 ( 14136) load[0m
+[0;32mI (168) esp_image: segment 4: paddr=0x00030018 vaddr=0x400d0018 size=0x6bee8 (442088) map[0m
+[0;32mI (329) esp_image: segment 5: paddr=0x0009bf08 vaddr=0x40083b38 size=0x1260c ( 75276) load[0m
+[0;32mI (374) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (374) boot: Disabling RNG early entropy source...[0m
+[0;32mI (375) cpu_start: Pro cpu up.[0m
+[0;32mI (378) cpu_start: Application information:[0m
+[0;32mI (383) cpu_start: Project name:     tcp_server[0m
+[0;32mI (388) cpu_start: App version:      1[0m
+[0;32mI (393) cpu_start: Compile time:     Jun  5 2020 11:11:35[0m
+[0;32mI (399) cpu_start: ELF file SHA256:  03fb5971c5864e1f...[0m
+[0;32mI (405) cpu_start: ESP-IDF:          v4.0-dirty[0m
+[0;32mI (410) cpu_start: Starting app cpu, entry point is 0x400812f8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (421) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (428) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (434) heap_init: At 3FFB9210 len 00026DF0 (155 KiB): DRAM[0m
+[0;32mI (440) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (446) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (453) heap_init: At 40096144 len 00009EBC (39 KiB): IRAM[0m
+[0;32mI (459) cpu_start: Pro cpu start user code[0m
+[0;32mI (565) spi_flash: detected chip: generic[0m
+[0;32mI (565) spi_flash: flash io: dio[0m
+[0;32mI (575) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+$ MPU Driver: MPU-SPI
+I (657) wifi: wifi driver task: 3ffd0490, prio:23, stack:3584, core=0
+[0;32mI (658) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE[0m
+[0;32mI (662) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE[0m
+I (690) wifi: wifi firmware version: 581f422
+I (690) wifi: config NVS flash: enabled
+I (690) wifi: config nano formating: disabled
+I (691) wifi: Init dynamic tx buffer num: 32
+I (695) wifi: Init data frame dynamic rx buffer num: 32
+I (699) wifi: Init management frame dynamic rx buffer num: 32
+I (705) wifi: Init management short buffer num: 32
+I (710) wifi: Init static rx buffer size: 1600
+I (714) wifi: Init static rx buffer num: 10
+I (717) wifi: Init dynamic rx buffer num: 32
+[0;32mI (722) example_connect: Connecting to Renato_RedeConesul...[0m
+[0;32mI (821) phy: phy_version: 4180, cb3948e, Sep 12 2019, 16:39:13, 0, 0[0m
+I (823) wifi: mode : sta (3c:71:bf:f8:ee:68)
+I (1430) wifi: new:<4,1>, old:<1,0>, ap:<255,255>, sta:<4,1>, prof:1
+I (2413) wifi: state: init -> auth (b0)
+I (2418) wifi: state: auth -> assoc (0)
+I (2426) wifi: state: assoc -> run (10)
+I (2537) wifi: connected with Renato_RedeConesul, aid = 7, channel 4, 40U, bssid = 34:e8:94:97:8d:9e
+I (2538) wifi: security type: 3, phy: bgn, rssi: -78
+I (2540) wifi: pm start, type: 1
+
+I (2618) wifi: AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3657) tcpip_adapter: sta ip: 192.168.1.108, mask: 255.255.255.0, gw: 192.168.1.254[0m
+[0;32mI (3658) example_connect: Connected to Renato_RedeConesul[0m
+[0;32mI (3661) example_connect: IPv4 address: 192.168.1.108[0m
+[0;32mI (3667) example: Socket created[0m
+[0;32mI (3671) example: Socket bound, port 8001[0m
+[0;32mI (3675) example: Socket listening[0m
+6
+[0;32mI (3680) SPI: MPU connection successful![0m
+[0;32mI (3884) MPU9250: Reset![0m
+[0;32mI (3894) MPU9250: Sample rate set to 100 Hz[0m
+[0;32mI (3895) MPU9250: Initialization complete[0m
+Reading sensor data:
+[0;32mI (3896) MPU9250: Sample rate set to 1000 Hz[0m
+[0;33mW (3900) MPU9250: Compass sample rate constrained to 100, magnetometer's maximum is 100 Hz[0m
+[0;32mI (21786) example: Socket accepted[0m
+[0;32mI (21787) example: Received 5 bytes from 192.168.1.113:[0m
+[0;32mI (21787) example: start[0m
+[0;31mE (21788) example: 
+----- overflow of 4d buffers-------
+[0m
+[0;32mI (21795) example: 
+SPI at 232d, TCP at 1d
+[0m
+[0;32mI (21801) example: 
+SPI at 233d, TCP at 2d
+[0m
+[0;32mI (21805) example: 
+SPI at 233d, TCP at 3d
+[0m
+[0;32mI (21810) example: 
+SPI at 234d, TCP at 4d
+[0m
+[0;32mI (21815) example: 
+SPI at 234d, TCP at 5d
+[0m
+[0;32mI (21820) example: 
+SPI at 235d, TCP at 6d
+[0m
+[0;32mI (21825) example: 
+SPI at 235d, TCP at 7d
+[0m
+[0;32mI (21830) example: 
+SPI at 236d, TCP at 8d
+[0m
+[0;32mI (21835) example: 
+SPI at 236d, TCP at 9d
+[0m
+[0;32mI (21840) example: 
+SPI at 237d, TCP at 10d
+[0m
+[0;32mI (21846) example: 
+SPI at 238d, TCP at 11d
+[0m
+[0;32mI (21851) example: 
+SPI at 238d, TCP at 12d
+[0m
+[0;32mI (21856) example: 
+SPI at 239d, TCP at 13d
+[0m
+[0;32mI (21861) example: 
+SPI at 239d, TCP at 14d
+[0m
+[0;32mI (21866) example: 
+SPI at 240d, TCP at 15d
+[0m
+[0;32mI (21872) example: 
+SPI at 241d, TCP at 16d
+[0m
+[0;32mI (21876) example: 
+SPI at 241d, TCP at 17d
+[0m
+[0;32mI (21881) example: 
+SPI at 242d, TCP at 18d
+[0m
+[0;32mI (21886) example: 
+SPI at 243d, TCP at 19d
+[0m
+[0;32mI (21892) example: 
+SPI at 243d, TCP at 20d
+[0m
+[0;32mI (21897) example: 
+SPI at 244d, TCP at 21d
+[0m
+[0;32mI (21902) example: 
+SPI at 244d, TCP at 22d
+[0m
+[0;32mI (21908) example: 
+SPI at 245d, TCP at 23d
+[0m
+[0;32mI (21914) example: 
+SPI at 245d, TCP at 24d
+[0m
+[0;32mI (21917) example: 
+SPI at 246d, TCP at 25d
+[0m
+[0;32mI (21923) example: 
+SPI at 246d, TCP at 26d
+[0m
+[0;32mI (21928) example: 
+SPI at 247d, TCP at 27d
+[0m
+[0;32mI (21933) example: 
+SPI at 248d, TCP at 28d
+[0m
+[0;32mI (21938) example: 
+SPI at 248d, TCP at 29d
+[0m
+[0;32mI (21943) example: 
+SPI at 249d, TCP at 30d
+[0m
+[0;32mI (21948) example: 
+SPI at 249d, TCP at 31d
+[0m
+[0;32mI (21953) example: 
+SPI at 250d, TCP at 32d
+[0m
+[0;32mI (21958) example: 
+SPI at 251d, TCP at 33d
+[0m
+[0;32mI (21963) example: 
+SPI at 251d, TCP at 34d
+[0m
+[0;32mI (21968) example: 
+SPI at 252d, TCP at 35d
+[0m
+[0;32mI (21974) example: 
+SPI at 253d, TCP at 36d
+[0m
+[0;32mI (21980) example: 
+SPI at 253d, TCP at 37d
+[0m
+[0;32mI (21985) example: 
+SPI at 254d, TCP at 38d
+[0m
+[0;32mI (21990) example: 
+SPI at 254d, TCP at 39d
+[0m
+[0;32mI (21995) example: 
+SPI at 255d, TCP at 40d
+[0m
+[0;32mI (22000) example: 
+SPI at 256d, TCP at 41d
+[0m
+[0;32mI (22006) example: 
+SPI at 256d, TCP at 42d
+[0m
+[0;32mI (22010) example: 
+SPI at 257d, TCP at 43d
+[0m
+[0;32mI (22015) example: 
+SPI at 258d, TCP at 44d
+[0m
+[0;32mI (22021) example: 
+SPI at 258d, TCP at 45d
+[0m
+[0;32mI (22025) example: 
+SPI at 259d, TCP at 46d
+[0m
+[0;32mI (22030) example: 
+SPI at 259d, TCP at 47d
+[0m
+[0;32mI (22036) example: 
+SPI at 260d, TCP at 48d
+[0m
+[0;32mI (22041) example: 
+SPI at 261d, TCP at 49d
+[0m
+[0;32mI (22045) example: 
+SPI at 261d, TCP at 50d
+[0m
+[0;32mI (22051) example: 
+SPI at 262d, TCP at 51d
+[0m
+[0;32mI (22056) example: 
+SPI at 262d, TCP at 52d
+[0m
+[0;32mI (22061) example: 
+SPI at 263d, TCP at 53d
+[0m
+[0;32mI (22066) example: 
+SPI at 263d, TCP at 54d
+[0m
+[0;32mI (22072) example: 
+SPI at 264d, TCP at 55d
+[0m
+[0;32mI (22077) example: 
+SPI at 265d, TCP at 56d
+[0m
+[0;32mI (22082) example: 
+SPI at 265d, TCP at 57d
+[0m
+[0;32mI (22087) example: 
+SPI at 266d, TCP at 58d
+[0m
+[0;32mI (22092) example: 
+SPI at 267d, TCP at 59d
+[0m
+[0;32mI (22097) example: 
+SPI at 267d, TCP at 60d
+[0m
+[0;32mI (22102) example: 
+SPI at 268d, TCP at 61d
+[0m
+[0;32mI (22107) example: 
+SPI at 269d, TCP at 62d
+[0m
+[0;32mI (22113) example: 
+SPI at 269d, TCP at 63d
+[0m
+[0;32mI (22118) example: 
+SPI at 270d, TCP at 64d
+[0m
+[0;32mI (22123) example: 
+SPI at 271d, TCP at 65d
+[0m
+[0;32mI (22127) example: 
+SPI at 271d, TCP at 66d
+[0m
+[0;32mI (22133) example: 
+SPI at 272d, TCP at 67d
+[0m
+[0;32mI (22138) example: 
+SPI at 272d, TCP at 68d
+[0m
+[0;32mI (22143) example: 
+SPI at 273d, TCP at 69d
+[0m
+[0;32mI (22148) example: 
+SPI at 274d, TCP at 70d
+[0m
+[0;32mI (22153) example: 
+SPI at 274d, TCP at 71d
+[0m
+[0;32mI (22159) example: 
+SPI at 275d, TCP at 72d
+[0m
+[0;32mI (22164) example: 
+SPI at 275d, TCP at 73d
+[0m
+[0;32mI (22169) example: 
+SPI at 276d, TCP at 74d
+[0m
+[0;32mI (22174) example: 
+SPI at 277d, TCP at 75d
+[0m
+[0;32mI (22179) example: 
+SPI at 277d, TCP at 76d
+[0m
+[0;32mI (22185) example: 
+SPI at 278d, TCP at 77d
+[0m
+[0;32mI (22189) example: 
+SPI at 279d, TCP at 78d
+[0m
+[0;32mI (22195) example: 
+SPI at 279d, TCP at 79d
+[0m
+[0;32mI (22200) example: 
+SPI at 280d, TCP at 80d
+[0m
+[0;32mI (22205) example: 
+SPI at 281d, TCP at 81d
+[0m
+[0;32mI (22209) example: 
+SPI at 281d, TCP at 82d
+[0m
+[0;32mI (22215) example: 
+SPI at 282d, TCP at 83d
+[0m
+[0;32mI (22220) example: 
+SPI at 282d, TCP at 84d
+[0m
+[0;32mI (22225) example: 
+SPI at 283d, TCP at 85d
+[0m
+[0;32mI (22230) example: 
+SPI at 283d, TCP at 86d
+[0m
+[0;32mI (22235) example: 
+SPI at 284d, TCP at 87d
+[0m
+[0;32mI (22241) example: 
+SPI at 285d, TCP at 88d
+[0m
+[0;32mI (22246) example: 
+SPI at 285d, TCP at 89d
+[0m
+[0;32mI (22251) example: 
+SPI at 286d, TCP at 90d
+[0m
+[0;32mI (22256) example: 
+SPI at 287d, TCP at 91d
+[0m
+[0;32mI (22262) example: 
+SPI at 287d, TCP at 92d
+[0m
+[0;32mI (22266) example: 
+SPI at 288d, TCP at 93d
+[0m
+[0;32mI (22271) example: 
+SPI at 288d, TCP at 94d
+[0m
+[0;32mI (22277) example: 
+SPI at 289d, TCP at 95d
+[0m
+[0;32mI (22282) example: 
+SPI at 290d, TCP at 96d
+[0m
+[0;32mI (22287) example: 
+SPI at 290d, TCP at 97d
+[0m
+[0;32mI (22292) example: 
+SPI at 291d, TCP at 98d
+[0m
+[0;32mI (22297) example: 
+SPI at 292d, TCP at 99d
+[0m
+[0;32mI (22303) example: 
+SPI at 292d, TCP at 100d
+[0m
+[0;32mI (22307) example: 
+SPI at 293d, TCP at 101d
+[0m
+[0;32mI (22313) example: 
+SPI at 294d, TCP at 102d
+[0m
+[0;32mI (22318) example: 
+SPI at 294d, TCP at 103d
+[0m
+[0;32mI (22323) example: 
+SPI at 295d, TCP at 104d
+[0m
+[0;32mI (22328) example: 
+SPI at 296d, TCP at 105d
+[0m
+[0;32mI (22333) example: 
+SPI at 296d, TCP at 106d
+[0m
+[0;32mI (22339) example: 
+SPI at 297d, TCP at 107d
+[0m
+[0;32mI (22344) example: 
+SPI at 297d, TCP at 108d
+[0m
+[0;32mI (22349) example: 
+SPI at 298d, TCP at 109d
+[0m
+[0;32mI (22354) example: 
+SPI at 299d, TCP at 110d
+[0m
+[0;32mI (22359) example: 
+SPI at 299d, TCP at 111d
+[0m
+[0;32mI (22365) example: 
+SPI at 300d, TCP at 112d
+[0m
+[0;32mI (22370) example: 
+SPI at 300d, TCP at 113d
+[0m
+[0;32mI (22375) example: 
+SPI at 301d, TCP at 114d
+[0m
+[0;32mI (22380) example: 
+SPI at 302d, TCP at 115d
+[0m
+[0;32mI (22386) example: 
+SPI at 302d, TCP at 116d
+[0m
+[0;32mI (22391) example: 
+SPI at 303d, TCP at 117d
+[0m
+[0;32mI (22396) example: 
+SPI at 304d, TCP at 118d
+[0m
+[0;32mI (22401) example: 
+SPI at 304d, TCP at 119d
+[0m
+[0;32mI (22406) example: 
+SPI at 305d, TCP at 120d
+[0m
+[0;32mI (22412) example: 
+SPI at 305d, TCP at 121d
+[0m
+[0;32mI (22417) example: 
+SPI at 306d, TCP at 122d
+[0m
+[0;32mI (22422) example: 
+SPI at 307d, TCP at 123d
+[0m
+[0;32mI (22427) example: 
+SPI at 307d, TCP at 124d
+[0m
+[0;32mI (22432) example: 
+SPI at 308d, TCP at 125d
+[0m
+[0;32mI (22438) example: 
+SPI at 308d, TCP at 126d
+[0m
+[0;32mI (22443) example: 
+SPI at 309d, TCP at 127d
+[0m
+[0;32mI (22448) example: 
+SPI at 310d, TCP at 128d
+[0m
+[0;32mI (22453) example: 
+SPI at 310d, TCP at 129d
+[0m
+[0;32mI (22458) example: 
+SPI at 311d, TCP at 130d
+[0m
+[0;32mI (22464) example: 
+SPI at 312d, TCP at 131d
+[0m
+[0;32mI (22469) example: 
+SPI at 312d, TCP at 132d
+[0m
+[0;32mI (22473) example: 
+SPI at 313d, TCP at 133d
+[0m
+[0;32mI (22479) example: 
+SPI at 314d, TCP at 134d
+[0m
+[0;32mI (22486) example: 
+SPI at 314d, TCP at 135d
+[0m
+[0;32mI (22490) example: 
+SPI at 315d, TCP at 136d
+[0m
+[0;32mI (22495) example: 
+SPI at 315d, TCP at 137d
+[0m
+[0;32mI (22500) example: 
+SPI at 316d, TCP at 138d
+[0m
+[0;32mI (22505) example: 
+SPI at 317d, TCP at 139d
+[0m
+[0;32mI (22510) example: 
+SPI at 317d, TCP at 140d
+[0m
+[0;32mI (22516) example: 
+SPI at 318d, TCP at 141d
+[0m
+[0;32mI (22521) example: 
+SPI at 319d, TCP at 142d
+[0m
+[0;32mI (22526) example: 
+SPI at 319d, TCP at 143d
+[0m
+[0;32mI (22531) example: 
+SPI at 320d, TCP at 144d
+[0m
+[0;32mI (22537) example: 
+SPI at 321d, TCP at 145d
+[0m
+[0;32mI (22542) example: 
+SPI at 321d, TCP at 146d
+[0m
+[0;32mI (22547) example: 
+SPI at 322d, TCP at 147d
+[0m
+[0;32mI (22553) example: 
+SPI at 323d, TCP at 148d
+[0m
+[0;32mI (22557) example: 
+SPI at 323d, TCP at 149d
+[0m
+[0;32mI (22563) example: 
+SPI at 324d, TCP at 150d
+[0m
+[0;32mI (22568) example: 
+SPI at 325d, TCP at 151d
+[0m
+[0;32mI (22573) example: 
+SPI at 325d, TCP at 152d
+[0m
+[0;32mI (22577) example: 
+SPI at 326d, TCP at 153d
+[0m
+[0;32mI (22584) example: 
+SPI at 326d, TCP at 154d
+[0m
+[0;32mI (22589) example: 
+SPI at 327d, TCP at 155d
+[0m
+[0;32mI (22594) example: 
+SPI at 328d, TCP at 156d
+[0m
+[0;32mI (22599) example: 
+SPI at 328d, TCP at 157d
+[0m
+[0;32mI (22604) example: 
+SPI at 329d, TCP at 158d
+[0m
+[0;32mI (22609) example: 
+SPI at 330d, TCP at 159d
+[0m
+[0;32mI (22615) example: 
+SPI at 330d, TCP at 160d
+[0m
+[0;32mI (22620) example: 
+SPI at 331d, TCP at 161d
+[0m
+[0;32mI (22625) example: 
+SPI at 332d, TCP at 162d
+[0m
+[0;32mI (22629) example: 
+SPI at 332d, TCP at 163d
+[0m
+[0;32mI (22635) example: 
+SPI at 333d, TCP at 164d
+[0m
+[0;32mI (22640) example: 
+SPI at 333d, TCP at 165d
+[0m
+[0;32mI (22646) example: 
+SPI at 334d, TCP at 166d
+[0m
+[0;32mI (22650) example: 
+SPI at 334d, TCP at 167d
+[0m
+[0;32mI (22656) example: 
+SPI at 335d, TCP at 168d
+[0m
+[0;32mI (22662) example: 
+SPI at 336d, TCP at 169d
+[0m
+[0;32mI (22667) example: 
+SPI at 336d, TCP at 170d
+[0m
+[0;32mI (22672) example: 
+SPI at 337d, TCP at 171d
+[0m
+[0;32mI (22678) example: 
+SPI at 338d, TCP at 172d
+[0m
+[0;32mI (22684) example: 
+SPI at 338d, TCP at 173d
+[0m
+[0;32mI (22688) example: 
+SPI at 339d, TCP at 174d
+[0m
+[0;32mI (22692) example: 
+SPI at 340d, TCP at 175d
+[0m
+[0;32mI (22697) example: 
+SPI at 340d, TCP at 176d
+[0m
+[0;32mI (22702) example: 
+SPI at 341d, TCP at 177d
+[0m
+[0;32mI (22708) example: 
+SPI at 341d, TCP at 178d
+[0m
+[0;32mI (22714) example: 
+SPI at 342d, TCP at 179d
+[0m
+[0;32mI (22719) example: 
+SPI at 343d, TCP at 180d
+[0m
+[0;32mI (22724) example: 
+SPI at 343d, TCP at 181d
+[0m
+[0;32mI (22728) example: 
+SPI at 344d, TCP at 182d
+[0m
+[0;32mI (22733) example: 
+SPI at 344d, TCP at 183d
+[0m
+[0;32mI (22739) example: 
+SPI at 345d, TCP at 184d
+[0m
+[0;32mI (22744) example: 
+SPI at 346d, TCP at 185d
+[0m
+[0;32mI (22749) example: 
+SPI at 346d, TCP at 186d
+[0m
+[0;32mI (22754) example: 
+SPI at 347d, TCP at 187d
+[0m
+[0;32mI (22759) example: 
+SPI at 348d, TCP at 188d
+[0m
+[0;32mI (22765) example: 
+SPI at 348d, TCP at 189d
+[0m
+[0;32mI (22770) example: 
+SPI at 349d, TCP at 190d
+[0m
+[0;32mI (22776) example: 
+SPI at 350d, TCP at 191d
+[0m
+[0;32mI (22780) example: 
+SPI at 350d, TCP at 192d
+[0m
+[0;32mI (22789) example: 
+SPI at 351d, TCP at 193d
+[0m
+[0;32mI (22791) example: 
+SPI at 352d, TCP at 194d
+[0m
+[0;32mI (22796) example: 
+SPI at 352d, TCP at 195d
+[0m
+[0;32mI (22801) example: 
+SPI at 353d, TCP at 196d
+[0m
+[0;32mI (22806) example: 
+SPI at 353d, TCP at 197d
+[0m
+[0;32mI (22812) example: 
+SPI at 354d, TCP at 198d
+[0m
+[0;32mI (22817) example: 
+SPI at 355d, TCP at 199d
+[0m
+[0;32mI (22822) example: 
+SPI at 355d, TCP at 200d
+[0m
+[0;32mI (22827) example: 
+SPI at 356d, TCP at 201d
+[0m
+[0;32mI (22832) example: 
+SPI at 357d, TCP at 202d
+[0m
+[0;32mI (22838) example: 
+SPI at 357d, TCP at 203d
+[0m
+[0;32mI (22844) example: 
+SPI at 358d, TCP at 204d
+[0m
+[0;32mI (22848) example: 
+SPI at 359d, TCP at 205d
+[0m
+[0;32mI (22853) example: 
+SPI at 359d, TCP at 206d
+[0m
+[0;32mI (22858) example: 
+SPI at 360d, TCP at 207d
+[0m
+[0;32mI (22864) example: 
+SPI at 360d, TCP at 208d
+[0m
+[0;32mI (22869) example: 
+SPI at 361d, TCP at 209d
+[0m
+[0;32mI (22874) example: 
+SPI at 362d, TCP at 210d
+[0m
+[0;32mI (22879) example: 
+SPI at 362d, TCP at 211d
+[0m
+[0;32mI (22884) example: 
+SPI at 363d, TCP at 212d
+[0m
+[0;32mI (22890) example: 
+SPI at 364d, TCP at 213d
+[0m
+[0;32mI (22895) example: 
+SPI at 364d, TCP at 214d
+[0m
+[0;32mI (22901) example: 
+SPI at 365d, TCP at 215d
+[0m
+[0;32mI (22906) example: 
+SPI at 366d, TCP at 216d
+[0m
+[0;32mI (22912) example: 
+SPI at 366d, TCP at 217d
+[0m
+[0;32mI (22917) example: 
+SPI at 367d, TCP at 218d
+[0m
+[0;32mI (22922) example: 
+SPI at 368d, TCP at 219d
+[0m
+[0;32mI (22927) example: 
+SPI at 368d, TCP at 220d
+[0m
+[0;32mI (22932) example: 
+SPI at 369d, TCP at 221d
+[0m
+[0;32mI (22938) example: 
+SPI at 370d, TCP at 222d
+[0m
+[0;32mI (22943) example: 
+SPI at 370d, TCP at 223d
+[0m
+[0;32mI (22947) example: 
+SPI at 371d, TCP at 224d
+[0m
+[0;32mI (22953) example: 
+SPI at 372d, TCP at 225d
+[0m
+[0;32mI (22958) example: 
+SPI at 372d, TCP at 226d
+[0m
+[0;32mI (22964) example: 
+SPI at 373d, TCP at 227d
+[0m
+[0;32mI (22969) example: 
+SPI at 373d, TCP at 228d
+[0m
+[0;32mI (22974) example: 
+SPI at 374d, TCP at 229d
+[0m
+[0;32mI (22979) example: 
+SPI at 375d, TCP at 230d
+[0m
+[0;32mI (22984) example: 
+SPI at 375d, TCP at 231d
+[0m
+[0;32mI (22990) example: 
+SPI at 376d, TCP at 232d
+[0m
+[0;32mI (22995) example: 
+SPI at 377d, TCP at 233d
+[0m
+[0;32mI (23000) example: 
+SPI at 377d, TCP at 234d
+[0m
+[0;32mI (23005) example: 
+SPI at 378d, TCP at 235d
+[0m
+[0;32mI (23010) example: 
+SPI at 379d, TCP at 236d
+[0m
+[0;32mI (23016) example: 
+SPI at 379d, TCP at 237d
+[0m
+[0;32mI (23021) example: 
+SPI at 380d, TCP at 238d
+[0m
+[0;32mI (23026) example: 
+SPI at 381d, TCP at 239d
+[0m
+[0;32mI (23031) example: 
+SPI at 381d, TCP at 240d
+[0m
+[0;32mI (23037) example: 
+SPI at 382d, TCP at 241d
+[0m
+[0;32mI (23041) example: 
+SPI at 382d, TCP at 242d
+[0m
+[0;32mI (23046) example: 
+SPI at 383d, TCP at 243d
+[0m
+[0;32mI (23052) example: 
+SPI at 384d, TCP at 244d
+[0m
+[0;32mI (23057) example: 
+SPI at 384d, TCP at 245d
+[0m
+[0;32mI (23063) example: 
+SPI at 385d, TCP at 246d
+[0m
+[0;32mI (23068) example: 
+SPI at 385d, TCP at 247d
+[0m
+[0;32mI (23073) example: 
+SPI at 386d, TCP at 248d
+[0m
+[0;32mI (23078) example: 
+SPI at 387d, TCP at 249d
+[0m
+[0;32mI (23083) example: 
+SPI at 387d, TCP at 250d
+[0m
+[0;32mI (23089) example: 
+SPI at 388d, TCP at 251d
+[0m
+[0;32mI (23094) example: 
+SPI at 389d, TCP at 252d
+[0m
+[0;32mI (23100) example: 
+SPI at 389d, TCP at 253d
+[0m
+[0;32mI (23104) example: 
+SPI at 390d, TCP at 254d
+[0m
+[0;32mI (23110) example: 
+SPI at 390d, TCP at 255d
+[0m
+[0;32mI (23115) example: 
+SPI at 391d, TCP at 256d
+[0m
+[0;32mI (23120) example: 
+SPI at 392d, TCP at 257d
+[0m
+[0;32mI (23125) example: 
+SPI at 392d, TCP at 258d
+[0m
+[0;32mI (23130) example: 
+SPI at 393d, TCP at 259d
+[0m
+[0;32mI (23135) example: 
+SPI at 394d, TCP at 260d
+[0m
+[0;32mI (23141) example: 
+SPI at 394d, TCP at 261d
+[0m
+[0;32mI (23145) example: 
+SPI at 395d, TCP at 262d
+[0m
+[0;32mI (23151) example: 
+SPI at 396d, TCP at 263d
+[0m
+[0;32mI (23156) example: 
+SPI at 396d, TCP at 264d
+[0m
+[0;32mI (23162) example: 
+SPI at 397d, TCP at 265d
+[0m
+[0;32mI (23168) example: 
+SPI at 398d, TCP at 266d
+[0m
+[0;32mI (23172) example: 
+SPI at 398d, TCP at 267d
+[0m
+[0;32mI (23177) example: 
+SPI at 399d, TCP at 268d
+[0m
+[0;32mI (23182) example: 
+SPI at 400d, TCP at 269d
+[0m
+[0;32mI (23188) example: 
+SPI at 400d, TCP at 270d
+[0m
+[0;32mI (23193) example: 
+SPI at 401d, TCP at 271d
+[0m
+[0;32mI (23198) example: 
+SPI at 401d, TCP at 272d
+[0m
+[0;32mI (23203) example: 
+SPI at 402d, TCP at 273d
+[0m
+[0;32mI (23209) example: 
+SPI at 403d, TCP at 274d
+[0m
+[0;32mI (23214) example: 
+SPI at 403d, TCP at 275d
+[0m
+[0;32mI (23219) example: 
+SPI at 404d, TCP at 276d
+[0m
+[0;32mI (23224) example: 
+SPI at 405d, TCP at 277d
+[0m
+[0;32mI (23229) example: 
+SPI at 405d, TCP at 278d
+[0m
+[0;32mI (23234) example: 
+SPI at 406d, TCP at 279d
+[0m
+[0;32mI (23240) example: 
+SPI at 407d, TCP at 280d
+[0m
+[0;32mI (23245) example: 
+SPI at 407d, TCP at 281d
+[0m
+[0;32mI (23250) example: 
+SPI at 408d, TCP at 282d
+[0m
+[0;32mI (23256) example: 
+SPI at 409d, TCP at 283d
+[0m
+[0;32mI (23260) example: 
+SPI at 409d, TCP at 284d
+[0m
+[0;32mI (23266) example: 
+SPI at 410d, TCP at 285d
+[0m
+[0;32mI (23271) example: 
+SPI at 410d, TCP at 286d
+[0m
+[0;32mI (23277) example: 
+SPI at 411d, TCP at 287d
+[0m
+[0;32mI (23281) example: 
+SPI at 412d, TCP at 288d
+[0m
+[0;32mI (23287) example: 
+SPI at 412d, TCP at 289d
+[0m
+[0;32mI (23292) example: 
+SPI at 413d, TCP at 290d
+[0m
+[0;32mI (23297) example: 
+SPI at 414d, TCP at 291d
+[0m
+[0;32mI (23302) example: 
+SPI at 414d, TCP at 292d
+[0m
+[0;32mI (23308) example: 
+SPI at 415d, TCP at 293d
+[0m
+[0;32mI (23313) example: 
+SPI at 415d, TCP at 294d
+[0m
+[0;32mI (23318) example: 
+SPI at 416d, TCP at 295d
+[0m
+[0;32mI (23323) example: 
+SPI at 417d, TCP at 296d
+[0m
+[0;32mI (23329) example: 
+SPI at 417d, TCP at 297d
+[0m
+[0;32mI (23333) example: 
+SPI at 418d, TCP at 298d
+[0m
+[0;32mI (23339) example: 
+SPI at 419d, TCP at 299d
+[0m
+[0;32mI (23344) example: 
+SPI at 419d, TCP at 300d
+[0m
+[0;32mI (23348) example: 
+SPI at 420d, TCP at 301d
+[0m
+[0;32mI (23354) example: 
+SPI at 421d, TCP at 302d
+[0m
+[0;32mI (23359) example: 
+SPI at 421d, TCP at 303d
+[0m
+[0;32mI (23365) example: 
+SPI at 422d, TCP at 304d
+[0m
+[0;32mI (23370) example: 
+SPI at 423d, TCP at 305d
+[0m
+[0;32mI (23375) example: 
+SPI at 423d, TCP at 306d
+[0m
+[0;32mI (23380) example: 
+SPI at 424d, TCP at 307d
+[0m
+[0;32mI (23385) example: 
+SPI at 424d, TCP at 308d
+[0m
+[0;32mI (23391) example: 
+SPI at 425d, TCP at 309d
+[0m
+[0;32mI (23396) example: 
+SPI at 426d, TCP at 310d
+[0m
+[0;32mI (23402) example: 
+SPI at 426d, TCP at 311d
+[0m
+[0;32mI (23407) example: 
+SPI at 427d, TCP at 312d
+[0m
+[0;32mI (23412) example: 
+SPI at 428d, TCP at 313d
+[0m
+[0;32mI (23417) example: 
+SPI at 428d, TCP at 314d
+[0m
+[0;32mI (23422) example: 
+SPI at 429d, TCP at 315d
+[0m
+[0;32mI (23428) example: 
+SPI at 430d, TCP at 316d
+[0m
+[0;32mI (23432) example: 
+SPI at 430d, TCP at 317d
+[0m
+[0;32mI (23438) example: 
+SPI at 431d, TCP at 318d
+[0m
+[0;32mI (23443) example: 
+SPI at 432d, TCP at 319d
+[0m
+[0;32mI (23448) example: 
+SPI at 432d, TCP at 320d
+[0m
+[0;32mI (23453) example: 
+SPI at 433d, TCP at 321d
+[0m
+[0;32mI (23458) example: 
+SPI at 433d, TCP at 322d
+[0m
+[0;32mI (23464) example: 
+SPI at 434d, TCP at 323d
+[0m
+[0;32mI (23469) example: 
+SPI at 435d, TCP at 324d
+[0m
+[0;32mI (23474) example: 
+SPI at 435d, TCP at 325d
+[0m
+[0;32mI (23479) example: 
+SPI at 436d, TCP at 326d
+[0m
+[0;32mI (23484) example: 
+SPI at 437d, TCP at 327d
+[0m
+[0;32mI (23490) example: 
+SPI at 437d, TCP at 328d
+[0m
+[0;32mI (23495) example: 
+SPI at 438d, TCP at 329d
+[0m
+[0;32mI (23500) example: 
+SPI at 439d, TCP at 330d
+[0m
+[0;32mI (23505) example: 
+SPI at 439d, TCP at 331d
+[0m
+[0;32mI (23512) example: 
+SPI at 440d, TCP at 332d
+[0m
+[0;32mI (23516) example: 
+SPI at 441d, TCP at 333d
+[0m
+[0;32mI (23521) example: 
+SPI at 441d, TCP at 334d
+[0m
+[0;32mI (23526) example: 
+SPI at 442d, TCP at 335d
+[0m
+[0;32mI (23531) example: 
+SPI at 442d, TCP at 336d
+[0m
+[0;32mI (23537) example: 
+SPI at 443d, TCP at 337d
+[0m
+[0;32mI (23542) example: 
+SPI at 444d, TCP at 338d
+[0m
+[0;32mI (23547) example: 
+SPI at 444d, TCP at 339d
+[0m
+[0;32mI (23552) example: 
+SPI at 445d, TCP at 340d
+[0m
+[0;32mI (23557) example: 
+SPI at 446d, TCP at 341d
+[0m
+[0;32mI (23563) example: 
+SPI at 446d, TCP at 342d
+[0m
+[0;32mI (23568) example: 
+SPI at 447d, TCP at 343d
+[0m
+[0;32mI (23573) example: 
+SPI at 448d, TCP at 344d
+[0m
+[0;32mI (23579) example: 
+SPI at 448d, TCP at 345d
+[0m
+[0;32mI (23583) example: 
+SPI at 449d, TCP at 346d
+[0m
+[0;32mI (23589) example: 
+SPI at 450d, TCP at 347d
+[0m
+[0;32mI (23594) example: 
+SPI at 450d, TCP at 348d
+[0m
+[0;32mI (23599) example: 
+SPI at 451d, TCP at 349d
+[0m
+[0;32mI (23603) example: 
+SPI at 451d, TCP at 350d
+[0m
+[0;32mI (23609) example: 
+SPI at 452d, TCP at 351d
+[0m
+[0;32mI (23614) example: 
+SPI at 453d, TCP at 352d
+[0m
+[0;32mI (23620) example: 
+SPI at 453d, TCP at 353d
+[0m
+[0;32mI (23625) example: 
+SPI at 454d, TCP at 354d
+[0m
+[0;32mI (23630) example: 
+SPI at 455d, TCP at 355d
+[0m
+[0;32mI (23635) example: 
+SPI at 455d, TCP at 356d
+[0m
+[0;32mI (23641) example: 
+SPI at 456d, TCP at 357d
+[0m
+[0;32mI (23646) example: 
+SPI at 457d, TCP at 358d
+[0m
+[0;32mI (23651) example: 
+SPI at 457d, TCP at 359d
+[0m
+[0;32mI (23656) example: 
+SPI at 458d, TCP at 360d
+[0m
+[0;32mI (23661) example: 
+SPI at 458d, TCP at 361d
+[0m
+[0;32mI (23667) example: 
+SPI at 459d, TCP at 362d
+[0m
+[0;32mI (23672) example: 
+SPI at 460d, TCP at 363d
+[0m
+[0;32mI (23678) example: 
+SPI at 460d, TCP at 364d
+[0m
+[0;32mI (23682) example: 
+SPI at 461d, TCP at 365d
+[0m
+[0;32mI (23688) example: 
+SPI at 462d, TCP at 366d
+[0m
+[0;32mI (23693) example: 
+SPI at 462d, TCP at 367d
+[0m
+[0;32mI (23698) example: 
+SPI at 463d, TCP at 368d
+[0m
+[0;32mI (23703) example: 
+SPI at 464d, TCP at 369d
+[0m
+[0;32mI (23709) example: 
+SPI at 464d, TCP at 370d
+[0m
+[0;32mI (23715) example: 
+SPI at 465d, TCP at 371d
+[0m
+[0;32mI (23718) example: 
+SPI at 465d, TCP at 372d
+[0m
+[0;32mI (23725) example: 
+SPI at 466d, TCP at 373d
+[0m
+[0;32mI (23729) example: 
+SPI at 467d, TCP at 374d
+[0m
+[0;32mI (23734) example: 
+SPI at 467d, TCP at 375d
+[0m
+[0;32mI (23740) example: 
+SPI at 468d, TCP at 376d
+[0m
+[0;32mI (23745) example: 
+SPI at 469d, TCP at 377d
+[0m
+[0;32mI (23750) example: 
+SPI at 469d, TCP at 378d
+[0m
+[0;32mI (23755) example: 
+SPI at 470d, TCP at 379d
+[0m
+[0;32mI (23760) example: 
+SPI at 471d, TCP at 380d
+[0m
+[0;32mI (23765) example: 
+SPI at 471d, TCP at 381d
+[0m
+[0;32mI (23771) example: 
+SPI at 472d, TCP at 382d
+[0m
+[0;32mI (23776) example: 
+SPI at 473d, TCP at 383d
+[0m
+[0;32mI (23781) example: 
+SPI at 473d, TCP at 384d
+[0m
+[0;32mI (23787) example: 
+SPI at 474d, TCP at 385d
+[0m
+[0;32mI (23792) example: 
+SPI at 474d, TCP at 386d
+[0m
+[0;32mI (23797) example: 
+SPI at 475d, TCP at 387d
+[0m
+[0;32mI (23803) example: 
+SPI at 476d, TCP at 388d
+[0m
+[0;32mI (23807) example: 
+SPI at 476d, TCP at 389d
+[0m
+[0;32mI (23813) example: 
+SPI at 477d, TCP at 390d
+[0m
+[0;32mI (23818) example: 
+SPI at 478d, TCP at 391d
+[0m
+[0;32mI (23823) example: 
+SPI at 478d, TCP at 392d
+[0m
+[0;32mI (23828) example: 
+SPI at 479d, TCP at 393d
+[0m
+[0;32mI (23833) example: 
+SPI at 480d, TCP at 394d
+[0m
+[0;32mI (23839) example: 
+SPI at 480d, TCP at 395d
+[0m
+[0;32mI (23844) example: 
+SPI at 481d, TCP at 396d
+[0m
+[0;32mI (23849) example: 
+SPI at 482d, TCP at 397d
+[0m
+[0;32mI (23854) example: 
+SPI at 482d, TCP at 398d
+[0m
+[0;32mI (23859) example: 
+SPI at 483d, TCP at 399d
+[0m
+[0;32mI (23865) example: 
+SPI at 484d, TCP at 400d
+[0m
+[0;32mI (23870) example: 
+SPI at 484d, TCP at 401d
+[0m
+[0;32mI (23875) example: 
+SPI at 485d, TCP at 402d
+[0m
+[0;32mI (23880) example: 
+SPI at 486d, TCP at 403d
+[0m
+[0;32mI (23885) example: 
+SPI at 486d, TCP at 404d
+[0m
+[0;32mI (23891) example: 
+SPI at 487d, TCP at 405d
+[0m
+[0;32mI (23896) example: 
+SPI at 487d, TCP at 406d
+[0m
+[0;32mI (23901) example: 
+SPI at 488d, TCP at 407d
+[0m
+[0;32mI (23906) example: 
+SPI at 489d, TCP at 408d
+[0m
+[0;32mI (23912) example: 
+SPI at 489d, TCP at 409d
+[0m
+[0;32mI (23917) example: 
+SPI at 490d, TCP at 410d
+[0m
+[0;32mI (23922) example: 
+SPI at 491d, TCP at 411d
+[0m
+[0;32mI (23927) example: 
+SPI at 491d, TCP at 412d
+[0m
+[0;32mI (23932) example: 
+SPI at 492d, TCP at 413d
+[0m
+[0;32mI (23938) example: 
+SPI at 493d, TCP at 414d
+[0m
+[0;32mI (23943) example: 
+SPI at 493d, TCP at 415d
+[0m
+[0;32mI (23948) example: 
+SPI at 494d, TCP at 416d
+[0m
+[0;32mI (23953) example: 
+SPI at 495d, TCP at 417d
+[0m
+[0;32mI (23958) example: 
+SPI at 495d, TCP at 418d
+[0m
+[0;32mI (23964) example: 
+SPI at 496d, TCP at 419d
+[0m
+[0;32mI (23969) example: 
+SPI at 497d, TCP at 420d
+[0m
+[0;32mI (23974) example: 
+SPI at 497d, TCP at 421d
+[0m
+[0;32mI (23979) example: 
+SPI at 498d, TCP at 422d
+[0m
+[0;32mI (23984) example: 
+SPI at 498d, TCP at 423d
+[0m
+[0;32mI (23990) example: 
+SPI at 499d, TCP at 424d
+[0m
+[0;32mI (23995) example: 
+SPI at 0d, TCP at 425d
+[0m
+[0;32mI (24000) example: 
+SPI at 0d, TCP at 426d
+[0m
+[0;32mI (24005) example: 
+SPI at 1d, TCP at 427d
+[0m
+[0;32mI (24010) example: 
+SPI at 2d, TCP at 428d
+[0m
+[0;32mI (24014) example: 
+SPI at 2d, TCP at 429d
+[0m
+[0;32mI (24019) example: 
+SPI at 3d, TCP at 430d
+[0m
+[0;32mI (24024) example: 
+SPI at 3d, TCP at 431d
+[0m
+[0;32mI (24029) example: 
+SPI at 4d, TCP at 432d
+[0m
+[0;32mI (24035) example: 
+SPI at 4d, TCP at 433d
+[0m
+[0;32mI (24039) example: 
+SPI at 5d, TCP at 434d
+[0m
+[0;32mI (24045) example: 
+SPI at 5d, TCP at 435d
+[0m
+[0;32mI (24050) example: 
+SPI at 6d, TCP at 436d
+[0m
+[0;32mI (24055) example: 
+SPI at 7d, TCP at 437d
+[0m
+[0;32mI (24060) example: 
+SPI at 7d, TCP at 438d
+[0m
+[0;32mI (24065) example: 
+SPI at 8d, TCP at 439d
+[0m
+[0;32mI (24070) example: 
+SPI at 8d, TCP at 440d
+[0m
+[0;32mI (24075) example: 
+SPI at 9d, TCP at 441d
+[0m
+[0;32mI (24080) example: 
+SPI at 10d, TCP at 442d
+[0m
+[0;32mI (24086) example: 
+SPI at 10d, TCP at 443d
+[0m
+[0;32mI (24091) example: 
+SPI at 11d, TCP at 444d
+[0m
+[0;32mI (24096) example: 
+SPI at 11d, TCP at 445d
+[0m
+[0;32mI (24101) example: 
+SPI at 12d, TCP at 446d
+[0m
+[0;32mI (24106) example: 
+SPI at 13d, TCP at 447d
+[0m
+[0;32mI (24110) example: 
+SPI at 13d, TCP at 448d
+[0m
+[0;32mI (24115) example: 
+SPI at 14d, TCP at 449d
+[0m
+[0;32mI (24121) example: 
+SPI at 15d, TCP at 450d
+[0m
+[0;32mI (24126) example: 
+SPI at 15d, TCP at 451d
+[0m
+[0;32mI (24131) example: 
+SPI at 16d, TCP at 452d
+[0m
+[0;32mI (24136) example: 
+SPI at 16d, TCP at 453d
+[0m
+[0;32mI (24141) example: 
+SPI at 17d, TCP at 454d
+[0m
+[0;32mI (24146) example: 
+SPI at 17d, TCP at 455d
+[0m
+[0;32mI (24151) example: 
+SPI at 18d, TCP at 456d
+[0m
+[0;32mI (24156) example: 
+SPI at 19d, TCP at 457d
+[0m
+[0;32mI (24163) example: 
+SPI at 19d, TCP at 458d
+[0m
+[0;32mI (24168) example: 
+SPI at 20d, TCP at 459d
+[0m
+[0;32mI (24173) example: 
+SPI at 21d, TCP at 460d
+[0m
+[0;32mI (24177) example: 
+SPI at 21d, TCP at 461d
+[0m
+[0;32mI (24183) example: 
+SPI at 22d, TCP at 462d
+[0m
+[0;32mI (24188) example: 
+SPI at 23d, TCP at 463d
+[0m
+[0;32mI (24194) example: 
+SPI at 23d, TCP at 464d
+[0m
+[0;32mI (24198) example: 
+SPI at 24d, TCP at 465d
+[0m
+[0;32mI (24203) example: 
+SPI at 24d, TCP at 466d
+[0m
+[0;32mI (24208) example: 
+SPI at 25d, TCP at 467d
+[0m
+[0;32mI (24214) example: 
+SPI at 26d, TCP at 468d
+[0m
+[0;32mI (24220) example: 
+SPI at 27d, TCP at 469d
+[0m
+[0;32mI (24223) example: 
+SPI at 27d, TCP at 470d
+[0m
+[0;32mI (24229) example: 
+SPI at 28d, TCP at 471d
+[0m
+[0;32mI (24234) example: 
+SPI at 28d, TCP at 472d
+[0m
+[0;32mI (24239) example: 
+SPI at 29d, TCP at 473d
+[0m
+[0;32mI (24244) example: 
+SPI at 29d, TCP at 474d
+[0m
+[0;32mI (24249) example: 
+SPI at 30d, TCP at 475d
+[0m
+[0;32mI (24255) example: 
+SPI at 31d, TCP at 476d
+[0m
+[0;32mI (24260) example: 
+SPI at 31d, TCP at 477d
+[0m
+[0;32mI (24265) example: 
+SPI at 32d, TCP at 478d
+[0m
+[0;32mI (24269) example: 
+SPI at 33d, TCP at 479d
+[0m
+[0;32mI (24274) example: 
+SPI at 33d, TCP at 480d
+[0m
+[0;32mI (24279) example: 
+SPI at 34d, TCP at 481d
+[0m
+[0;32mI (24284) example: 
+SPI at 34d, TCP at 482d
+[0m
+[0;32mI (24291) example: 
+SPI at 35d, TCP at 483d
+[0m
+[0;32mI (24296) example: 
+SPI at 36d, TCP at 484d
+[0m
+[0;32mI (24301) example: 
+SPI at 36d, TCP at 485d
+[0m
+[0;32mI (24306) example: 
+SPI at 37d, TCP at 486d
+[0m
+[0;32mI (24311) example: 
+SPI at 38d, TCP at 487d
+[0m
+[0;32mI (24316) example: 
+SPI at 38d, TCP at 488d
+[0m
+[0;32mI (24321) example: 
+SPI at 39d, TCP at 489d
+[0m
+[0;32mI (24326) example: 
+SPI at 39d, TCP at 490d
+[0m
+[0;32mI (24332) example: 
+SPI at 40d, TCP at 491d
+[0m
+[0;32mI (24338) example: 
+SPI at 41d, TCP at 492d
+[0m
+[0;32mI (24341) example: 
+SPI at 41d, TCP at 493d
+[0m
+[0;32mI (24346) example: 
+SPI at 42d, TCP at 494d
+[0m
+[0;32mI (24352) example: 
+SPI at 42d, TCP at 495d
+[0m
+[0;32mI (24357) example: 
+SPI at 43d, TCP at 496d
+[0m
+[0;32mI (24363) example: 
+SPI at 44d, TCP at 497d
+[0m
+[0;32mI (24367) example: 
+SPI at 44d, TCP at 498d
+[0m
+[0;32mI (24372) example: 
+SPI at 45d, TCP at 499d
+[0m
+[0;32mI (24377) example: 
+SPI at 45d, TCP at 0d
+[0m
+[0;32mI (24382) example: 
+SPI at 46d, TCP at 1d
+[0m
+[0;32mI (24387) example: 
+SPI at 47d, TCP at 2d
+[0m
+[0;32mI (24392) example: 
+SPI at 47d, TCP at 3d
+[0m
+[0;32mI (24397) example: 
+SPI at 48d, TCP at 4d
+[0m
+[0;32mI (24402) example: 
+SPI at 48d, TCP at 5d
+[0m
+[0;32mI (24408) example: 
+SPI at 49d, TCP at 6d
+[0m
+[0;32mI (24412) example: 
+SPI at 49d, TCP at 7d
+[0m
+[0;32mI (24417) example: 
+SPI at 50d, TCP at 8d
+[0m
+[0;32mI (24422) example: 
+SPI at 51d, TCP at 9d
+[0m
+[0;32mI (24427) example: 
+SPI at 51d, TCP at 10d
+[0m
+[0;32mI (24432) example: 
+SPI at 52d, TCP at 11d
+[0m
+[0;32mI (24436) example: 
+SPI at 52d, TCP at 12d
+[0m
+[0;32mI (24441) example: 
+SPI at 53d, TCP at 13d
+[0m
+[0;32mI (24447) example: 
+SPI at 54d, TCP at 14d
+[0m
+[0;32mI (24453) example: 
+SPI at 54d, TCP at 15d
+[0m
+[0;32mI (24457) example: 
+SPI at 55d, TCP at 16d
+[0m
+[0;32mI (24462) example: 
+SPI at 55d, TCP at 17d
+[0m
+[0;32mI (24467) example: 
+SPI at 56d, TCP at 18d
+[0m
+[0;32mI (24472) example: 
+SPI at 57d, TCP at 19d
+[0m
+[0;32mI (24477) example: 
+SPI at 57d, TCP at 20d
+[0m
+[0;32mI (24482) example: 
+SPI at 58d, TCP at 21d
+[0m
+[0;32mI (24487) example: 
+SPI at 59d, TCP at 22d
+[0m
+[0;32mI (24492) example: 
+SPI at 59d, TCP at 23d
+[0m
+[0;32mI (24497) example: 
+SPI at 60d, TCP at 24d
+[0m
+[0;32mI (24503) example: 
+SPI at 60d, TCP at 25d
+[0m
+[0;32mI (24507) example: 
+SPI at 61d, TCP at 26d
+[0m
+[0;32mI (24512) example: 
+SPI at 62d, TCP at 27d
+[0m
+[0;32mI (24518) example: 
+SPI at 62d, TCP at 28d
+[0m
+[0;32mI (24523) example: 
+SPI at 63d, TCP at 29d
+[0m
+[0;32mI (24527) example: 
+SPI at 63d, TCP at 30d
+[0m
+[0;32mI (24534) example: 
+SPI at 64d, TCP at 31d
+[0m
+[0;32mI (24538) example: 
+SPI at 65d, TCP at 32d
+[0m
+[0;32mI (24542) example: 
+SPI at 65d, TCP at 33d
+[0m
+[0;32mI (24547) example: 
+SPI at 66d, TCP at 34d
+[0m
+[0;32mI (24552) example: 
+SPI at 66d, TCP at 35d
+[0m
+[0;32mI (24558) example: 
+SPI at 67d, TCP at 36d
+[0m
+[0;32mI (24563) example: 
+SPI at 68d, TCP at 37d
+[0m
+[0;32mI (24568) example: 
+SPI at 68d, TCP at 38d
+[0m
+[0;32mI (24573) example: 
+SPI at 69d, TCP at 39d
+[0m
+[0;32mI (24577) example: 
+SPI at 70d, TCP at 40d
+[0m
+[0;32mI (24582) example: 
+SPI at 70d, TCP at 41d
+[0m
+[0;32mI (24588) example: 
+SPI at 71d, TCP at 42d
+[0m
+[0;32mI (24593) example: 
+SPI at 71d, TCP at 43d
+[0m
+[0;32mI (24599) example: 
+SPI at 72d, TCP at 44d
+[0m
+[0;32mI (24603) example: 
+SPI at 73d, TCP at 45d
+[0m
+[0;32mI (24608) example: 
+SPI at 73d, TCP at 46d
+[0m
+[0;32mI (24613) example: 
+SPI at 74d, TCP at 47d
+[0m
+[0;32mI (24618) example: 
+SPI at 74d, TCP at 48d
+[0m
+[0;32mI (24623) example: 
+SPI at 75d, TCP at 49d
+[0m
+[0;32mI (24628) example: 
+SPI at 76d, TCP at 50d
+[0m
+[0;32mI (24633) example: 
+SPI at 76d, TCP at 51d
+[0m
+[0;32mI (24638) example: 
+SPI at 77d, TCP at 52d
+[0m
+[0;32mI (24643) example: 
+SPI at 77d, TCP at 53d
+[0m
+[0;32mI (24648) example: 
+SPI at 78d, TCP at 54d
+[0m
+[0;32mI (24654) example: 
+SPI at 79d, TCP at 55d
+[0m
+[0;32mI (24659) example: 
+SPI at 79d, TCP at 56d
+[0m
+[0;32mI (24664) example: 
+SPI at 80d, TCP at 57d
+[0m
+[0;32mI (24669) example: 
+SPI at 80d, TCP at 58d
+[0m
+[0;32mI (24674) example: 
+SPI at 81d, TCP at 59d
+[0m
+[0;32mI (24678) example: 
+SPI at 81d, TCP at 60d
+[0m
+[0;32mI (24683) example: 
+SPI at 82d, TCP at 61d
+[0m
+[0;32mI (24688) example: 
+SPI at 83d, TCP at 62d
+[0m
+[0;32mI (24693) example: 
+SPI at 83d, TCP at 63d
+[0m
+[0;32mI (24699) example: 
+SPI at 84d, TCP at 64d
+[0m
+[0;32mI (24704) example: 
+SPI at 85d, TCP at 65d
+[0m
+[0;32mI (24709) example: 
+SPI at 85d, TCP at 66d
+[0m
+[0;32mI (24714) example: 
+SPI at 86d, TCP at 67d
+[0m
+[0;32mI (24719) example: 
+SPI at 87d, TCP at 68d
+[0m
+[0;32mI (24723) example: 
+SPI at 87d, TCP at 69d
+[0m
+[0;32mI (24728) example: 
+SPI at 88d, TCP at 70d
+[0m
+[0;32mI (24734) example: 
+SPI at 88d, TCP at 71d
+[0m
+[0;32mI (24739) example: 
+SPI at 89d, TCP at 72d
+[0m
+[0;32mI (24744) example: 
+SPI at 89d, TCP at 73d
+[0m
+[0;32mI (24749) example: 
+SPI at 90d, TCP at 74d
+[0m
+[0;32mI (24753) example: 
+SPI at 90d, TCP at 75d
+[0m
+[0;32mI (24759) example: 
+SPI at 91d, TCP at 76d
+[0m
+[0;32mI (24764) example: 
+SPI at 92d, TCP at 77d
+[0m
+[0;32mI (24769) example: 
+SPI at 92d, TCP at 78d
+[0m
+[0;32mI (24774) example: 
+SPI at 93d, TCP at 79d
+[0m
+[0;32mI (24779) example: 
+SPI at 93d, TCP at 80d
+[0m
+[0;32mI (24784) example: 
+SPI at 94d, TCP at 81d
+[0m
+[0;32mI (24790) example: 
+SPI at 95d, TCP at 82d
+[0m
+[0;32mI (24794) example: 
+SPI at 95d, TCP at 83d
+[0m
+[0;32mI (24800) example: 
+SPI at 96d, TCP at 84d
+[0m
+[0;32mI (24804) example: 
+SPI at 96d, TCP at 85d
+[0m
+[0;32mI (24810) example: 
+SPI at 97d, TCP at 86d
+[0m
+[0;32mI (24815) example: 
+SPI at 98d, TCP at 87d
+[0m
+[0;32mI (24820) example: 
+SPI at 98d, TCP at 88d
+[0m
+[0;32mI (24825) example: 
+SPI at 99d, TCP at 89d
+[0m
+[0;32mI (24830) example: 
+SPI at 100d, TCP at 90d
+[0m
+[0;32mI (24835) example: 
+SPI at 100d, TCP at 91d
+[0m
+[0;32mI (24841) example: 
+SPI at 101d, TCP at 92d
+[0m
+[0;32mI (24844) example: 
+SPI at 101d, TCP at 93d
+[0m
+[0;32mI (24850) example: 
+SPI at 102d, TCP at 94d
+[0m
+[0;32mI (24855) example: 
+SPI at 103d, TCP at 95d
+[0m
+[0;32mI (24861) example: 
+SPI at 103d, TCP at 96d
+[0m
+[0;32mI (24866) example: 
+SPI at 104d, TCP at 97d
+[0m
+[0;32mI (24871) example: 
+SPI at 104d, TCP at 98d
+[0m
+[0;32mI (24876) example: 
+SPI at 105d, TCP at 99d
+[0m
+[0;32mI (24881) example: 
+SPI at 106d, TCP at 100d
+[0m
+[0;32mI (24886) example: 
+SPI at 106d, TCP at 101d
+[0m
+[0;32mI (24891) example: 
+SPI at 107d, TCP at 102d
+[0m
+[0;32mI (24897) example: 
+SPI at 108d, TCP at 103d
+[0m
+[0;32mI (24902) example: 
+SPI at 108d, TCP at 104d
+[0m
+[0;32mI (24907) example: 
+SPI at 109d, TCP at 105d
+[0m
+[0;32mI (24912) example: 
+SPI at 110d, TCP at 106d
+[0m
+[0;32mI (24917) example: 
+SPI at 110d, TCP at 107d
+[0m
+[0;32mI (24923) example: 
+SPI at 111d, TCP at 108d
+[0m
+[0;32mI (24928) example: 
+SPI at 111d, TCP at 109d
+[0m
+[0;32mI (24933) example: 
+SPI at 112d, TCP at 110d
+[0m
+[0;32mI (24938) example: 
+SPI at 113d, TCP at 111d
+[0m
+[0;32mI (24944) example: 
+SPI at 113d, TCP at 112d
+[0m
+[0;32mI (24949) example: 
+SPI at 114d, TCP at 113d
+[0m
+[0;32mI (24954) example: 
+SPI at 115d, TCP at 114d
+[0m
+[0;32mI (24960) example: 
+SPI at 115d, TCP at 115d
+[0m
+[0;32mI (24964) example: 
+SPI at 116d, TCP at 116d
+[0m
+[0;32mI (24971) example: 
+SPI at 117d, TCP at 117d
+[0m
+[0;32mI (24979) example: 
+SPI at 118d, TCP at 118d
+[0m
+[0;32mI (24987) example: 
+SPI at 119d, TCP at 119d
+[0m
+[0;32mI (24995) example: 
+SPI at 120d, TCP at 120d
+[0m
+[0;32mI (25003) example: 
+SPI at 121d, TCP at 121d
+[0m
+[0;32mI (25011) example: 
+SPI at 122d, TCP at 122d
+[0m
+[0;32mI (25019) example: 
+SPI at 123d, TCP at 123d
+[0m
+[0;32mI (25027) example: 
+SPI at 124d, TCP at 124d
+[0m
+[0;32mI (25035) example: 
+SPI at 125d, TCP at 125d
+[0m
+[0;32mI (25043) example: 
+SPI at 126d, TCP at 126d
+[0m
+[0;32mI (25051) example: 
+SPI at 127d, TCP at 127d
+[0m
+[0;32mI (25059) example: 
+SPI at 128d, TCP at 128d
+[0m
+[0;32mI (25067) example: 
+SPI at 129d, TCP at 129d
+[0m
+[0;32mI (25075) example: 
+SPI at 130d, TCP at 130d
+[0m
+[0;32mI (25083) example: 
+SPI at 131d, TCP at 131d
+[0m
+[0;32mI (25091) example: 
+SPI at 132d, TCP at 132d
+[0m
+[0;32mI (25099) example: 
+SPI at 133d, TCP at 133d
+[0m
+[0;32mI (25107) example: 
+SPI at 134d, TCP at 134d
+[0m
+[0;32mI (25115) example: 
+SPI at 135d, TCP at 135d
+[0m
+[0;32mI (25123) example: 
+SPI at 136d, TCP at 136d
+[0m
+[0;32mI (25131) example: 
+SPI at 137d, TCP at 137d
+[0m
+[0;32mI (25139) example: 
+SPI at 138d, TCP at 138d
+[0m
+[0;32mI (25147) example: 
+SPI at 139d, TCP at 139d
+[0m
+[0;32mI (25155) example: 
+SPI at 140d, TCP at 140d
+[0m
+[0;32mI (25163) example: 
+SPI at 141d, TCP at 141d
+[0m
+[0;32mI (25171) example: 
+SPI at 142d, TCP at 142d
+[0m
+[0;32mI (25179) example: 
+SPI at 143d, TCP at 143d
+[0m
+[0;32mI (25187) example: 
+SPI at 144d, TCP at 144d
+[0m
+[0;32mI (25195) example: 
+SPI at 145d, TCP at 145d
+[0m
+[0;32mI (25203) example: 
+SPI at 146d, TCP at 146d
+[0m
+[0;32mI (25211) example: 
+SPI at 147d, TCP at 147d
+[0m
+[0;32mI (25219) example: 
+SPI at 148d, TCP at 148d
+[0m
+[0;32mI (25227) example: 
+SPI at 149d, TCP at 149d
+[0m
+[0;32mI (25235) example: 
+SPI at 150d, TCP at 150d
+[0m
+[0;32mI (25243) example: 
+SPI at 151d, TCP at 151d
+[0m
+[0;32mI (25252) example: 
+SPI at 152d, TCP at 152d
+[0m
+[0;32mI (25260) example: 
+SPI at 153d, TCP at 153d
+[0m
+[0;32mI (25268) example: 
+SPI at 154d, TCP at 154d
+[0m
+[0;32mI (25276) example: 
+SPI at 155d, TCP at 155d
+[0m
+[0;32mI (25284) example: 
+SPI at 156d, TCP at 156d
+[0m
+[0;32mI (25292) example: 
+SPI at 157d, TCP at 157d
+[0m
+[0;32mI (25300) example: 
+SPI at 158d, TCP at 158d
+[0m
+[0;32mI (25308) example: 
+SPI at 159d, TCP at 159d
+[0m
+[0;32mI (25316) example: 
+SPI at 160d, TCP at 160d
+[0m
+[0;32mI (25324) example: 
+SPI at 161d, TCP at 161d
+[0m
+[0;32mI (25332) example: 
+SPI at 162d, TCP at 162d
+[0m
+[0;32mI (25340) example: 
+SPI at 163d, TCP at 163d
+[0m
+[0;32mI (25348) example: 
+SPI at 164d, TCP at 164d
+[0m
+[0;32mI (25356) example: 
+SPI at 165d, TCP at 165d
+[0m
+[0;32mI (25365) example: 
+SPI at 166d, TCP at 166d
+[0m
+[0;32mI (25373) example: 
+SPI at 167d, TCP at 167d
+[0m
+[0;32mI (25381) example: 
+SPI at 168d, TCP at 168d
+[0m
+[0;32mI (25389) example: 
+SPI at 169d, TCP at 169d
+[0m
+[0;32mI (25397) example: 
+SPI at 170d, TCP at 170d
+[0m
+[0;32mI (25405) example: 
+SPI at 171d, TCP at 171d
+[0m
+[0;32mI (25413) example: 
+SPI at 172d, TCP at 172d
+[0m
+[0;32mI (25421) example: 
+SPI at 173d, TCP at 173d
+[0m
+[0;32mI (25429) example: 
+SPI at 174d, TCP at 174d
+[0m
+[0;32mI (25437) example: 
+SPI at 175d, TCP at 175d
+[0m
+[0;32mI (25445) example: 
+SPI at 176d, TCP at 176d
+[0m
+[0;32mI (25453) example: 
+SPI at 177d, TCP at 177d
+[0m
+[0;32mI (25462) example: 
+SPI at 178d, TCP at 178d
+[0m
+[0;32mI (25470) example: 
+SPI at 179d, TCP at 179d
+[0m
+[0;32mI (25478) example: 
+SPI at 180d, TCP at 180d
+[0m
+[0;32mI (25486) example: 
+SPI at 181d, TCP at 181d
+[0m
+[0;32mI (25494) example: 
+SPI at 182d, TCP at 182d
+[0m
+[0;32mI (25502) example: 
+SPI at 183d, TCP at 183d
+[0m
+[0;32mI (25510) example: 
+SPI at 184d, TCP at 184d
+[0m
+[0;32mI (25518) example: 
+SPI at 185d, TCP at 185d
+[0m
+[0;32mI (25526) example: 
+SPI at 186d, TCP at 186d
+[0m
+[0;32mI (25534) example: 
+SPI at 187d, TCP at 187d
+[0m
+[0;32mI (25542) example: 
+SPI at 188d, TCP at 188d
+[0m
+[0;32mI (25550) example: 
+SPI at 189d, TCP at 189d
+[0m
+[0;32mI (25557) example: 
+SPI at 190d, TCP at 190d
+[0m
+[0;32mI (25566) example: 
+SPI at 191d, TCP at 191d
+[0m
+[0;32mI (25574) example: 
+SPI at 192d, TCP at 192d
+[0m
+[0;32mI (25582) example: 
+SPI at 193d, TCP at 193d
+[0m
+[0;32mI (25590) example: 
+SPI at 194d, TCP at 194d
+[0m
+[0;32mI (25598) example: 
+SPI at 195d, TCP at 195d
+[0m
+[0;32mI (25606) example: 
+SPI at 196d, TCP at 196d
+[0m
+[0;32mI (25614) example: 
+SPI at 197d, TCP at 197d
+[0m
+[0;32mI (25622) example: 
+SPI at 198d, TCP at 198d
+[0m
+[0;32mI (25630) example: 
+SPI at 199d, TCP at 199d
+[0m
+[0;32mI (25638) example: 
+SPI at 200d, TCP at 200d
+[0m
+[0;32mI (25646) example: 
+SPI at 201d, TCP at 201d
+[0m
+[0;32mI (25654) example: 
+SPI at 202d, TCP at 202d
+[0m
+[0;32mI (25662) example: 
+SPI at 203d, TCP at 203d
+[0m
+[0;32mI (25671) example: 
+SPI at 204d, TCP at 204d
+[0m
+[0;32mI (25679) example: 
+SPI at 205d, TCP at 205d
+[0m
+[0;32mI (25687) example: 
+SPI at 206d, TCP at 206d
+[0m
+[0;32mI (25695) example: 
+SPI at 207d, TCP at 207d
+[0m
+[0;32mI (25703) example: 
+SPI at 208d, TCP at 208d
+[0m
+[0;32mI (25711) example: 
+SPI at 209d, TCP at 209d
+[0m
+[0;32mI (25719) example: 
+SPI at 210d, TCP at 210d
+[0m
+[0;32mI (25727) example: 
+SPI at 211d, TCP at 211d
+[0m
+[0;32mI (25735) example: 
+SPI at 212d, TCP at 212d
+[0m
+[0;32mI (25743) example: 
+SPI at 213d, TCP at 213d
+[0m
+[0;32mI (25751) example: 
+SPI at 214d, TCP at 214d
+[0m
+[0;32mI (25759) example: 
+SPI at 215d, TCP at 215d
+[0m
+[0;32mI (25767) example: 
+SPI at 216d, TCP at 216d
+[0m
+[0;32mI (25776) example: 
+SPI at 217d, TCP at 217d
+[0m
+[0;32mI (25784) example: 
+SPI at 218d, TCP at 218d
+[0m
+[0;32mI (25792) example: 
+SPI at 219d, TCP at 219d
+[0m
+[0;32mI (25800) example: 
+SPI at 220d, TCP at 220d
+[0m
+[0;32mI (25808) example: 
+SPI at 221d, TCP at 221d
+[0m
+[0;32mI (25816) example: 
+SPI at 222d, TCP at 222d
+[0m
+[0;32mI (25824) example: 
+SPI at 223d, TCP at 223d
+[0m
+[0;32mI (25832) example: 
+SPI at 224d, TCP at 224d
+[0m
+[0;32mI (25840) example: 
+SPI at 225d, TCP at 225d
+[0m
+[0;32mI (25848) example: 
+SPI at 226d, TCP at 226d
+[0m
+[0;32mI (25856) example: 
+SPI at 227d, TCP at 227d
+[0m
+[0;32mI (25864) example: 
+SPI at 228d, TCP at 228d
+[0m
+[0;32mI (25872) example: 
+SPI at 229d, TCP at 229d
+[0m
+[0;32mI (25880) example: 
+SPI at 230d, TCP at 230d
+[0m
+[0;32mI (25889) example: 
+SPI at 231d, TCP at 231d
+[0m
+[0;32mI (25897) example: 
+SPI at 232d, TCP at 232d
+[0m
+[0;32mI (25905) example: 
+SPI at 233d, TCP at 233d
+[0m
+[0;32mI (25913) example: 
+SPI at 234d, TCP at 234d
+[0m
+[0;32mI (25921) example: 
+SPI at 235d, TCP at 235d
+[0m
+[0;32mI (25929) example: 
+SPI at 236d, TCP at 236d
+[0m
+[0;32mI (25937) example: 
+SPI at 237d, TCP at 237d
+[0m
+[0;32mI (25945) example: 
+SPI at 238d, TCP at 238d
+[0m
+[0;32mI (25953) example: 
+SPI at 239d, TCP at 239d
+[0m
+[0;32mI (25961) example: 
+SPI at 240d, TCP at 240d
+[0m
+[0;32mI (25969) example: 
+SPI at 241d, TCP at 241d
+[0m
+[0;32mI (25977) example: 
+SPI at 242d, TCP at 242d
+[0m
+[0;32mI (25985) example: 
+SPI at 243d, TCP at 243d
+[0m
+[0;32mI (25993) example: 
+SPI at 244d, TCP at 244d
+[0m
+[0;32mI (26001) example: 
+SPI at 245d, TCP at 245d
+[0m
+[0;32mI (26009) example: 
+SPI at 246d, TCP at 246d
+[0m
+[0;32mI (26017) example: 
+SPI at 247d, TCP at 247d
+[0m
+[0;32mI (26025) example: 
+SPI at 248d, TCP at 248d
+[0m
+[0;32mI (26033) example: 
+SPI at 249d, TCP at 249d
+[0m
+[0;32mI (26041) example: 
+SPI at 250d, TCP at 250d
+[0m
+[0;32mI (26049) example: 
+SPI at 251d, TCP at 251d
+[0m
+[0;32mI (26057) example: 
+SPI at 252d, TCP at 252d
+[0m
+[0;32mI (26065) example: 
+SPI at 253d, TCP at 253d
+[0m
+[0;32mI (26073) example: 
+SPI at 254d, TCP at 254d
+[0m
+[0;32mI (26082) example: 
+SPI at 255d, TCP at 255d
+[0m
+[0;32mI (26090) example: 
+SPI at 256d, TCP at 256d
+[0m
+[0;32mI (26098) example: 
+SPI at 257d, TCP at 257d
+[0m
+[0;32mI (26106) example: 
+SPI at 258d, TCP at 258d
+[0m
+[0;32mI (26114) example: 
+SPI at 259d, TCP at 259d
+[0m
+[0;32mI (26123) example: 
+SPI at 260d, TCP at 260d
+[0m
+[0;32mI (26131) example: 
+SPI at 261d, TCP at 261d
+[0m
+[0;32mI (26139) example: 
+SPI at 262d, TCP at 262d
+[0m
+[0;32mI (26147) example: 
+SPI at 263d, TCP at 263d
+[0m
+[0;32mI (26155) example: 
+SPI at 264d, TCP at 264d
+[0m
+[0;32mI (26163) example: 
+SPI at 265d, TCP at 265d
+[0m
+[0;32mI (26172) example: 
+SPI at 266d, TCP at 266d
+[0m
+[0;32mI (26179) example: 
+SPI at 267d, TCP at 267d
+[0m
+[0;32mI (26187) example: 
+SPI at 268d, TCP at 268d
+[0m
+[0;32mI (26195) example: 
+SPI at 269d, TCP at 269d
+[0m
+[0;32mI (26203) example: 
+SPI at 270d, TCP at 270d
+[0m
+[0;32mI (26211) example: 
+SPI at 271d, TCP at 271d
+[0m
+[0;32mI (26219) example: 
+SPI at 272d, TCP at 272d
+[0m
+[0;32mI (26227) example: 
+SPI at 273d, TCP at 273d
+[0m
+[0;32mI (26235) example: 
+SPI at 274d, TCP at 274d
+[0m
+[0;32mI (26243) example: 
+SPI at 275d, TCP at 275d
+[0m
+[0;32mI (26251) example: 
+SPI at 276d, TCP at 276d
+[0m
+[0;32mI (26259) example: 
+SPI at 277d, TCP at 277d
+[0m
+[0;32mI (26267) example: 
+SPI at 278d, TCP at 278d
+[0m
+[0;32mI (26276) example: 
+SPI at 279d, TCP at 279d
+[0m
+[0;32mI (26285) example: 
+SPI at 280d, TCP at 280d
+[0m
+[0;32mI (26293) example: 
+SPI at 281d, TCP at 281d
+[0m
+[0;32mI (26301) example: 
+SPI at 282d, TCP at 282d
+[0m
+[0;32mI (26309) example: 
+SPI at 283d, TCP at 283d
+[0m
+[0;32mI (26317) example: 
+SPI at 284d, TCP at 284d
+[0m
+[0;32mI (26325) example: 
+SPI at 285d, TCP at 285d
+[0m
+[0;32mI (26333) example: 
+SPI at 286d, TCP at 286d
+[0m
+[0;32mI (26341) example: 
+SPI at 287d, TCP at 287d
+[0m
+[0;32mI (26349) example: 
+SPI at 288d, TCP at 288d
+[0m
+[0;32mI (26357) example: 
+SPI at 289d, TCP at 289d
+[0m
+[0;32mI (26365) example: 
+SPI at 290d, TCP at 290d
+[0m
+[0;32mI (26373) example: 
+SPI at 291d, TCP at 291d
+[0m
+[0;32mI (26381) example: 
+SPI at 292d, TCP at 292d
+[0m
+[0;32mI (26390) example: 
+SPI at 293d, TCP at 293d
+[0m
+[0;32mI (26398) example: 
+SPI at 294d, TCP at 294d
+[0m
+[0;32mI (26406) example: 
+SPI at 295d, TCP at 295d
+[0m
+[0;32mI (26414) example: 
+SPI at 296d, TCP at 296d
+[0m
+[0;32mI (26422) example: 
+SPI at 297d, TCP at 297d
+[0m
+[0;32mI (26430) example: 
+SPI at 298d, TCP at 298d
+[0m
+[0;32mI (26438) example: 
+SPI at 299d, TCP at 299d
+[0m
+[0;32mI (26446) example: 
+SPI at 300d, TCP at 300d
+[0m
+[0;32mI (26454) example: 
+SPI at 301d, TCP at 301d
+[0m
+[0;32mI (26462) example: 
+SPI at 302d, TCP at 302d
+[0m
+[0;32mI (26470) example: 
+SPI at 303d, TCP at 303d
+[0m
+[0;32mI (26478) example: 
+SPI at 304d, TCP at 304d
+[0m
+[0;32mI (26486) example: 
+SPI at 305d, TCP at 305d
+[0m
+[0;32mI (26494) example: 
+SPI at 306d, TCP at 306d
+[0m
+[0;32mI (26502) example: 
+SPI at 307d, TCP at 307d
+[0m
+[0;32mI (26510) example: 
+SPI at 308d, TCP at 308d
+[0m
+[0;32mI (26518) example: 
+SPI at 309d, TCP at 309d
+[0m
+[0;32mI (26526) example: 
+SPI at 310d, TCP at 310d
+[0m
+[0;32mI (26535) example: 
+SPI at 311d, TCP at 311d
+[0m
+[0;32mI (26543) example: 
+SPI at 312d, TCP at 312d
+[0m
+[0;32mI (26551) example: 
+SPI at 313d, TCP at 313d
+[0m
+[0;32mI (26559) example: 
+SPI at 314d, TCP at 314d
+[0m
+[0;32mI (26567) example: 
+SPI at 315d, TCP at 315d
+[0m
+[0;32mI (26575) example: 
+SPI at 316d, TCP at 316d
+[0m
+[0;32mI (26584) example: 
+SPI at 317d, TCP at 317d
+[0m
+[0;32mI (26592) example: 
+SPI at 318d, TCP at 318d
+[0m
+[0;32mI (26600) example: 
+SPI at 319d, TCP at 319d
+[0m
+[0;32mI (26608) example: 
+SPI at 320d, TCP at 320d
+[0m
+[0;32mI (26616) example: 
+SPI at 321d, TCP at 321d
+[0m
+[0;32mI (26624) example: 
+SPI at 322d, TCP at 322d
+[0m
+[0;32mI (26632) example: 
+SPI at 323d, TCP at 323d
+[0m
+[0;32mI (26640) example: 
+SPI at 324d, TCP at 324d
+[0m
+[0;32mI (26648) example: 
+SPI at 325d, TCP at 325d
+[0m
+[0;32mI (26656) example: 
+SPI at 326d, TCP at 326d
+[0m
+[0;32mI (26664) example: 
+SPI at 327d, TCP at 327d
+[0m
+[0;32mI (26672) example: 
+SPI at 328d, TCP at 328d
+[0m
+[0;32mI (26680) example: 
+SPI at 329d, TCP at 329d
+[0m
+[0;32mI (26688) example: 
+SPI at 330d, TCP at 330d
+[0m
+[0;32mI (26696) example: 
+SPI at 331d, TCP at 331d
+[0m
+[0;32mI (26704) example: 
+SPI at 332d, TCP at 332d
+[0m
+[0;32mI (26712) example: 
+SPI at 333d, TCP at 333d
+[0m
+[0;32mI (26720) example: 
+SPI at 334d, TCP at 334d
+[0m
+[0;32mI (26728) example: 
+SPI at 335d, TCP at 335d
+[0m
+[0;32mI (26736) example: 
+SPI at 336d, TCP at 336d
+[0m
+[0;32mI (26744) example: 
+SPI at 337d, TCP at 337d
+[0m
+[0;32mI (26752) example: 
+SPI at 338d, TCP at 338d
+[0m
+[0;32mI (26760) example: 
+SPI at 339d, TCP at 339d
+[0m
+[0;32mI (26768) example: 
+SPI at 340d, TCP at 340d
+[0m
+[0;32mI (26776) example: 
+SPI at 341d, TCP at 341d
+[0m
+[0;32mI (26784) example: 
+SPI at 342d, TCP at 342d
+[0m
+[0;32mI (26792) example: 
+SPI at 343d, TCP at 343d
+[0m
+[0;32mI (26800) example: 
+SPI at 344d, TCP at 344d
+[0m
+[0;32mI (26808) example: 
+SPI at 345d, TCP at 345d
+[0m
+[0;32mI (26816) example: 
+SPI at 346d, TCP at 346d
+[0m
+[0;32mI (26824) example: 
+SPI at 347d, TCP at 347d
+[0m
+[0;32mI (26832) example: 
+SPI at 348d, TCP at 348d
+[0m
+[0;32mI (26840) example: 
+SPI at 349d, TCP at 349d
+[0m
+[0;32mI (26848) example: 
+SPI at 350d, TCP at 350d
+[0m
+[0;32mI (26856) example: 
+SPI at 351d, TCP at 351d
+[0m
+[0;32mI (26864) example: 
+SPI at 352d, TCP at 352d
+[0m
+[0;32mI (26872) example: 
+SPI at 353d, TCP at 353d
+[0m
+[0;32mI (26880) example: 
+SPI at 354d, TCP at 354d
+[0m
+[0;32mI (26888) example: 
+SPI at 355d, TCP at 355d
+[0m
+[0;32mI (26896) example: 
+SPI at 356d, TCP at 356d
+[0m
+[0;32mI (26904) example: 
+SPI at 357d, TCP at 357d
+[0m
+[0;32mI (26912) example: 
+SPI at 358d, TCP at 358d
+[0m
+[0;32mI (26920) example: 
+SPI at 359d, TCP at 359d
+[0m
+[0;32mI (26928) example: 
+SPI at 360d, TCP at 360d
+[0m
+[0;32mI (26936) example: 
+SPI at 361d, TCP at 361d
+[0m
+[0;32mI (26945) example: 
+SPI at 362d, TCP at 362d
+[0m
+[0;32mI (26953) example: 
+SPI at 363d, TCP at 363d
+[0m
+[0;32mI (26961) example: 
+SPI at 364d, TCP at 364d
+[0m
+[0;32mI (26969) example: 
+SPI at 365d, TCP at 365d
+[0m
+[0;32mI (26977) example: 
+SPI at 366d, TCP at 366d
+[0m
+[0;32mI (26985) example: 
+SPI at 367d, TCP at 367d
+[0m
+[0;32mI (26993) example: 
+SPI at 368d, TCP at 368d
+[0m
+[0;32mI (27002) example: 
+SPI at 369d, TCP at 369d
+[0m
+[0;32mI (27010) example: 
+SPI at 370d, TCP at 370d
+[0m
+[0;32mI (27018) example: 
+SPI at 371d, TCP at 371d
+[0m
+[0;32mI (27026) example: 
+SPI at 372d, TCP at 372d
+[0m
+[0;32mI (27034) example: 
+SPI at 373d, TCP at 373d
+[0m
+[0;32mI (27042) example: 
+SPI at 374d, TCP at 374d
+[0m
+[0;32mI (27050) example: 
+SPI at 375d, TCP at 375d
+[0m
+[0;32mI (27058) example: 
+SPI at 376d, TCP at 376d
+[0m
+[0;32mI (27066) example: 
+SPI at 377d, TCP at 377d
+[0m
+[0;32mI (27074) example: 
+SPI at 378d, TCP at 378d
+[0m
+[0;32mI (27082) example: 
+SPI at 379d, TCP at 379d
+[0m
+[0;32mI (27090) example: 
+SPI at 380d, TCP at 380d
+[0m
+[0;32mI (27098) example: 
+SPI at 381d, TCP at 381d
+[0m
+[0;32mI (27107) example: 
+SPI at 382d, TCP at 382d
+[0m
+[0;32mI (27115) example: 
+SPI at 383d, TCP at 383d
+[0m
+[0;32mI (27123) example: 
+SPI at 384d, TCP at 384d
+[0m
+[0;32mI (27131) example: 
+SPI at 385d, TCP at 385d
+[0m
+[0;32mI (27139) example: 
+SPI at 386d, TCP at 386d
+[0m
+[0;32mI (27147) example: 
+SPI at 387d, TCP at 387d
+[0m
+[0;32mI (27155) example: 
+SPI at 388d, TCP at 388d
+[0m
+[0;32mI (27163) example: 
+SPI at 389d, TCP at 389d
+[0m
+[0;32mI (27171) example: 
+SPI at 390d, TCP at 390d
+[0m
+[0;32mI (27179) example: 
+SPI at 391d, TCP at 391d
+[0m
+[0;32mI (27187) example: 
+SPI at 392d, TCP at 392d
+[0m
+[0;32mI (27196) example: 
+SPI at 393d, TCP at 393d
+[0m
+[0;32mI (27204) example: 
+SPI at 394d, TCP at 394d
+[0m
+[0;32mI (27212) example: 
+SPI at 395d, TCP at 395d
+[0m
+[0;32mI (27220) example: 
+SPI at 396d, TCP at 396d
+[0m
+[0;32mI (27228) example: 
+SPI at 397d, TCP at 397d
+[0m
+[0;32mI (27236) example: 
+SPI at 398d, TCP at 398d
+[0m
+[0;32mI (27244) example: 
+SPI at 399d, TCP at 399d
+[0m
+[0;32mI (27252) example: 
+SPI at 400d, TCP at 400d
+[0m
+[0;32mI (27260) example: 
+SPI at 401d, TCP at 401d
+[0m
+[0;32mI (27268) example: 
+SPI at 402d, TCP at 402d
+[0m
+[0;32mI (27276) example: 
+SPI at 403d, TCP at 403d
+[0m
+[0;32mI (27284) example: 
+SPI at 404d, TCP at 404d
+[0m
+[0;32mI (27292) example: 
+SPI at 405d, TCP at 405d
+[0m
+[0;32mI (27300) example: 
+SPI at 406d, TCP at 406d
+[0m
+[0;32mI (27309) example: 
+SPI at 407d, TCP at 407d
+[0m
+[0;32mI (27317) example: 
+SPI at 408d, TCP at 408d
+[0m
+[0;32mI (27325) example: 
+SPI at 409d, TCP at 409d
+[0m
+[0;32mI (27333) example: 
+SPI at 410d, TCP at 410d
+[0m
+[0;32mI (27341) example: 
+SPI at 411d, TCP at 411d
+[0m
+[0;32mI (27349) example: 
+SPI at 412d, TCP at 412d
+[0m
+[0;32mI (27357) example: 
+SPI at 413d, TCP at 413d
+[0m
+[0;32mI (27365) example: 
+SPI at 414d, TCP at 414d
+[0m
+[0;32mI (27373) example: 
+SPI at 415d, TCP at 415d
+[0m
+[0;32mI (27381) example: 
+SPI at 416d, TCP at 416d
+[0m
+[0;32mI (27389) example: 
+SPI at 417d, TCP at 417d
+[0m
+[0;32mI (27397) example: 
+SPI at 418d, TCP at 418d
+[0m
+[0;32mI (27405) example: 
+SPI at 419d, TCP at 419d
+[0m
+[0;32mI (27414) example: 
+SPI at 420d, TCP at 420d
+[0m
+[0;32mI (27422) example: 
+SPI at 421d, TCP at 421d
+[0m
+[0;32mI (27430) example: 
+SPI at 422d, TCP at 422d
+[0m
+[0;32mI (27438) example: 
+SPI at 423d, TCP at 423d
+[0m
+[0;32mI (27446) example: 
+SPI at 424d, TCP at 424d
+[0m
+[0;32mI (27454) example: 
+SPI at 425d, TCP at 425d
+[0m
+[0;32mI (27462) example: 
+SPI at 426d, TCP at 426d
+[0m
+[0;32mI (27470) example: 
+SPI at 427d, TCP at 427d
+[0m
+[0;32mI (27478) example: 
+SPI at 428d, TCP at 428d
+[0m
+[0;32mI (27486) example: 
+SPI at 429d, TCP at 429d
+[0m
+[0;32mI (27494) example: 
+SPI at 430d, TCP at 430d
+[0m
+[0;32mI (27502) example: 
+SPI at 431d, TCP at 431d
+[0m
+[0;32mI (27510) example: 
+SPI at 432d, TCP at 432d
+[0m
+[0;32mI (27518) example: 
+SPI at 433d, TCP at 433d
+[0m
+[0;32mI (27526) example: 
+SPI at 434d, TCP at 434d
+[0m
+[0;32mI (27534) example: 
+SPI at 435d, TCP at 435d
+[0m
+[0;32mI (27542) example: 
+SPI at 436d, TCP at 436d
+[0m
+[0;32mI (27550) example: 
+SPI at 437d, TCP at 437d
+[0m
+[0;32mI (27558) example: 
+SPI at 438d, TCP at 438d
+[0m
+[0;32mI (27566) example: 
+SPI at 439d, TCP at 439d
+[0m
+[0;32mI (27574) example: 
+SPI at 440d, TCP at 440d
+[0m
+[0;32mI (27582) example: 
+SPI at 441d, TCP at 441d
+[0m
+[0;32mI (27590) example: 
+SPI at 442d, TCP at 442d
+[0m
+[0;32mI (27598) example: 
+SPI at 443d, TCP at 443d
+[0m
+[0;32mI (27605) example: 
+SPI at 444d, TCP at 444d
+[0m
+[0;32mI (27614) example: 
+SPI at 445d, TCP at 445d
+[0m
+[0;32mI (27622) example: 
+SPI at 446d, TCP at 446d
+[0m
+[0;32mI (27630) example: 
+SPI at 447d, TCP at 447d
+[0m
+[0;32mI (27638) example: 
+SPI at 448d, TCP at 448d
+[0m
+[0;32mI (27646) example: 
+SPI at 449d, TCP at 449d
+[0m
+[0;32mI (27654) example: 
+SPI at 450d, TCP at 450d
+[0m
+[0;32mI (27662) example: 
+SPI at 451d, TCP at 451d
+[0m
+[0;32mI (27670) example: 
+SPI at 452d, TCP at 452d
+[0m
+[0;32mI (27678) example: 
+SPI at 453d, TCP at 453d
+[0m
+[0;32mI (27686) example: 
+SPI at 454d, TCP at 454d
+[0m
+[0;32mI (27694) example: 
+SPI at 455d, TCP at 455d
+[0m
+[0;32mI (27703) example: 
+SPI at 456d, TCP at 456d
+[0m
+[0;32mI (27711) example: 
+SPI at 457d, TCP at 457d
+[0m
+[0;32mI (27719) example: 
+SPI at 458d, TCP at 458d
+[0m
+[0;32mI (27727) example: 
+SPI at 459d, TCP at 459d
+[0m
+[0;32mI (27735) example: 
+SPI at 460d, TCP at 460d
+[0m
+[0;32mI (27743) example: 
+SPI at 461d, TCP at 461d
+[0m
+[0;32mI (27751) example: 
+SPI at 462d, TCP at 462d
+[0m
+[0;32mI (27759) example: 
+SPI at 463d, TCP at 463d
+[0m
+[0;32mI (27767) example: 
+SPI at 464d, TCP at 464d
+[0m
+[0;32mI (27775) example: 
+SPI at 465d, TCP at 465d
+[0m
+[0;32mI (27784) example: 
+SPI at 466d, TCP at 466d
+[0m
+[0;32mI (27792) example: 
+SPI at 467d, TCP at 467d
+[0m
+[0;32mI (27800) example: 
+SPI at 468d, TCP at 468d
+[0m
+[0;32mI (27808) example: 
+SPI at 469d, TCP at 469d
+[0m
+[0;32mI (27816) example: 
+SPI at 470d, TCP at 470d
+[0m
+[0;32mI (27824) example: 
+SPI at 471d, TCP at 471d
+[0m
+[0;32mI (27832) example: 
+SPI at 472d, TCP at 472d
+[0m
+[0;32mI (27840) example: 
+SPI at 473d, TCP at 473d
+[0m
+[0;32mI (27848) example: 
+SPI at 474d, TCP at 474d
+[0m
+[0;32mI (27856) example: 
+SPI at 475d, TCP at 475d
+[0m
+[0;32mI (27864) example: 
+SPI at 476d, TCP at 476d
+[0m
+[0;32mI (27872) example: 
+SPI at 477d, TCP at 477d
+[0m
+[0;32mI (27880) example: 
+SPI at 478d, TCP at 478d
+[0m
+[0;32mI (27888) example: 
+SPI at 479d, TCP at 479d
+[0m
+[0;32mI (27896) example: 
+SPI at 480d, TCP at 480d
+[0m
+[0;32mI (27904) example: 
+SPI at 481d, TCP at 481d
+[0m
+[0;32mI (27912) example: 
+SPI at 482d, TCP at 482d
+[0m
+[0;32mI (27920) example: 
+SPI at 483d, TCP at 483d
+[0m
+[0;32mI (27928) example: 
+SPI at 484d, TCP at 484d
+[0m
+[0;32mI (27936) example: 
+SPI at 485d, TCP at 485d
+[0m
+[0;32mI (27944) example: 
+SPI at 486d, TCP at 486d
+[0m
+[0;32mI (27952) example: 
+SPI at 487d, TCP at 487d
+[0m
+[0;32mI (27960) example: 
+SPI at 488d, TCP at 488d
+[0m
+[0;32mI (27968) example: 
+SPI at 489d, TCP at 489d
+[0m
+[0;32mI (27976) example: 
+SPI at 490d, TCP at 490d
+[0m
+[0;32mI (27984) example: 
+SPI at 491d, TCP at 491d
+[0m
+[0;32mI (27992) example: 
+SPI at 492d, TCP at 492d
+[0m
+[0;32mI (28000) example: 
+SPI at 493d, TCP at 493d
+[0m
+[0;32mI (28008) example: 
+SPI at 494d, TCP at 494d
+[0m
+[0;32mI (28017) example: 
+SPI at 495d, TCP at 495d
+[0m
+[0;32mI (28025) example: 
+SPI at 496d, TCP at 496d
+[0m
+[0;32mI (28033) example: 
+SPI at 497d, TCP at 497d
+[0m
+[0;32mI (28041) example: 
+SPI at 498d, TCP at 498d
+[0m
+[0;32mI (28049) example: 
+SPI at 499d, TCP at 499d
+[0m
+[0;32mI (28057) example: 
+SPI at 0d, TCP at 0d
+[0m
+[0;32mI (28065) example: 
+SPI at 1d, TCP at 1d
+[0m
+[0;32mI (28073) example: 
+SPI at 2d, TCP at 2d
+[0m
+[0;32mI (28081) example: 
+SPI at 3d, TCP at 3d
+[0m
+[0;32mI (28089) example: 
+SPI at 4d, TCP at 4d
+[0m
+[0;32mI (28097) example: 
+SPI at 5d, TCP at 5d
+[0m
+[0;32mI (28105) example: 
+SPI at 6d, TCP at 6d
+[0m
+[0;32mI (28113) example: 
+SPI at 7d, TCP at 7d
+[0m
+[0;32mI (28121) example: 
+SPI at 8d, TCP at 8d
+[0m
+[0;32mI (28130) example: 
+SPI at 9d, TCP at 9d
+[0m
+[0;32mI (28138) example: 
+SPI at 10d, TCP at 10d
+[0m
+[0;32mI (28146) example: 
+SPI at 11d, TCP at 11d
+[0m
+[0;32mI (28154) example: 
+SPI at 12d, TCP at 12d
+[0m
+[0;32mI (28162) example: 
+SPI at 13d, TCP at 13d
+[0m
+[0;32mI (28170) example: 
+SPI at 14d, TCP at 14d
+[0m
+[0;32mI (28178) example: 
+SPI at 15d, TCP at 15d
+[0m
+[0;32mI (28186) example: 
+SPI at 16d, TCP at 16d
+[0m
+[0;32mI (28194) example: 
+SPI at 17d, TCP at 17d
+[0m
+[0;32mI (28202) example: 
+SPI at 18d, TCP at 18d
+[0m
+[0;32mI (28210) example: 
+SPI at 19d, TCP at 19d
+[0m
+[0;32mI (28218) example: 
+SPI at 20d, TCP at 20d
+[0m
+[0;32mI (28226) example: 
+SPI at 21d, TCP at 21d
+[0m
+[0;32mI (28234) example: 
+SPI at 22d, TCP at 22d
+[0m
+[0;32mI (28242) example: 
+SPI at 23d, TCP at 23d
+[0m
+[0;32mI (28250) example: 
+SPI at 24d, TCP at 24d
+[0m
+[0;32mI (28258) example: 
+SPI at 25d, TCP at 25d
+[0m
+[0;32mI (28266) example: 
+SPI at 26d, TCP at 26d
+[0m
+[0;32mI (28274) example: 
+SPI at 27d, TCP at 27d
+[0m
+[0;32mI (28282) example: 
+SPI at 28d, TCP at 28d
+[0m
+[0;32mI (28290) example: 
+SPI at 29d, TCP at 29d
+[0m
+[0;32mI (28298) example: 
+SPI at 30d, TCP at 30d
+[0m
+[0;32mI (28306) example: 
+SPI at 31d, TCP at 31d
+[0m
+[0;32mI (28314) example: 
+SPI at 32d, TCP at 32d
+[0m
+[0;32mI (28322) example: 
+SPI at 33d, TCP at 33d
+[0m
+[0;32mI (28330) example: 
+SPI at 34d, TCP at 34d
+[0m
+[0;32mI (28338) example: 
+SPI at 35d, TCP at 35d
+[0m
+[0;32mI (28346) example: 
+SPI at 36d, TCP at 36d
+[0m
+[0;32mI (28354) example: 
+SPI at 37d, TCP at 37d
+[0m
+[0;32mI (28362) example: 
+SPI at 38d, TCP at 38d
+[0m
+[0;32mI (28370) example: 
+SPI at 39d, TCP at 39d
+[0m
+[0;32mI (28378) example: 
+SPI at 40d, TCP at 40d
+[0m
+[0;32mI (28386) example: 
+SPI at 41d, TCP at 41d
+[0m
+[0;32mI (28394) example: 
+SPI at 42d, TCP at 42d
+[0m
+[0;32mI (28402) example: 
+SPI at 43d, TCP at 43d
+[0m
+[0;32mI (28410) example: 
+SPI at 44d, TCP at 44d
+[0m
+[0;32mI (28418) example: 
+SPI at 45d, TCP at 45d
+[0m
+[0;32mI (28426) example: 
+SPI at 46d, TCP at 46d
+[0m
+[0;32mI (28434) example: 
+SPI at 47d, TCP at 47d
+[0m
+[0;32mI (28442) example: 
+SPI at 48d, TCP at 48d
+[0m
+[0;32mI (28450) example: 
+SPI at 49d, TCP at 49d
+[0m
+[0;32mI (28458) example: 
+SPI at 50d, TCP at 50d
+[0m
+[0;32mI (28466) example: 
+SPI at 51d, TCP at 51d
+[0m
+[0;32mI (28474) example: 
+SPI at 52d, TCP at 52d
+[0m
+[0;32mI (28482) example: 
+SPI at 53d, TCP at 53d
+[0m
+[0;32mI (28490) example: 
+SPI at 54d, TCP at 54d
+[0m
+[0;32mI (28498) example: 
+SPI at 55d, TCP at 55d
+[0m
+[0;32mI (28506) example: 
+SPI at 56d, TCP at 56d
+[0m
+[0;32mI (28514) example: 
+SPI at 57d, TCP at 57d
+[0m
+[0;32mI (28522) example: 
+SPI at 58d, TCP at 58d
+[0m
+[0;32mI (28530) example: 
+SPI at 59d, TCP at 59d
+[0m
+[0;32mI (28538) example: 
+SPI at 60d, TCP at 60d
+[0m
+[0;32mI (28546) example: 
+SPI at 61d, TCP at 61d
+[0m
+[0;32mI (28554) example: 
+SPI at 62d, TCP at 62d
+[0m
+[0;32mI (28562) example: 
+SPI at 63d, TCP at 63d
+[0m
+[0;32mI (28570) example: 
+SPI at 64d, TCP at 64d
+[0m
+[0;32mI (28578) example: 
+SPI at 65d, TCP at 65d
+[0m
+[0;32mI (28586) example: 
+SPI at 66d, TCP at 66d
+[0m
+[0;32mI (28594) example: 
+SPI at 67d, TCP at 67d
+[0m
+[0;32mI (28602) example: 
+SPI at 68d, TCP at 68d
+[0m
+[0;32mI (28610) example: 
+SPI at 69d, TCP at 69d
+[0m
+[0;32mI (28618) example: 
+SPI at 70d, TCP at 70d
+[0m
+[0;32mI (28626) example: 
+SPI at 71d, TCP at 71d
+[0m
+[0;32mI (28634) example: 
+SPI at 72d, TCP at 72d
+[0m
+[0;32mI (28643) example: 
+SPI at 73d, TCP at 73d
+[0m
+[0;32mI (28651) example: 
+SPI at 74d, TCP at 74d
+[0m
+[0;32mI (28659) example: 
+SPI at 75d, TCP at 75d
+[0m
+[0;32mI (28667) example: 
+SPI at 76d, TCP at 76d
+[0m
+[0;32mI (28675) example: 
+SPI at 77d, TCP at 77d
+[0m
+[0;32mI (28683) example: 
+SPI at 78d, TCP at 78d
+[0m
+[0;32mI (28691) example: 
+SPI at 79d, TCP at 79d
+[0m
+[0;32mI (28699) example: 
+SPI at 80d, TCP at 80d
+[0m
+[0;32mI (28707) example: 
+SPI at 81d, TCP at 81d
+[0m
+[0;32mI (28715) example: 
+SPI at 82d, TCP at 82d
+[0m
+[0;32mI (28723) example: 
+SPI at 83d, TCP at 83d
+[0m
+[0;32mI (28732) example: 
+SPI at 84d, TCP at 84d
+[0m
+[0;32mI (28739) example: 
+SPI at 85d, TCP at 85d
+[0m
+[0;32mI (28747) example: 
+SPI at 86d, TCP at 86d
+[0m
+[0;32mI (28755) example: 
+SPI at 87d, TCP at 87d
+[0m
+[0;32mI (28763) example: 
+SPI at 88d, TCP at 88d
+[0m
+[0;32mI (28771) example: 
+SPI at 89d, TCP at 89d
+[0m
+[0;32mI (28779) example: 
+SPI at 90d, TCP at 90d
+[0m
+[0;32mI (28788) example: 
+SPI at 91d, TCP at 91d
+[0m
+[0;32mI (28796) example: 
+SPI at 92d, TCP at 92d
+[0m
+[0;32mI (28804) example: 
+SPI at 93d, TCP at 93d
+[0m
+[0;32mI (28812) example: 
+SPI at 94d, TCP at 94d
+[0m
+[0;32mI (28820) example: 
+SPI at 95d, TCP at 95d
+[0m
+[0;32mI (28828) example: 
+SPI at 96d, TCP at 96d
+[0m
+[0;32mI (28836) example: 
+SPI at 97d, TCP at 97d
+[0m
+[0;32mI (28844) example: 
+SPI at 98d, TCP at 98d
+[0m
+[0;32mI (28852) example: 
+SPI at 99d, TCP at 99d
+[0m
+[0;32mI (28860) example: 
+SPI at 100d, TCP at 100d
+[0m
+[0;32mI (28868) example: 
+SPI at 101d, TCP at 101d
+[0m
+[0;32mI (28876) example: 
+SPI at 102d, TCP at 102d
+[0m
+[0;32mI (28884) example: 
+SPI at 103d, TCP at 103d
+[0m
+[0;32mI (28892) example: 
+SPI at 104d, TCP at 104d
+[0m
+[0;32mI (28900) example: 
+SPI at 105d, TCP at 105d
+[0m
+[0;32mI (28908) example: 
+SPI at 106d, TCP at 106d
+[0m
+[0;32mI (28916) example: 
+SPI at 107d, TCP at 107d
+[0m
+[0;32mI (28924) example: 
+SPI at 108d, TCP at 108d
+[0m
+[0;32mI (28932) example: 
+SPI at 109d, TCP at 109d
+[0m
+[0;32mI (28940) example: 
+SPI at 110d, TCP at 110d
+[0m
+[0;32mI (28948) example: 
+SPI at 111d, TCP at 111d
+[0m
+[0;32mI (28956) example: 
+SPI at 112d, TCP at 112d
+[0m
+[0;32mI (28964) example: 
+SPI at 113d, TCP at 113d
+[0m
+[0;32mI (28972) example: 
+SPI at 114d, TCP at 114d
+[0m
+[0;32mI (28980) example: 
+SPI at 115d, TCP at 115d
+[0m
+[0;32mI (28988) example: 
+SPI at 116d, TCP at 116d
+[0m
+[0;32mI (28996) example: 
+SPI at 117d, TCP at 117d
+[0m
+[0;32mI (29004) example: 
+SPI at 118d, TCP at 118d
+[0m
+[0;32mI (29012) example: 
+SPI at 119d, TCP at 119d
+[0m
+[0;32mI (29020) example: 
+SPI at 120d, TCP at 120d
+[0m
+[0;32mI (29028) example: 
+SPI at 121d, TCP at 121d
+[0m
+[0;32mI (29036) example: 
+SPI at 122d, TCP at 122d
+[0m
+[0;32mI (29044) example: 
+SPI at 123d, TCP at 123d
+[0m
+[0;32mI (29053) example: 
+SPI at 124d, TCP at 124d
+[0m
+[0;32mI (29061) example: 
+SPI at 125d, TCP at 125d
+[0m
+[0;32mI (29069) example: 
+SPI at 126d, TCP at 126d
+[0m
+[0;32mI (29077) example: 
+SPI at 127d, TCP at 127d
+[0m
+[0;32mI (29085) example: 
+SPI at 128d, TCP at 128d
+[0m
+[0;32mI (29093) example: 
+SPI at 129d, TCP at 129d
+[0m
+[0;32mI (29101) example: 
+SPI at 130d, TCP at 130d
+[0m
+[0;32mI (29109) example: 
+SPI at 131d, TCP at 131d
+[0m
+[0;32mI (29117) example: 
+SPI at 132d, TCP at 132d
+[0m
+[0;32mI (29125) example: 
+SPI at 133d, TCP at 133d
+[0m
+[0;32mI (29133) example: 
+SPI at 134d, TCP at 134d
+[0m
+[0;32mI (29141) example: 
+SPI at 135d, TCP at 135d
+[0m
+[0;32mI (29149) example: 
+SPI at 136d, TCP at 136d
+[0m
+[0;32mI (29157) example: 
+SPI at 137d, TCP at 137d
+[0m
+[0;32mI (29165) example: 
+SPI at 138d, TCP at 138d
+[0m
+[0;32mI (29173) example: 
+SPI at 139d, TCP at 139d
+[0m
+[0;32mI (29181) example: 
+SPI at 140d, TCP at 140d
+[0m
+[0;32mI (29189) example: 
+SPI at 141d, TCP at 141d
+[0m
+[0;32mI (29197) example: 
+SPI at 142d, TCP at 142d
+[0m
+[0;32mI (29205) example: 
+SPI at 143d, TCP at 143d
+[0m
+[0;32mI (29213) example: 
+SPI at 144d, TCP at 144d
+[0m
+[0;32mI (29221) example: 
+SPI at 145d, TCP at 145d
+[0m
+[0;32mI (29230) example: 
+SPI at 146d, TCP at 146d
+[0m
+[0;32mI (29238) example: 
+SPI at 147d, TCP at 147d
+[0m
+[0;32mI (29246) example: 
+SPI at 148d, TCP at 148d
+[0m
+[0;32mI (29254) example: 
+SPI at 149d, TCP at 149d
+[0m
+[0;32mI (29262) example: 
+SPI at 150d, TCP at 150d
+[0m
+[0;32mI (29270) example: 
+SPI at 151d, TCP at 151d
+[0m
+[0;32mI (29278) example: 
+SPI at 152d, TCP at 152d
+[0m
+[0;32mI (29286) example: 
+SPI at 153d, TCP at 153d
+[0m
+[0;32mI (29294) example: 
+SPI at 154d, TCP at 154d
+[0m
+[0;32mI (29302) example: 
+SPI at 155d, TCP at 155d
+[0m
+[0;32mI (29310) example: 
+SPI at 156d, TCP at 156d
+[0m
+[0;32mI (29319) example: 
+SPI at 157d, TCP at 157d
+[0m
+[0;32mI (29327) example: 
+SPI at 158d, TCP at 158d
+[0m
+[0;32mI (29335) example: 
+SPI at 159d, TCP at 159d
+[0m
+[0;32mI (29343) example: 
+SPI at 160d, TCP at 160d
+[0m
+[0;32mI (29351) example: 
+SPI at 161d, TCP at 161d
+[0m
+[0;32mI (29359) example: 
+SPI at 162d, TCP at 162d
+[0m
+[0;32mI (29367) example: 
+SPI at 163d, TCP at 163d
+[0m
+[0;32mI (29375) example: 
+SPI at 164d, TCP at 164d
+[0m
+[0;32mI (29383) example: 
+SPI at 165d, TCP at 165d
+[0m
+[0;32mI (29391) example: 
+SPI at 166d, TCP at 166d
+[0m
+[0;32mI (29399) example: 
+SPI at 167d, TCP at 167d
+[0m
+[0;32mI (29408) example: 
+SPI at 168d, TCP at 168d
+[0m
+[0;32mI (29416) example: 
+SPI at 169d, TCP at 169d
+[0m
+[0;32mI (29424) example: 
+SPI at 170d, TCP at 170d
+[0m
+[0;32mI (29432) example: 
+SPI at 171d, TCP at 171d
+[0m
+[0;32mI (29440) example: 
+SPI at 172d, TCP at 172d
+[0m
+[0;32mI (29448) example: 
+SPI at 173d, TCP at 173d
+[0m
+[0;32mI (29456) example: 
+SPI at 174d, TCP at 174d
+[0m
+[0;32mI (29464) example: 
+SPI at 175d, TCP at 175d
+[0m
+[0;32mI (29472) example: 
+SPI at 176d, TCP at 176d
+[0m
+[0;32mI (29480) example: 
+SPI at 177d, TCP at 177d
+[0m
+[0;32mI (29488) example: 
+SPI at 178d, TCP at 178d
+[0m
+[0;32mI (29496) example: 
+SPI at 179d, TCP at 179d
+[0m
+[0;32mI (29504) example: 
+SPI at 180d, TCP at 180d
+[0m
+[0;32mI (29512) example: 
+SPI at 181d, TCP at 181d
+[0m
+[0;32mI (29520) example: 
+SPI at 182d, TCP at 182d
+[0m
+[0;32mI (29528) example: 
+SPI at 183d, TCP at 183d
+[0m
+[0;32mI (29536) example: 
+SPI at 184d, TCP at 184d
+[0m
+[0;32mI (29544) example: 
+SPI at 185d, TCP at 185d
+[0m
+[0;32mI (29554) example: 
+SPI at 186d, TCP at 186d
+[0m
+[0;32mI (29562) example: 
+SPI at 187d, TCP at 187d
+[0m
+[0;32mI (29570) example: 
+SPI at 188d, TCP at 188d
+[0m
+[0;32mI (29578) example: 
+SPI at 189d, TCP at 189d
+[0m
+[0;32mI (29586) example: 
+SPI at 190d, TCP at 190d
+[0m
+[0;32mI (29594) example: 
+SPI at 191d, TCP at 191d
+[0m
+[0;32mI (29602) example: 
+SPI at 192d, TCP at 192d
+[0m
+[0;32mI (29610) example: 
+SPI at 193d, TCP at 193d
+[0m
+[0;32mI (29618) example: 
+SPI at 194d, TCP at 194d
+[0m
+[0;32mI (29626) example: 
+SPI at 195d, TCP at 195d
+[0m
+[0;32mI (29634) example: 
+SPI at 196d, TCP at 196d
+[0m
+[0;32mI (29642) example: 
+SPI at 197d, TCP at 197d
+[0m
+[0;32mI (29650) example: 
+SPI at 198d, TCP at 198d
+[0m
+[0;32mI (29658) example: 
+SPI at 199d, TCP at 199d
+[0m
+[0;32mI (29666) example: 
+SPI at 200d, TCP at 200d
+[0m
+[0;32mI (29674) example: 
+SPI at 201d, TCP at 201d
+[0m
+[0;32mI (29682) example: 
+SPI at 202d, TCP at 202d
+[0m
+[0;32mI (29690) example: 
+SPI at 203d, TCP at 203d
+[0m
+[0;32mI (29698) example: 
+SPI at 204d, TCP at 204d
+[0m
+[0;32mI (29706) example: 
+SPI at 205d, TCP at 205d
+[0m
+[0;32mI (29714) example: 
+SPI at 206d, TCP at 206d
+[0m
+[0;32mI (29722) example: 
+SPI at 207d, TCP at 207d
+[0m
+[0;32mI (29730) example: 
+SPI at 208d, TCP at 208d
+[0m
+[0;32mI (29738) example: 
+SPI at 209d, TCP at 209d
+[0m
+[0;32mI (29746) example: 
+SPI at 210d, TCP at 210d
+[0m
+[0;32mI (29754) example: 
+SPI at 211d, TCP at 211d
+[0m
+[0;32mI (29762) example: 
+SPI at 212d, TCP at 212d
+[0m
+[0;32mI (29770) example: 
+SPI at 213d, TCP at 213d
+[0m
+[0;32mI (29778) example: 
+SPI at 214d, TCP at 214d
+[0m
+[0;32mI (29786) example: 
+SPI at 215d, TCP at 215d
+[0m
+[0;32mI (29794) example: 
+SPI at 216d, TCP at 216d
+[0m
+[0;32mI (29802) example: 
+SPI at 217d, TCP at 217d
+[0m
+[0;32mI (29810) example: 
+SPI at 218d, TCP at 218d
+[0m
+[0;32mI (29818) example: 
+SPI at 219d, TCP at 219d
+[0m
+[0;32mI (29826) example: 
+SPI at 220d, TCP at 220d
+[0m
+[0;32mI (29834) example: 
+SPI at 221d, TCP at 221d
+[0m
+[0;32mI (29842) example: 
+SPI at 222d, TCP at 222d
+[0m
+[0;32mI (29850) example: 
+SPI at 223d, TCP at 223d
+[0m
+[0;32mI (29858) example: 
+SPI at 224d, TCP at 224d
+[0m
+[0;32mI (29866) example: 
+SPI at 225d, TCP at 225d
+[0m
+[0;32mI (29874) example: 
+SPI at 226d, TCP at 226d
+[0m
+[0;32mI (29882) example: 
+SPI at 227d, TCP at 227d
+[0m
+[0;32mI (29890) example: 
+SPI at 228d, TCP at 228d
+[0m
+[0;32mI (29898) example: 
+SPI at 229d, TCP at 229d
+[0m
+[0;32mI (29906) example: 
+SPI at 230d, TCP at 230d
+[0m
+[0;32mI (29914) example: 
+SPI at 231d, TCP at 231d
+[0m
+[0;32mI (29922) example: 
+SPI at 232d, TCP at 232d
+[0m
+[0;32mI (29930) example: 
+SPI at 233d, TCP at 233d
+[0m
+[0;32mI (29938) example: 
+SPI at 234d, TCP at 234d
+[0m
+[0;32mI (29946) example: 
+SPI at 235d, TCP at 235d
+[0m
+[0;32mI (29954) example: 
+SPI at 236d, TCP at 236d
+[0m
+[0;32mI (29963) example: 
+SPI at 237d, TCP at 237d
+[0m
+[0;32mI (29971) example: 
+SPI at 238d, TCP at 238d
+[0m
+[0;32mI (29979) example: 
+SPI at 239d, TCP at 239d
+[0m
+[0;32mI (29987) example: 
+SPI at 240d, TCP at 240d
+[0m
+[0;32mI (29995) example: 
+SPI at 241d, TCP at 241d
+[0m
+[0;32mI (30003) example: 
+SPI at 242d, TCP at 242d
+[0m
+[0;32mI (30011) example: 
+SPI at 243d, TCP at 243d
+[0m
+[0;32mI (30019) example: 
+SPI at 244d, TCP at 244d
+[0m
+[0;32mI (30027) example: 
+SPI at 245d, TCP at 245d
+[0m
+[0;32mI (30035) example: 
+SPI at 246d, TCP at 246d
+[0m
+[0;32mI (30043) example: 
+SPI at 247d, TCP at 247d
+[0m
+[0;32mI (30051) example: 
+SPI at 248d, TCP at 248d
+[0m
+[0;32mI (30059) example: 
+SPI at 249d, TCP at 249d
+[0m
+[0;32mI (30067) example: 
+SPI at 250d, TCP at 250d
+[0m
+[0;32mI (30075) example: 
+SPI at 251d, TCP at 251d
+[0m
+[0;32mI (30083) example: 
+SPI at 252d, TCP at 252d
+[0m
+[0;32mI (30091) example: 
+SPI at 253d, TCP at 253d
+[0m
+[0;32mI (30099) example: 
+SPI at 254d, TCP at 254d
+[0m
+[0;32mI (30107) example: 
+SPI at 255d, TCP at 255d
+[0m
+[0;32mI (30115) example: 
+SPI at 256d, TCP at 256d
+[0m
+[0;32mI (30123) example: 
+SPI at 257d, TCP at 257d
+[0m
+[0;32mI (30131) example: 
+SPI at 258d, TCP at 258d
+[0m
+[0;32mI (30139) example: 
+SPI at 259d, TCP at 259d
+[0m
+[0;32mI (30147) example: 
+SPI at 260d, TCP at 260d
+[0m
+[0;32mI (30155) example: 
+SPI at 261d, TCP at 261d
+[0m
+[0;32mI (30163) example: 
+SPI at 262d, TCP at 262d
+[0m
+[0;32mI (30171) example: 
+SPI at 263d, TCP at 263d
+[0m
+[0;32mI (30179) example: 
+SPI at 264d, TCP at 264d
+[0m
+[0;32mI (30187) example: 
+SPI at 265d, TCP at 265d
+[0m
+[0;32mI (30195) example: 
+SPI at 266d, TCP at 266d
+[0m
+[0;32mI (30203) example: 
+SPI at 267d, TCP at 267d
+[0m
+[0;32mI (30211) example: 
+SPI at 268d, TCP at 268d
+[0m
+[0;32mI (30219) example: 
+SPI at 269d, TCP at 269d
+[0m
+[0;32mI (30227) example: 
+SPI at 270d, TCP at 270d
+[0m
+[0;32mI (30235) example: 
+SPI at 271d, TCP at 271d
+[0m
+[0;32mI (30243) example: 
+SPI at 272d, TCP at 272d
+[0m
+[0;32mI (30251) example: 
+SPI at 273d, TCP at 273d
+[0m
+[0;32mI (30259) example: 
+SPI at 274d, TCP at 274d
+[0m
+[0;32mI (30267) example: 
+SPI at 275d, TCP at 275d
+[0m
+[0;32mI (30275) example: 
+SPI at 276d, TCP at 276d
+[0m
+[0;32mI (30283) example: 
+SPI at 277d, TCP at 277d
+[0m
+[0;32mI (30291) example: 
+SPI at 278d, TCP at 278d
+[0m
+[0;32mI (30299) example: 
+SPI at 279d, TCP at 279d
+[0m
+[0;32mI (30307) example: 
+SPI at 280d, TCP at 280d
+[0m
+[0;32mI (30315) example: 
+SPI at 281d, TCP at 281d
+[0m
+[0;32mI (30323) example: 
+SPI at 282d, TCP at 282d
+[0m
+[0;32mI (30331) example: 
+SPI at 283d, TCP at 283d
+[0m
+[0;32mI (30339) example: 
+SPI at 284d, TCP at 284d
+[0m
+[0;32mI (30347) example: 
+SPI at 285d, TCP at 285d
+[0m
+[0;32mI (30355) example: 
+SPI at 286d, TCP at 286d
+[0m
+[0;32mI (30363) example: 
+SPI at 287d, TCP at 287d
+[0m
+[0;32mI (30370) example: 
+SPI at 288d, TCP at 288d
+[0m
+[0;32mI (30379) example: 
+SPI at 289d, TCP at 289d
+[0m
+[0;32mI (30387) example: 
+SPI at 290d, TCP at 290d
+[0m
+[0;32mI (30395) example: 
+SPI at 291d, TCP at 291d
+[0m
+[0;32mI (30403) example: 
+SPI at 292d, TCP at 292d
+[0m
+[0;32mI (30411) example: 
+SPI at 293d, TCP at 293d
+[0m
+[0;32mI (30419) example: 
+SPI at 294d, TCP at 294d
+[0m
+[0;32mI (30427) example: 
+SPI at 295d, TCP at 295d
+[0m
+[0;32mI (30435) example: 
+SPI at 296d, TCP at 296d
+[0m
+[0;32mI (30443) example: 
+SPI at 297d, TCP at 297d
+[0m
+[0;32mI (30451) example: 
+SPI at 298d, TCP at 298d
+[0m
+[0;32mI (30459) example: 
+SPI at 299d, TCP at 299d
+[0m
+[0;32mI (30467) example: 
+SPI at 300d, TCP at 300d
+[0m
+[0;32mI (30475) example: 
+SPI at 301d, TCP at 301d
+[0m
+[0;32mI (30484) example: 
+SPI at 302d, TCP at 302d
+[0m
+[0;32mI (30492) example: 
+SPI at 303d, TCP at 303d
+[0m
+[0;32mI (30500) example: 
+SPI at 304d, TCP at 304d
+[0m
+[0;32mI (30508) example: 
+SPI at 305d, TCP at 305d
+[0m
+[0;32mI (30516) example: 
+SPI at 306d, TCP at 306d
+[0m
+[0;32mI (30524) example: 
+SPI at 307d, TCP at 307d
+[0m
+[0;32mI (30532) example: 
+SPI at 308d, TCP at 308d
+[0m
+[0;32mI (30540) example: 
+SPI at 309d, TCP at 309d
+[0m
+[0;32mI (30548) example: 
+SPI at 310d, TCP at 310d
+[0m
+[0;32mI (30556) example: 
+SPI at 311d, TCP at 311d
+[0m
+[0;32mI (30564) example: 
+SPI at 312d, TCP at 312d
+[0m
+[0;32mI (30572) example: 
+SPI at 313d, TCP at 313d
+[0m
+[0;32mI (30580) example: 
+SPI at 314d, TCP at 314d
+[0m
+[0;32mI (30589) example: 
+SPI at 315d, TCP at 315d
+[0m
+[0;32mI (30597) example: 
+SPI at 316d, TCP at 316d
+[0m
+[0;32mI (30605) example: 
+SPI at 317d, TCP at 317d
+[0m
+[0;32mI (30613) example: 
+SPI at 318d, TCP at 318d
+[0m
+[0;32mI (30621) example: 
+SPI at 319d, TCP at 319d
+[0m
+[0;32mI (30629) example: 
+SPI at 320d, TCP at 320d
+[0m
+[0;32mI (30637) example: 
+SPI at 321d, TCP at 321d
+[0m
+[0;32mI (30645) example: 
+SPI at 322d, TCP at 322d
+[0m
+[0;32mI (30653) example: 
+SPI at 323d, TCP at 323d
+[0m
+[0;32mI (30662) example: 
+SPI at 324d, TCP at 324d
+[0m
+[0;32mI (30670) example: 
+SPI at 325d, TCP at 325d
+[0m
+[0;32mI (30677) example: 
+SPI at 326d, TCP at 326d
+[0m
+[0;32mI (30687) example: 
+SPI at 327d, TCP at 327d
+[0m
+[0;32mI (30695) example: 
+SPI at 328d, TCP at 328d
+[0m
+[0;32mI (30703) example: 
+SPI at 329d, TCP at 329d
+[0m
+[0;32mI (30711) example: 
+SPI at 330d, TCP at 330d
+[0m
+[0;32mI (30719) example: 
+SPI at 331d, TCP at 331d
+[0m
+[0;32mI (30727) example: 
+SPI at 332d, TCP at 332d
+[0m
+[0;32mI (30735) example: 
+SPI at 333d, TCP at 333d
+[0m
+[0;32mI (30743) example: 
+SPI at 334d, TCP at 334d
+[0m
+[0;32mI (30751) example: 
+SPI at 335d, TCP at 335d
+[0m
+[0;32mI (30759) example: 
+SPI at 336d, TCP at 336d
+[0m
+[0;32mI (30767) example: 
+SPI at 337d, TCP at 337d
+[0m
+[0;32mI (30775) example: 
+SPI at 338d, TCP at 338d
+[0m
+[0;32mI (30783) example: 
+SPI at 339d, TCP at 339d
+[0m
+[0;32mI (30792) example: 
+SPI at 340d, TCP at 340d
+[0m
+[0;32mI (30800) example: 
+SPI at 341d, TCP at 341d
+[0m
+[0;32mI (30808) example: 
+SPI at 342d, TCP at 342d
+[0m
+[0;32mI (30816) example: 
+SPI at 343d, TCP at 343d
+[0m
+[0;32mI (30824) example: 
+SPI at 344d, TCP at 344d
+[0m
+[0;32mI (30832) example: 
+SPI at 345d, TCP at 345d
+[0m
+[0;32mI (30840) example: 
+SPI at 346d, TCP at 346d
+[0m
+[0;32mI (30848) example: 
+SPI at 347d, TCP at 347d
+[0m
+[0;32mI (30856) example: 
+SPI at 348d, TCP at 348d
+[0m
+[0;32mI (30864) example: 
+SPI at 349d, TCP at 349d
+[0m
+[0;32mI (30872) example: 
+SPI at 350d, TCP at 350d
+[0m
+[0;32mI (30880) example: 
+SPI at 351d, TCP at 351d
+[0m
+[0;32mI (30888) example: 
+SPI at 352d, TCP at 352d
+[0m
+[0;32mI (30896) example: 
+SPI at 353d, TCP at 353d
+[0m
+[0;32mI (30904) example: 
+SPI at 354d, TCP at 354d
+[0m
+[0;32mI (30912) example: 
+SPI at 355d, TCP at 355d
+[0m
+[0;32mI (30920) example: 
+SPI at 356d, TCP at 356d
+[0m
+[0;32mI (30928) example: 
+SPI at 357d, TCP at 357d
+[0m
+[0;32mI (30937) example: 
+SPI at 358d, TCP at 358d
+[0m
+[0;32mI (30945) example: 
+SPI at 359d, TCP at 359d
+[0m
+[0;32mI (30953) example: 
+SPI at 360d, TCP at 360d
+[0m
+[0;32mI (30961) example: 
+SPI at 361d, TCP at 361d
+[0m
+[0;32mI (30969) example: 
+SPI at 362d, TCP at 362d
+[0m
+[0;32mI (30977) example: 
+SPI at 363d, TCP at 363d
+[0m
+[0;32mI (30984) example: 
+SPI at 364d, TCP at 364d
+[0m
+[0;32mI (30993) example: 
+SPI at 365d, TCP at 365d
+[0m
+[0;32mI (31001) example: 
+SPI at 366d, TCP at 366d
+[0m
+[0;32mI (31009) example: 
+SPI at 367d, TCP at 367d
+[0m
+[0;32mI (31017) example: 
+SPI at 368d, TCP at 368d
+[0m
+[0;32mI (31025) example: 
+SPI at 369d, TCP at 369d
+[0m
+[0;32mI (31033) example: 
+SPI at 370d, TCP at 370d
+[0m
+[0;32mI (31042) example: 
+SPI at 371d, TCP at 371d
+[0m
+[0;32mI (31050) example: 
+SPI at 372d, TCP at 372d
+[0m
+[0;32mI (31058) example: 
+SPI at 373d, TCP at 373d
+[0m
+[0;32mI (31066) example: 
+SPI at 374d, TCP at 374d
+[0m
+[0;32mI (31074) example: 
+SPI at 375d, TCP at 375d
+[0m
+[0;32mI (31082) example: 
+SPI at 376d, TCP at 376d
+[0m
+[0;32mI (31090) example: 
+SPI at 377d, TCP at 377d
+[0m
+[0;32mI (31099) example: 
+SPI at 378d, TCP at 378d
+[0m
+[0;32mI (31107) example: 
+SPI at 379d, TCP at 379d
+[0m
+[0;32mI (31115) example: 
+SPI at 380d, TCP at 380d
+[0m
+[0;32mI (31123) example: 
+SPI at 381d, TCP at 381d
+[0m
+[0;32mI (31131) example: 
+SPI at 382d, TCP at 382d
+[0m
+[0;32mI (31139) example: 
+SPI at 383d, TCP at 383d
+[0m
+[0;32mI (31147) example: 
+SPI at 384d, TCP at 384d
+[0m
+[0;32mI (31155) example: 
+SPI at 385d, TCP at 385d
+[0m
+[0;32mI (31163) example: 
+SPI at 386d, TCP at 386d
+[0m
+[0;32mI (31171) example: 
+SPI at 387d, TCP at 387d
+[0m
+[0;32mI (31179) example: 
+SPI at 388d, TCP at 388d
+[0m
+[0;32mI (31187) example: 
+SPI at 389d, TCP at 389d
+[0m
+[0;32mI (31195) example: 
+SPI at 390d, TCP at 390d
+[0m
+[0;32mI (31204) example: 
+SPI at 391d, TCP at 391d
+[0m
+[0;32mI (31212) example: 
+SPI at 392d, TCP at 392d
+[0m
+[0;32mI (31220) example: 
+SPI at 393d, TCP at 393d
+[0m
+[0;32mI (31228) example: 
+SPI at 394d, TCP at 394d
+[0m
+[0;32mI (31236) example: 
+SPI at 395d, TCP at 395d
+[0m
+[0;32mI (31244) example: 
+SPI at 396d, TCP at 396d
+[0m
+[0;32mI (31252) example: 
+SPI at 397d, TCP at 397d
+[0m
+[0;32mI (31260) example: 
+SPI at 398d, TCP at 398d
+[0m
+[0;32mI (31268) example: 
+SPI at 399d, TCP at 399d
+[0m
+[0;32mI (31276) example: 
+SPI at 400d, TCP at 400d
+[0m
+[0;32mI (31284) example: 
+SPI at 401d, TCP at 401d
+[0m
+[0;32mI (31292) example: 
+SPI at 402d, TCP at 402d
+[0m
+[0;32mI (31300) example: 
+SPI at 403d, TCP at 403d
+[0m
+[0;32mI (31308) example: 
+SPI at 404d, TCP at 404d
+[0m
+[0;32mI (31316) example: 
+SPI at 405d, TCP at 405d
+[0m
+[0;32mI (31324) example: 
+SPI at 406d, TCP at 406d
+[0m
+[0;32mI (31332) example: 
+SPI at 407d, TCP at 407d
+[0m
+[0;32mI (31340) example: 
+SPI at 408d, TCP at 408d
+[0m
+[0;32mI (31348) example: 
+SPI at 409d, TCP at 409d
+[0m
+[0;32mI (31356) example: 
+SPI at 410d, TCP at 410d
+[0m
+[0;32mI (31364) example: 
+SPI at 411d, TCP at 411d
+[0m
+[0;32mI (31372) example: 
+SPI at 412d, TCP at 412d
+[0m
+[0;32mI (31380) example: 
+SPI at 413d, TCP at 413d
+[0m
+[0;32mI (31388) example: 
+SPI at 414d, TCP at 414d
+[0m
+[0;32mI (31396) example: 
+SPI at 415d, TCP at 415d
+[0m
+[0;32mI (31404) example: 
+SPI at 416d, TCP at 416d
+[0m
+[0;32mI (31412) example: 
+SPI at 417d, TCP at 417d
+[0m
+[0;32mI (31420) example: 
+SPI at 418d, TCP at 418d
+[0m
+[0;32mI (31428) example: 
+SPI at 419d, TCP at 419d
+[0m
+[0;32mI (31436) example: 
+SPI at 420d, TCP at 420d
+[0m
+[0;32mI (31444) example: 
+SPI at 421d, TCP at 421d
+[0m
+[0;32mI (31452) example: 
+SPI at 422d, TCP at 422d
+[0m
+[0;32mI (31460) example: 
+SPI at 423d, TCP at 423d
+[0m
+[0;32mI (31468) example: 
+SPI at 424d, TCP at 424d
+[0m
+[0;32mI (31476) example: 
+SPI at 425d, TCP at 425d
+[0m
+[0;32mI (31484) example: 
+SPI at 426d, TCP at 426d
+[0m
+[0;32mI (31492) example: 
+SPI at 427d, TCP at 427d
+[0m
+[0;32mI (31500) example: 
+SPI at 428d, TCP at 428d
+[0m
+[0;32mI (31509) example: 
+SPI at 429d, TCP at 429d
+[0m
+[0;32mI (31517) example: 
+SPI at 430d, TCP at 430d
+[0m
+[0;32mI (31525) example: 
+SPI at 431d, TCP at 431d
+[0m
+[0;32mI (31533) example: 
+SPI at 432d, TCP at 432d
+[0m
+[0;32mI (31541) example: 
+SPI at 433d, TCP at 433d
+[0m
+[0;32mI (31549) example: 
+SPI at 434d, TCP at 434d
+[0m
+[0;32mI (31557) example: 
+SPI at 435d, TCP at 435d
+[0m
+[0;32mI (31565) example: 
+SPI at 436d, TCP at 436d
+[0m
+[0;32mI (31573) example: 
+SPI at 437d, TCP at 437d
+[0m
+[0;32mI (31581) example: 
+SPI at 438d, TCP at 438d
+[0m
+[0;32mI (31589) example: 
+SPI at 439d, TCP at 439d
+[0m
+[0;32mI (31597) example: 
+SPI at 440d, TCP at 440d
+[0m
+[0;32mI (31605) example: 
+SPI at 441d, TCP at 441d
+[0m
+[0;32mI (31613) example: 
+SPI at 442d, TCP at 442d
+[0m
+[0;32mI (31621) example: 
+SPI at 443d, TCP at 443d
+[0m
+[0;32mI (31629) example: 
+SPI at 444d, TCP at 444d
+[0m
+[0;32mI (31637) example: 
+SPI at 445d, TCP at 445d
+[0m
+[0;32mI (31645) example: 
+SPI at 446d, TCP at 446d
+[0m
+[0;32mI (31653) example: 
+SPI at 447d, TCP at 447d
+[0m
+[0;32mI (31662) example: 
+SPI at 448d, TCP at 448d
+[0m
+[0;32mI (31670) example: 
+SPI at 449d, TCP at 449d
+[0m
+[0;32mI (31678) example: 
+SPI at 450d, TCP at 450d
+[0m
+[0;32mI (31686) example: 
+SPI at 451d, TCP at 451d
+[0m
+[0;32mI (31694) example: 
+SPI at 452d, TCP at 452d
+[0m
+[0;32mI (31701) example: 
+SPI at 453d, TCP at 453d
+[0m
+[0;32mI (31710) example: 
+SPI at 454d, TCP at 454d
+[0m
+[0;32mI (31718) example: 
+SPI at 455d, TCP at 455d
+[0m
+[0;32mI (31726) example: 
+SPI at 456d, TCP at 456d
+[0m
+[0;32mI (31734) example: 
+SPI at 457d, TCP at 457d
+[0m
+[0;32mI (31742) example: 
+SPI at 458d, TCP at 458d
+[0m
+[0;32mI (31750) example: 
+SPI at 459d, TCP at 459d
+[0m
+[0;32mI (31758) example: 
+SPI at 460d, TCP at 460d
+[0m
+[0;32mI (31766) example: 
+SPI at 461d, TCP at 461d
+[0m
+[0;32mI (31774) example: 
+SPI at 462d, TCP at 462d
+[0m
+[0;32mI (31782) example: 
+SPI at 463d, TCP at 463d
+[0m
+[0;32mI (31790) example: 
+SPI at 464d, TCP at 464d
+[0m
+[0;32mI (31798) example: 
+SPI at 465d, TCP at 465d
+[0m
+[0;32mI (31806) example: 
+SPI at 466d, TCP at 466d
+[0m
+[0;32mI (31815) example: 
+SPI at 467d, TCP at 467d
+[0m
+[0;32mI (31823) example: 
+SPI at 468d, TCP at 468d
+[0m
+[0;32mI (31831) example: 
+SPI at 469d, TCP at 469d
+[0m
+[0;32mI (31839) example: 
+SPI at 470d, TCP at 470d
+[0m
+[0;32mI (31847) example: 
+SPI at 471d, TCP at 471d
+[0m
+[0;32mI (31855) example: 
+SPI at 472d, TCP at 472d
+[0m
+[0;32mI (31863) example: 
+SPI at 473d, TCP at 473d
+[0m
+[0;32mI (31871) example: 
+SPI at 474d, TCP at 474d
+[0m
+[0;32mI (31879) example: 
+SPI at 475d, TCP at 475d
+[0m
+[0;32mI (31887) example: 
+SPI at 476d, TCP at 476d
+[0m
+[0;32mI (31895) example: 
+SPI at 477d, TCP at 477d
+[0m
+[0;32mI (31903) example: 
+SPI at 478d, TCP at 478d
+[0m
+[0;32mI (31911) example: 
+SPI at 479d, TCP at 479d
+[0m
+[0;32mI (31920) example: 
+SPI at 480d, TCP at 480d
+[0m
+[0;32mI (31928) example: 
+SPI at 481d, TCP at 481d
+[0m
+[0;32mI (31936) example: 
+SPI at 482d, TCP at 482d
+[0m
+[0;32mI (31944) example: 
+SPI at 483d, TCP at 483d
+[0m
+[0;32mI (31952) example: 
+SPI at 484d, TCP at 484d
+[0m
+[0;32mI (31960) example: 
+SPI at 485d, TCP at 485d
+[0m
+[0;32mI (31968) example: 
+SPI at 486d, TCP at 486d
+[0m
+[0;32mI (31976) example: 
+SPI at 487d, TCP at 487d
+[0m
+[0;32mI (31984) example: 
+SPI at 488d, TCP at 488d
+[0m
+[0;32mI (31992) example: 
+SPI at 489d, TCP at 489d
+[0m
+[0;32mI (32000) example: 
+SPI at 490d, TCP at 490d
+[0m
+[0;32mI (32008) example: 
+SPI at 491d, TCP at 491d
+[0m
+[0;32mI (32017) example: 
+SPI at 492d, TCP at 492d
+[0m
+[0;32mI (32025) example: 
+SPI at 493d, TCP at 493d
+[0m
+[0;32mI (32034) example: 
+SPI at 494d, TCP at 494d
+[0m
+[0;32mI (32042) example: 
+SPI at 495d, TCP at 495d
+[0m
+[0;32mI (32050) example: 
+SPI at 496d, TCP at 496d
+[0m
+[0;32mI (32058) example: 
+SPI at 497d, TCP at 497d
+[0m
+[0;32mI (32066) example: 
+SPI at 498d, TCP at 498d
+[0m
+[0;32mI (32074) example: 
+SPI at 499d, TCP at 499d
+[0m
+[0;32mI (32082) example: 
+SPI at 0d, TCP at 0d
+[0m
+[0;32mI (32090) example: 
+SPI at 1d, TCP at 1d
+[0m
+[0;32mI (32098) example: 
+SPI at 2d, TCP at 2d
+[0m
+[0;32mI (32106) example: 
+SPI at 3d, TCP at 3d
+[0m
+[0;32mI (32114) example: 
+SPI at 4d, TCP at 4d
+[0m
+[0;32mI (32123) example: 
+SPI at 5d, TCP at 5d
+[0m
+[0;32mI (32131) example: 
+SPI at 6d, TCP at 6d
+[0m
+[0;32mI (32139) example: 
+SPI at 7d, TCP at 7d
+[0m
+[0;32mI (32147) example: 
+SPI at 8d, TCP at 8d
+[0m
+[0;32mI (32155) example: 
+SPI at 9d, TCP at 9d
+[0m
+[0;32mI (32163) example: 
+SPI at 10d, TCP at 10d
+[0m
+[0;32mI (32171) example: 
+SPI at 11d, TCP at 11d
+[0m
+[0;32mI (32179) example: 
+SPI at 12d, TCP at 12d
+[0m
+[0;32mI (32187) example: 
+SPI at 13d, TCP at 13d
+[0m
+[0;32mI (32195) example: 
+SPI at 14d, TCP at 14d
+[0m
+[0;32mI (32203) example: 
+SPI at 15d, TCP at 15d
+[0m
+[0;32mI (32211) example: 
+SPI at 16d, TCP at 16d
+[0m
+[0;32mI (32219) example: 
+SPI at 17d, TCP at 17d
+[0m
+[0;32mI (32229) example: 
+SPI at 18d, TCP at 18d
+[0m
+[0;32mI (32237) example: 
+SPI at 19d, TCP at 19d
+[0m
+[0;32mI (32245) example: 
+SPI at 20d, TCP at 20d
+[0m
+[0;32mI (32253) example: 
+SPI at 21d, TCP at 21d
+[0m
+[0;32mI (32261) example: 
+SPI at 22d, TCP at 22d
+[0m
+[0;32mI (32270) example: 
+SPI at 23d, TCP at 23d
+[0m
+[0;32mI (32278) example: 
+SPI at 24d, TCP at 24d
+[0m
+[0;32mI (32286) example: 
+SPI at 25d, TCP at 25d
+[0m
+[0;32mI (32294) example: 
+SPI at 26d, TCP at 26d
+[0m
+[0;32mI (32302) example: 
+SPI at 27d, TCP at 27d
+[0m
+[0;32mI (32310) example: 
+SPI at 28d, TCP at 28d
+[0m
+[0;32mI (32318) example: 
+SPI at 29d, TCP at 29d
+[0m
+[0;32mI (32326) example: 
+SPI at 30d, TCP at 30d
+[0m
+[0;32mI (32334) example: 
+SPI at 31d, TCP at 31d
+[0m
+[0;32mI (32342) example: 
+SPI at 32d, TCP at 32d
+[0m
+[0;32mI (32350) example: 
+SPI at 33d, TCP at 33d
+[0m
+[0;32mI (32358) example: 
+SPI at 34d, TCP at 34d
+[0m
+[0;32mI (32366) example: 
+SPI at 35d, TCP at 35d
+[0m
+[0;32mI (32374) example: 
+SPI at 36d, TCP at 36d
+[0m
+[0;32mI (32382) example: 
+SPI at 37d, TCP at 37d
+[0m
+[0;32mI (32390) example: 
+SPI at 38d, TCP at 38d
+[0m
+[0;32mI (32398) example: 
+SPI at 39d, TCP at 39d
+[0m
+[0;32mI (32406) example: 
+SPI at 40d, TCP at 40d
+[0m
+[0;32mI (32414) example: 
+SPI at 41d, TCP at 41d
+[0m
+[0;32mI (32422) example: 
+SPI at 42d, TCP at 42d
+[0m
+[0;32mI (32431) example: 
+SPI at 43d, TCP at 43d
+[0m
+[0;32mI (32439) example: 
+SPI at 44d, TCP at 44d
+[0m
+[0;32mI (32447) example: 
+SPI at 45d, TCP at 45d
+[0m
+[0;32mI (32455) example: 
+SPI at 46d, TCP at 46d
+[0m
+[0;32mI (32463) example: 
+SPI at 47d, TCP at 47d
+[0m
+[0;32mI (32471) example: 
+SPI at 48d, TCP at 48d
+[0m
+[0;32mI (32479) example: 
+SPI at 49d, TCP at 49d
+[0m
+[0;32mI (32487) example: 
+SPI at 50d, TCP at 50d
+[0m
+[0;32mI (32495) example: 
+SPI at 51d, TCP at 51d
+[0m
+[0;32mI (32503) example: 
+SPI at 52d, TCP at 52d
+[0m
+[0;32mI (32511) example: 
+SPI at 53d, TCP at 53d
+[0m
+[0;32mI (32519) example: 
+SPI at 54d, TCP at 54d
+[0m
+[0;32mI (32527) example: 
+SPI at 55d, TCP at 55d
+[0m
+[0;32mI (32535) example: 
+SPI at 56d, TCP at 56d
+[0m
+[0;32mI (32543) example: 
+SPI at 57d, TCP at 57d
+[0m
+[0;32mI (32551) example: 
+SPI at 58d, TCP at 58d
+[0m
+[0;32mI (32559) example: 
+SPI at 59d, TCP at 59d
+[0m
+[0;32mI (32567) example: 
+SPI at 60d, TCP at 60d
+[0m
+[0;32mI (32575) example: 
+SPI at 61d, TCP at 61d
+[0m
+[0;32mI (32583) example: 
+SPI at 62d, TCP at 62d
+[0m
+[0;32mI (32591) example: 
+SPI at 63d, TCP at 63d
+[0m
+[0;32mI (32599) example: 
+SPI at 64d, TCP at 64d
+[0m
+[0;32mI (32607) example: 
+SPI at 65d, TCP at 65d
+[0m
+[0;32mI (32615) example: 
+SPI at 66d, TCP at 66d
+[0m
+[0;32mI (32623) example: 
+SPI at 67d, TCP at 67d
+[0m
+[0;32mI (32631) example: 
+SPI at 68d, TCP at 68d
+[0m
+[0;32mI (32639) example: 
+SPI at 69d, TCP at 69d
+[0m
+[0;32mI (32647) example: 
+SPI at 70d, TCP at 70d
+[0m
+[0;32mI (32655) example: 
+SPI at 71d, TCP at 71d
+[0m
+[0;32mI (32663) example: 
+SPI at 72d, TCP at 72d
+[0m
+[0;32mI (32671) example: 
+SPI at 73d, TCP at 73d
+[0m
+[0;32mI (32679) example: 
+SPI at 74d, TCP at 74d
+[0m
+[0;32mI (32687) example: 
+SPI at 75d, TCP at 75d
+[0m
+[0;32mI (32695) example: 
+SPI at 76d, TCP at 76d
+[0m
+[0;32mI (32703) example: 
+SPI at 77d, TCP at 77d
+[0m
+[0;32mI (32711) example: 
+SPI at 78d, TCP at 78d
+[0m
+[0;32mI (32719) example: 
+SPI at 79d, TCP at 79d
+[0m
+[0;32mI (32727) example: 
+SPI at 80d, TCP at 80d
+[0m
+[0;32mI (32735) example: 
+SPI at 81d, TCP at 81d
+[0m
+[0;32mI (32743) example: 
+SPI at 82d, TCP at 82d
+[0m
+[0;32mI (32751) example: 
+SPI at 83d, TCP at 83d
+[0m
+[0;32mI (32759) example: 
+SPI at 84d, TCP at 84d
+[0m
+[0;32mI (32767) example: 
+SPI at 85d, TCP at 85d
+[0m
+[0;32mI (32775) example: 
+SPI at 86d, TCP at 86d
+[0m
+[0;32mI (32783) example: 
+SPI at 87d, TCP at 87d
+[0m
+[0;32mI (32791) example: 
+SPI at 88d, TCP at 88d
+[0m
+[0;32mI (32799) example: 
+SPI at 89d, TCP at 89d
+[0m
+[0;32mI (32807) example: 
+SPI at 90d, TCP at 90d
+[0m
+[0;32mI (32815) example: 
+SPI at 91d, TCP at 91d
+[0m
+[0;32mI (32823) example: 
+SPI at 92d, TCP at 92d
+[0m
+[0;32mI (32831) example: 
+SPI at 93d, TCP at 93d
+[0m
+[0;32mI (32840) example: 
+SPI at 94d, TCP at 94d
+[0m
+[0;32mI (32848) example: 
+SPI at 95d, TCP at 95d
+[0m
+[0;32mI (32856) example: 
+SPI at 96d, TCP at 96d
+[0m
+[0;32mI (32864) example: 
+SPI at 97d, TCP at 97d
+[0m
+[0;32mI (32872) example: 
+SPI at 98d, TCP at 98d
+[0m
+[0;32mI (32880) example: 
+SPI at 99d, TCP at 99d
+[0m
+[0;32mI (32888) example: 
+SPI at 100d, TCP at 100d
+[0m
+[0;32mI (32896) example: 
+SPI at 101d, TCP at 101d
+[0m
+[0;32mI (32904) example: 
+SPI at 102d, TCP at 102d
+[0m
+[0;32mI (32912) example: 
+SPI at 103d, TCP at 103d
+[0m
+[0;32mI (32920) example: 
+SPI at 104d, TCP at 104d
+[0m
+[0;32mI (32928) example: 
+SPI at 105d, TCP at 105d
+[0m
+[0;32mI (32936) example: 
+SPI at 106d, TCP at 106d
+[0m
+[0;32mI (32945) example: 
+SPI at 107d, TCP at 107d
+[0m
+[0;32mI (32953) example: 
+SPI at 108d, TCP at 108d
+[0m
+[0;32mI (32961) example: 
+SPI at 109d, TCP at 109d
+[0m
+[0;32mI (32969) example: 
+SPI at 110d, TCP at 110d
+[0m
+[0;32mI (32977) example: 
+SPI at 111d, TCP at 111d
+[0m
+[0;32mI (32985) example: 
+SPI at 112d, TCP at 112d
+[0m
+[0;32mI (32993) example: 
+SPI at 113d, TCP at 113d
+[0m
+[0;32mI (33001) example: 
+SPI at 114d, TCP at 114d
+[0m
+[0;32mI (33009) example: 
+SPI at 115d, TCP at 115d
+[0m
+[0;32mI (33017) example: 
+SPI at 116d, TCP at 116d
+[0m
+[0;32mI (33025) example: 
+SPI at 117d, TCP at 117d
+[0m
+[0;32mI (33034) example: 
+SPI at 118d, TCP at 118d
+[0m
+[0;32mI (33042) example: 
+SPI at 119d, TCP at 119d
+[0m
+[0;32mI (33050) example: 
+SPI at 120d, TCP at 120d
+[0m
+[0;32mI (33058) example: 
+SPI at 121d, TCP at 121d
+[0m
+[0;32mI (33066) example: 
+SPI at 122d, TCP at 122d
+[0m
+[0;32mI (33074) example: 
+SPI at 123d, TCP at 123d
+[0m
+[0;32mI (33082) example: 
+SPI at 124d, TCP at 124d
+[0m
+[0;32mI (33090) example: 
+SPI at 125d, TCP at 125d
+[0m
+[0;32mI (33098) example: 
+SPI at 126d, TCP at 126d
+[0m
+[0;32mI (33106) example: 
+SPI at 127d, TCP at 127d
+[0m
+[0;32mI (33114) example: 
+SPI at 128d, TCP at 128d
+[0m
+[0;32mI (33122) example: 
+SPI at 129d, TCP at 129d
+[0m
+[0;32mI (33130) example: 
+SPI at 130d, TCP at 130d
+[0m
+[0;32mI (33138) example: 
+SPI at 131d, TCP at 131d
+[0m
+[0;32mI (33147) example: 
+SPI at 132d, TCP at 132d
+[0m
+[0;32mI (33155) example: 
+SPI at 133d, TCP at 133d
+[0m
+[0;32mI (33163) example: 
+SPI at 134d, TCP at 134d
+[0m
+[0;32mI (33171) example: 
+SPI at 135d, TCP at 135d
+[0m
+[0;32mI (33179) example: 
+SPI at 136d, TCP at 136d
+[0m
+[0;32mI (33187) example: 
+SPI at 137d, TCP at 137d
+[0m
+[0;32mI (33195) example: 
+SPI at 138d, TCP at 138d
+[0m
+[0;32mI (33203) example: 
+SPI at 139d, TCP at 139d
+[0m
+[0;32mI (33211) example: 
+SPI at 140d, TCP at 140d
+[0m
+[0;32mI (33219) example: 
+SPI at 141d, TCP at 141d
+[0m
+[0;32mI (33227) example: 
+SPI at 142d, TCP at 142d
+[0m
+[0;32mI (33235) example: 
+SPI at 143d, TCP at 143d
+[0m
+[0;32mI (33243) example: 
+SPI at 144d, TCP at 144d
+[0m
+[0;32mI (33252) example: 
+SPI at 145d, TCP at 145d
+[0m
+[0;32mI (33260) example: 
+SPI at 146d, TCP at 146d
+[0m
+[0;32mI (33268) example: 
+SPI at 147d, TCP at 147d
+[0m
+[0;32mI (33276) example: 
+SPI at 148d, TCP at 148d
+[0m
+[0;32mI (33285) example: 
+SPI at 149d, TCP at 149d
+[0m
+[0;32mI (33293) example: 
+SPI at 150d, TCP at 150d
+[0m
+[0;32mI (33301) example: 
+SPI at 151d, TCP at 151d
+[0m
+[0;32mI (33309) example: 
+SPI at 152d, TCP at 152d
+[0m
+[0;32mI (33317) example: 
+SPI at 153d, TCP at 153d
+[0m
+[0;32mI (33325) example: 
+SPI at 154d, TCP at 154d
+[0m
+[0;32mI (33333) example: 
+SPI at 155d, TCP at 155d
+[0m
+[0;32mI (33342) example: 
+SPI at 156d, TCP at 156d
+[0m
+[0;32mI (33350) example: 
+SPI at 157d, TCP at 157d
+[0m
+[0;32mI (33358) example: 
+SPI at 158d, TCP at 158d
+[0m
+[0;32mI (33366) example: 
+SPI at 159d, TCP at 159d
+[0m
+[0;32mI (33374) example: 
+SPI at 160d, TCP at 160d
+[0m
+[0;32mI (33383) example: 
+SPI at 161d, TCP at 161d
+[0m
+[0;32mI (33392) example: 
+SPI at 162d, TCP at 162d
+[0m
+[0;32mI (33400) example: 
+SPI at 163d, TCP at 163d
+[0m
+[0;32mI (33408) example: 
+SPI at 164d, TCP at 164d
+[0m
+[0;32mI (33416) example: 
+SPI at 165d, TCP at 165d
+[0m
+[0;32mI (33424) example: 
+SPI at 166d, TCP at 166d
+[0m
+[0;32mI (33432) example: 
+SPI at 167d, TCP at 167d
+[0m
+[0;32mI (33440) example: 
+SPI at 168d, TCP at 168d
+[0m
+[0;32mI (33448) example: 
+SPI at 169d, TCP at 169d
+[0m
+[0;32mI (33456) example: 
+SPI at 170d, TCP at 170d
+[0m
+[0;32mI (33465) example: 
+SPI at 171d, TCP at 171d
+[0m
+[0;32mI (33473) example: 
+SPI at 172d, TCP at 172d
+[0m
+[0;32mI (33481) example: 
+SPI at 173d, TCP at 173d
+[0m
+[0;32mI (33489) example: 
+SPI at 174d, TCP at 174d
+[0m
+[0;32mI (33497) example: 
+SPI at 175d, TCP at 175d
+[0m
+[0;32mI (33505) example: 
+SPI at 176d, TCP at 176d
+[0m
+[0;32mI (33513) example: 
+SPI at 177d, TCP at 177d
+[0m
+[0;32mI (33521) example: 
+SPI at 178d, TCP at 178d
+[0m
+[0;32mI (33529) example: 
+SPI at 179d, TCP at 179d
+[0m
+[0;32mI (33537) example: 
+SPI at 180d, TCP at 180d
+[0m
+[0;32mI (33545) example: 
+SPI at 181d, TCP at 181d
+[0m
+[0;32mI (33553) example: 
+SPI at 182d, TCP at 182d
+[0m
+[0;32mI (33561) example: 
+SPI at 183d, TCP at 183d
+[0m
+[0;32mI (33569) example: 
+SPI at 184d, TCP at 184d
+[0m
+[0;32mI (33577) example: 
+SPI at 185d, TCP at 185d
+[0m
+[0;32mI (33585) example: 
+SPI at 186d, TCP at 186d
+[0m
+[0;32mI (33593) example: 
+SPI at 187d, TCP at 187d
+[0m
+[0;32mI (33601) example: 
+SPI at 188d, TCP at 188d
+[0m
+[0;32mI (33609) example: 
+SPI at 189d, TCP at 189d
+[0m
+[0;32mI (33617) example: 
+SPI at 190d, TCP at 190d
+[0m
+[0;32mI (33625) example: 
+SPI at 191d, TCP at 191d
+[0m
+[0;32mI (33633) example: 
+SPI at 192d, TCP at 192d
+[0m
+[0;32mI (33641) example: 
+SPI at 193d, TCP at 193d
+[0m
+[0;32mI (33649) example: 
+SPI at 194d, TCP at 194d
+[0m
+[0;32mI (33658) example: 
+SPI at 195d, TCP at 195d
+[0m
+[0;32mI (33666) example: 
+SPI at 196d, TCP at 196d
+[0m
+[0;32mI (33674) example: 
+SPI at 197d, TCP at 197d
+[0m
+[0;32mI (33682) example: 
+SPI at 198d, TCP at 198d
+[0m
+[0;32mI (33690) example: 
+SPI at 199d, TCP at 199d
+[0m
+[0;32mI (33698) example: 
+SPI at 200d, TCP at 200d
+[0m
+[0;32mI (33706) example: 
+SPI at 201d, TCP at 201d
+[0m
+[0;32mI (33714) example: 
+SPI at 202d, TCP at 202d
+[0m
+[0;32mI (33722) example: 
+SPI at 203d, TCP at 203d
+[0m
+[0;32mI (33730) example: 
+SPI at 204d, TCP at 204d
+[0m
+[0;32mI (33738) example: 
+SPI at 205d, TCP at 205d
+[0m
+[0;32mI (33746) example: 
+SPI at 206d, TCP at 206d
+[0m
+[0;32mI (33754) example: 
+SPI at 207d, TCP at 207d
+[0m
+[0;32mI (33762) example: 
+SPI at 208d, TCP at 208d
+[0m
+[0;32mI (33770) example: 
+SPI at 209d, TCP at 209d
+[0m
+[0;32mI (33778) example: 
+SPI at 210d, TCP at 210d
+[0m
+[0;32mI (33786) example: 
+SPI at 211d, TCP at 211d
+[0m
+[0;32mI (33794) example: 
+SPI at 212d, TCP at 212d
+[0m
+[0;32mI (33802) example: 
+SPI at 213d, TCP at 213d
+[0m
+[0;32mI (33810) example: 
+SPI at 214d, TCP at 214d
+[0m
+[0;32mI (33818) example: 
+SPI at 215d, TCP at 215d
+[0m
+[0;32mI (33826) example: 
+SPI at 216d, TCP at 216d
+[0m
+[0;32mI (33834) example: 
+SPI at 217d, TCP at 217d
+[0m
+[0;32mI (33842) example: 
+SPI at 218d, TCP at 218d
+[0m
+[0;32mI (33850) example: 
+SPI at 219d, TCP at 219d
+[0m
+[0;32mI (33858) example: 
+SPI at 220d, TCP at 220d
+[0m
+[0;32mI (33867) example: 
+SPI at 221d, TCP at 221d
+[0m
+[0;32mI (33875) example: 
+SPI at 222d, TCP at 222d
+[0m
+[0;32mI (33883) example: 
+SPI at 223d, TCP at 223d
+[0m
+[0;32mI (33891) example: 
+SPI at 224d, TCP at 224d
+[0m
+[0;32mI (33899) example: 
+SPI at 225d, TCP at 225d
+[0m
+[0;32mI (33907) example: 
+SPI at 226d, TCP at 226d
+[0m
+[0;32mI (33915) example: 
+SPI at 227d, TCP at 227d
+[0m
+[0;32mI (33923) example: 
+SPI at 228d, TCP at 228d
+[0m
+[0;32mI (33932) example: 
+SPI at 229d, TCP at 229d
+[0m
+[0;32mI (33940) example: 
+SPI at 230d, TCP at 230d
+[0m
+[0;32mI (33948) example: 
+SPI at 231d, TCP at 231d
+[0m
+[0;32mI (33956) example: 
+SPI at 232d, TCP at 232d
+[0m
+[0;32mI (33965) example: 
+SPI at 233d, TCP at 233d
+[0m
+[0;32mI (33973) example: 
+SPI at 234d, TCP at 234d
+[0m
+[0;32mI (33981) example: 
+SPI at 235d, TCP at 235d
+[0m
+[0;32mI (33989) example: 
+SPI at 236d, TCP at 236d
+[0m
+[0;32mI (33997) example: 
+SPI at 237d, TCP at 237d
+[0m
+[0;32mI (34005) example: 
+SPI at 238d, TCP at 238d
+[0m
+[0;32mI (34013) example: 
+SPI at 239d, TCP at 239d
+[0m
+[0;32mI (34021) example: 
+SPI at 240d, TCP at 240d
+[0m
+[0;32mI (34029) example: 
+SPI at 241d, TCP at 241d
+[0m
+[0;32mI (34037) example: 
+SPI at 242d, TCP at 242d
+[0m
+[0;32mI (34045) example: 
+SPI at 243d, TCP at 243d
+[0m
+[0;32mI (34053) example: 
+SPI at 244d, TCP at 244d
+[0m
+[0;32mI (34061) example: 
+SPI at 245d, TCP at 245d
+[0m
+[0;32mI (34070) example: 
+SPI at 246d, TCP at 246d
+[0m
+[0;32mI (34078) example: 
+SPI at 247d, TCP at 247d
+[0m
+[0;32mI (34086) example: 
+SPI at 248d, TCP at 248d
+[0m
+[0;32mI (34094) example: 
+SPI at 249d, TCP at 249d
+[0m
+[0;32mI (34102) example: 
+SPI at 250d, TCP at 250d
+[0m
+[0;32mI (34110) example: 
+SPI at 251d, TCP at 251d
+[0m
+[0;32mI (34118) example: 
+SPI at 252d, TCP at 252d
+[0m
+[0;32mI (34126) example: 
+SPI at 253d, TCP at 253d
+[0m
+[0;32mI (34134) example: 
+SPI at 254d, TCP at 254d
+[0m
+[0;32mI (34142) example: 
+SPI at 255d, TCP at 255d
+[0m
+[0;32mI (34150) example: 
+SPI at 256d, TCP at 256d
+[0m
+[0;32mI (34158) example: 
+SPI at 257d, TCP at 257d
+[0m
+[0;32mI (34166) example: 
+SPI at 258d, TCP at 258d
+[0m
+[0;32mI (34175) example: 
+SPI at 259d, TCP at 259d
+[0m
+[0;32mI (34183) example: 
+SPI at 260d, TCP at 260d
+[0m
+[0;32mI (34191) example: 
+SPI at 261d, TCP at 261d
+[0m
+[0;32mI (34199) example: 
+SPI at 262d, TCP at 262d
+[0m
+[0;32mI (34207) example: 
+SPI at 263d, TCP at 263d
+[0m
+[0;32mI (34215) example: 
+SPI at 264d, TCP at 264d
+[0m
+[0;32mI (34223) example: 
+SPI at 265d, TCP at 265d
+[0m
+[0;32mI (34231) example: 
+SPI at 266d, TCP at 266d
+[0m
+[0;32mI (34239) example: 
+SPI at 267d, TCP at 267d
+[0m
+[0;32mI (34247) example: 
+SPI at 268d, TCP at 268d
+[0m
+[0;32mI (34255) example: 
+SPI at 269d, TCP at 269d
+[0m
+[0;32mI (34263) example: 
+SPI at 270d, TCP at 270d
+[0m
+[0;32mI (34271) example: 
+SPI at 271d, TCP at 271d
+[0m
+[0;32mI (34279) example: 
+SPI at 272d, TCP at 272d
+[0m
+[0;32mI (34287) example: 
+SPI at 273d, TCP at 273d
+[0m
+[0;32mI (34295) example: 
+SPI at 274d, TCP at 274d
+[0m
+[0;32mI (34303) example: 
+SPI at 275d, TCP at 275d
+[0m
+[0;32mI (34311) example: 
+SPI at 276d, TCP at 276d
+[0m
+[0;32mI (34319) example: 
+SPI at 277d, TCP at 277d
+[0m
+[0;32mI (34327) example: 
+SPI at 278d, TCP at 278d
+[0m
+[0;32mI (34335) example: 
+SPI at 279d, TCP at 279d
+[0m
+[0;32mI (34343) example: 
+SPI at 280d, TCP at 280d
+[0m
+[0;32mI (34351) example: 
+SPI at 281d, TCP at 281d
+[0m
+[0;32mI (34359) example: 
+SPI at 282d, TCP at 282d
+[0m
+[0;32mI (34367) example: 
+SPI at 283d, TCP at 283d
+[0m
+[0;32mI (34375) example: 
+SPI at 284d, TCP at 284d
+[0m
+[0;32mI (34383) example: 
+SPI at 285d, TCP at 285d
+[0m
+[0;32mI (34391) example: 
+SPI at 286d, TCP at 286d
+[0m
+[0;32mI (34399) example: 
+SPI at 287d, TCP at 287d
+[0m
+[0;32mI (34407) example: 
+SPI at 288d, TCP at 288d
+[0m
+[0;32mI (34415) example: 
+SPI at 289d, TCP at 289d
+[0m
+[0;32mI (34423) example: 
+SPI at 290d, TCP at 290d
+[0m
+[0;32mI (34431) example: 
+SPI at 291d, TCP at 291d
+[0m
+[0;32mI (34439) example: 
+SPI at 292d, TCP at 292d
+[0m
+[0;32mI (34447) example: 
+SPI at 293d, TCP at 293d
+[0m
+[0;32mI (34455) example: 
+SPI at 294d, TCP at 294d
+[0m
+[0;32mI (34463) example: 
+SPI at 295d, TCP at 295d
+[0m
+[0;32mI (34471) example: 
+SPI at 296d, TCP at 296d
+[0m
+[0;32mI (34480) example: 
+SPI at 297d, TCP at 297d
+[0m
+[0;32mI (34488) example: 
+SPI at 298d, TCP at 298d
+[0m
+[0;32mI (34496) example: 
+SPI at 299d, TCP at 299d
+[0m
+[0;32mI (34504) example: 
+SPI at 300d, TCP at 300d
+[0m
+[0;32mI (34512) example: 
+SPI at 301d, TCP at 301d
+[0m
+[0;32mI (34520) example: 
+SPI at 302d, TCP at 302d
+[0m
+[0;32mI (34528) example: 
+SPI at 303d, TCP at 303d
+[0m
+[0;32mI (34536) example: 
+SPI at 304d, TCP at 304d
+[0m
+[0;32mI (34544) example: 
+SPI at 305d, TCP at 305d
+[0m
+[0;32mI (34552) example: 
+SPI at 306d, TCP at 306d
+[0m
+[0;32mI (34560) example: 
+SPI at 307d, TCP at 307d
+[0m
+[0;32mI (34569) example: 
+SPI at 308d, TCP at 308d
+[0m
+[0;32mI (34577) example: 
+SPI at 309d, TCP at 309d
+[0m
+[0;32mI (34585) example: 
+SPI at 310d, TCP at 310d
+[0m
+[0;32mI (34593) example: 
+SPI at 311d, TCP at 311d
+[0m
+[0;32mI (34601) example: 
+SPI at 312d, TCP at 312d
+[0m
+[0;32mI (34609) example: 
+SPI at 313d, TCP at 313d
+[0m
+[0;32mI (34617) example: 
+SPI at 314d, TCP at 314d
+[0m
+[0;32mI (34625) example: 
+SPI at 315d, TCP at 315d
+[0m
+[0;32mI (34633) example: 
+SPI at 316d, TCP at 316d
+[0m
+[0;32mI (34641) example: 
+SPI at 317d, TCP at 317d
+[0m
+[0;32mI (34649) example: 
+SPI at 318d, TCP at 318d
+[0m
+[0;32mI (34657) example: 
+SPI at 319d, TCP at 319d
+[0m
+[0;32mI (34665) example: 
+SPI at 320d, TCP at 320d
+[0m
+[0;32mI (34673) example: 
+SPI at 321d, TCP at 321d
+[0m
+[0;32mI (34681) example: 
+SPI at 322d, TCP at 322d
+[0m
+[0;32mI (34689) example: 
+SPI at 323d, TCP at 323d
+[0m
+[0;32mI (34697) example: 
+SPI at 324d, TCP at 324d
+[0m
+[0;32mI (34705) example: 
+SPI at 325d, TCP at 325d
+[0m
+[0;32mI (34713) example: 
+SPI at 326d, TCP at 326d
+[0m
+[0;32mI (34721) example: 
+SPI at 327d, TCP at 327d
+[0m
+[0;32mI (34729) example: 
+SPI at 328d, TCP at 328d
+[0m
+[0;32mI (34737) example: 
+SPI at 329d, TCP at 329d
+[0m
+[0;32mI (34745) example: 
+SPI at 330d, TCP at 330d
+[0m
+[0;32mI (34753) example: 
+SPI at 331d, TCP at 331d
+[0m
+[0;32mI (34761) example: 
+SPI at 332d, TCP at 332d
+[0m
+[0;32mI (34769) example: 
+SPI at 333d, TCP at 333d
+[0m
+[0;32mI (34777) example: 
+SPI at 334d, TCP at 334d
+[0m
+[0;32mI (34785) example: 
+SPI at 335d, TCP at 335d
+[0m
+[0;32mI (34793) example: 
+SPI at 336d, TCP at 336d
+[0m
+[0;32mI (34801) example: 
+SPI at 337d, TCP at 337d
+[0m
+[0;32mI (34809) example: 
+SPI at 338d, TCP at 338d
+[0m
+[0;32mI (34817) example: 
+SPI at 339d, TCP at 339d
+[0m
+[0;32mI (34825) example: 
+SPI at 340d, TCP at 340d
+[0m
+[0;32mI (34833) example: 
+SPI at 341d, TCP at 341d
+[0m
+[0;32mI (34841) example: 
+SPI at 342d, TCP at 342d
+[0m
+[0;32mI (34849) example: 
+SPI at 343d, TCP at 343d
+[0m
+[0;32mI (34857) example: 
+SPI at 344d, TCP at 344d
+[0m
+[0;32mI (34865) example: 
+SPI at 345d, TCP at 345d
+[0m
+[0;32mI (34873) example: 
+SPI at 346d, TCP at 346d
+[0m
+[0;32mI (34881) example: 
+SPI at 347d, TCP at 347d
+[0m
+[0;32mI (34890) example: 
+SPI at 348d, TCP at 348d
+[0m
+[0;32mI (34898) example: 
+SPI at 349d, TCP at 349d
+[0m
+[0;32mI (34906) example: 
+SPI at 350d, TCP at 350d
+[0m
+[0;32mI (34914) example: 
+SPI at 351d, TCP at 351d
+[0m
+[0;32mI (34922) example: 
+SPI at 352d, TCP at 352d
+[0m
+[0;32mI (34930) example: 
+SPI at 353d, TCP at 353d
+[0m
+[0;32mI (34938) example: 
+SPI at 354d, TCP at 354d
+[0m
+[0;32mI (34946) example: 
+SPI at 355d, TCP at 355d
+[0m
+[0;32mI (34954) example: 
+SPI at 356d, TCP at 356d
+[0m
+[0;32mI (34962) example: 
+SPI at 357d, TCP at 357d
+[0m
+[0;32mI (34970) example: 
+SPI at 358d, TCP at 358d
+[0m
+[0;32mI (34978) example: 
+SPI at 359d, TCP at 359d
+[0m
+[0;32mI (34986) example: 
+SPI at 360d, TCP at 360d
+[0m
+[0;32mI (34994) example: 
+SPI at 361d, TCP at 361d
+[0m
+[0;32mI (35002) example: 
+SPI at 362d, TCP at 362d
+[0m
+[0;32mI (35010) example: 
+SPI at 363d, TCP at 363d
+[0m
+[0;32mI (35018) example: 
+SPI at 364d, TCP at 364d
+[0m
+[0;32mI (35026) example: 
+SPI at 365d, TCP at 365d
+[0m
+[0;32mI (35034) example: 
+SPI at 366d, TCP at 366d
+[0m
+[0;32mI (35042) example: 
+SPI at 367d, TCP at 367d
+[0m
+[0;32mI (35050) example: 
+SPI at 368d, TCP at 368d
+[0m
+[0;32mI (35058) example: 
+SPI at 369d, TCP at 369d
+[0m
+[0;32mI (35066) example: 
+SPI at 370d, TCP at 370d
+[0m
+[0;32mI (35074) example: 
+SPI at 371d, TCP at 371d
+[0m
+[0;32mI (35083) example: 
+SPI at 372d, TCP at 372d
+[0m
+[0;32mI (35091) example: 
+SPI at 373d, TCP at 373d
+[0m
+[0;32mI (35099) example: 
+SPI at 374d, TCP at 374d
+[0m
+[0;32mI (35107) example: 
+SPI at 375d, TCP at 375d
+[0m
+[0;32mI (35115) example: 
+SPI at 376d, TCP at 376d
+[0m
+[0;32mI (35123) example: 
+SPI at 377d, TCP at 377d
+[0m
+[0;32mI (35131) example: 
+SPI at 378d, TCP at 378d
+[0m
+[0;32mI (35139) example: 
+SPI at 379d, TCP at 379d
+[0m
+[0;32mI (35147) example: 
+SPI at 380d, TCP at 380d
+[0m
+[0;32mI (35155) example: 
+SPI at 381d, TCP at 381d
+[0m
+[0;32mI (35163) example: 
+SPI at 382d, TCP at 382d
+[0m
+[0;32mI (35171) example: 
+SPI at 383d, TCP at 383d
+[0m
+[0;32mI (35179) example: 
+SPI at 384d, TCP at 384d
+[0m
+[0;32mI (35187) example: 
+SPI at 385d, TCP at 385d
+[0m
+[0;32mI (35196) example: 
+SPI at 386d, TCP at 386d
+[0m
+[0;32mI (35204) example: 
+SPI at 387d, TCP at 387d
+[0m
+[0;32mI (35212) example: 
+SPI at 388d, TCP at 388d
+[0m
+[0;32mI (35220) example: 
+SPI at 389d, TCP at 389d
+[0m
+[0;32mI (35228) example: 
+SPI at 390d, TCP at 390d
+[0m
+[0;32mI (35236) example: 
+SPI at 391d, TCP at 391d
+[0m
+[0;32mI (35244) example: 
+SPI at 392d, TCP at 392d
+[0m
+[0;32mI (35252) example: 
+SPI at 393d, TCP at 393d
+[0m
+[0;32mI (35260) example: 
+SPI at 394d, TCP at 394d
+[0m
+[0;32mI (35268) example: 
+SPI at 395d, TCP at 395d
+[0m
+[0;32mI (35276) example: 
+SPI at 396d, TCP at 396d
+[0m
+[0;32mI (35285) example: 
+SPI at 397d, TCP at 397d
+[0m
+[0;32mI (35293) example: 
+SPI at 398d, TCP at 398d
+[0m
+[0;32mI (35301) example: 
+SPI at 399d, TCP at 399d
+[0m
+[0;32mI (35309) example: 
+SPI at 400d, TCP at 400d
+[0m
+[0;32mI (35317) example: 
+SPI at 401d, TCP at 401d
+[0m
+[0;32mI (35325) example: 
+SPI at 402d, TCP at 402d
+[0m
+[0;32mI (35333) example: 
+SPI at 403d, TCP at 403d
+[0m
+[0;32mI (35341) example: 
+SPI at 404d, TCP at 404d
+[0m
+[0;32mI (35349) example: 
+SPI at 405d, TCP at 405d
+[0m
+[0;32mI (35357) example: 
+SPI at 406d, TCP at 406d
+[0m
+[0;32mI (35365) example: 
+SPI at 407d, TCP at 407d
+[0m
+[0;32mI (35373) example: 
+SPI at 408d, TCP at 408d
+[0m
+[0;32mI (35381) example: 
+SPI at 409d, TCP at 409d
+[0m
+[0;32mI (35390) example: 
+SPI at 410d, TCP at 410d
+[0m
+[0;32mI (35398) example: 
+SPI at 411d, TCP at 411d
+[0m
+[0;32mI (35406) example: 
+SPI at 412d, TCP at 412d
+[0m
+[0;32mI (35414) example: 
+SPI at 413d, TCP at 413d
+[0m
+[0;32mI (35422) example: 
+SPI at 414d, TCP at 414d
+[0m
+[0;32mI (35430) example: 
+SPI at 415d, TCP at 415d
+[0m
+[0;32mI (35438) example: 
+SPI at 416d, TCP at 416d
+[0m
+[0;32mI (35446) example: 
+SPI at 417d, TCP at 417d
+[0m
+[0;32mI (35454) example: 
+SPI at 418d, TCP at 418d
+[0m
+[0;32mI (35462) example: 
+SPI at 419d, TCP at 419d
+[0m
+[0;32mI (35470) example: 
+SPI at 420d, TCP at 420d
+[0m
+[0;32mI (35478) example: 
+SPI at 421d, TCP at 421d
+[0m
+[0;32mI (35486) example: 
+SPI at 422d, TCP at 422d
+[0m
+[0;32mI (35494) example: 
+SPI at 423d, TCP at 423d
+[0m
+[0;32mI (35502) example: 
+SPI at 424d, TCP at 424d
+[0m
+[0;32mI (35510) example: 
+SPI at 425d, TCP at 425d
+[0m
+[0;32mI (35518) example: 
+SPI at 426d, TCP at 426d
+[0m
+[0;32mI (35526) example: 
+SPI at 427d, TCP at 427d
+[0m
+[0;32mI (35534) example: 
+SPI at 428d, TCP at 428d
+[0m
+[0;32mI (35542) example: 
+SPI at 429d, TCP at 429d
+[0m
+[0;32mI (35550) example: 
+SPI at 430d, TCP at 430d
+[0m
+[0;32mI (35558) example: 
+SPI at 431d, TCP at 431d
+[0m
+[0;32mI (35566) example: 
+SPI at 432d, TCP at 432d
+[0m
+[0;32mI (35574) example: 
+SPI at 433d, TCP at 433d
+[0m
+[0;32mI (35582) example: 
+SPI at 434d, TCP at 434d
+[0m
+[0;32mI (35590) example: 
+SPI at 435d, TCP at 435d
+[0m
+[0;32mI (35598) example: 
+SPI at 436d, TCP at 436d
+[0m
+[0;32mI (35607) example: 
+SPI at 437d, TCP at 437d
+[0m
+[0;32mI (35615) example: 
+SPI at 438d, TCP at 438d
+[0m
+[0;32mI (35623) example: 
+SPI at 439d, TCP at 439d
+[0m
+[0;32mI (35631) example: 
+SPI at 440d, TCP at 440d
+[0m
+[0;32mI (35639) example: 
+SPI at 441d, TCP at 441d
+[0m
+[0;32mI (35648) example: 
+SPI at 442d, TCP at 442d
+[0m
+[0;32mI (35656) example: 
+SPI at 443d, TCP at 443d
+[0m
+[0;32mI (35664) example: 
+SPI at 444d, TCP at 444d
+[0m
+[0;32mI (35672) example: 
+SPI at 445d, TCP at 445d
+[0m
+[0;32mI (35680) example: 
+SPI at 446d, TCP at 446d
+[0m
+[0;32mI (35688) example: 
+SPI at 447d, TCP at 447d
+[0m
+[0;32mI (35695) example: 
+SPI at 448d, TCP at 448d
+[0m
+[0;32mI (35704) example: 
+SPI at 449d, TCP at 449d
+[0m
+[0;32mI (35712) example: 
+SPI at 450d, TCP at 450d
+[0m
+[0;32mI (35720) example: 
+SPI at 451d, TCP at 451d
+[0m
+[0;32mI (35728) example: 
+SPI at 452d, TCP at 452d
+[0m
+[0;32mI (35736) example: 
+SPI at 453d, TCP at 453d
+[0m
+[0;32mI (35744) example: 
+SPI at 454d, TCP at 454d
+[0m
+[0;32mI (35752) example: 
+SPI at 455d, TCP at 455d
+[0m
+[0;32mI (35760) example: 
+SPI at 456d, TCP at 456d
+[0m
+[0;32mI (35768) example: 
+SPI at 457d, TCP at 457d
+[0m
+[0;32mI (35776) example: 
+SPI at 458d, TCP at 458d
+[0m
+[0;32mI (35785) example: 
+SPI at 459d, TCP at 459d
+[0m
+[0;32mI (35793) example: 
+SPI at 460d, TCP at 460d
+[0m
+[0;32mI (35801) example: 
+SPI at 461d, TCP at 461d
+[0m
+[0;32mI (35810) example: 
+SPI at 462d, TCP at 462d
+[0m
+[0;32mI (35818) example: 
+SPI at 463d, TCP at 463d
+[0m
+[0;32mI (35826) example: 
+SPI at 464d, TCP at 464d
+[0m
+[0;32mI (35834) example: 
+SPI at 465d, TCP at 465d
+[0m
+[0;32mI (35842) example: 
+SPI at 466d, TCP at 466d
+[0m
+[0;32mI (35850) example: 
+SPI at 467d, TCP at 467d
+[0m
+[0;32mI (35858) example: 
+SPI at 468d, TCP at 468d
+[0m
+[0;32mI (35866) example: 
+SPI at 469d, TCP at 469d
+[0m
+[0;32mI (35874) example: 
+SPI at 470d, TCP at 470d
+[0m
+[0;32mI (35882) example: 
+SPI at 471d, TCP at 471d
+[0m
+[0;32mI (35890) example: 
+SPI at 472d, TCP at 472d
+[0m
+[0;32mI (35898) example: 
+SPI at 473d, TCP at 473d
+[0m
+[0;32mI (35906) example: 
+SPI at 474d, TCP at 474d
+[0m
+[0;32mI (35914) example: 
+SPI at 475d, TCP at 475d
+[0m
+[0;32mI (35922) example: 
+SPI at 476d, TCP at 476d
+[0m
+[0;32mI (35931) example: 
+SPI at 477d, TCP at 477d
+[0m
+[0;32mI (35939) example: 
+SPI at 478d, TCP at 478d
+[0m
+[0;32mI (35947) example: 
+SPI at 479d, TCP at 479d
+[0m
+[0;32mI (35956) example: 
+SPI at 480d, TCP at 480d
+[0m
+[0;32mI (35964) example: 
+SPI at 481d, TCP at 481d
+[0m
+[0;32mI (35972) example: 
+SPI at 482d, TCP at 482d
+[0m
+[0;32mI (35980) example: 
+SPI at 483d, TCP at 483d
+[0m
+[0;32mI (35988) example: 
+SPI at 484d, TCP at 484d
+[0m
+[0;32mI (35996) example: 
+SPI at 485d, TCP at 485d
+[0m
+[0;32mI (36004) example: 
+SPI at 486d, TCP at 486d
+[0m
+[0;32mI (36012) example: 
+SPI at 487d, TCP at 487d
+[0m
+[0;32mI (36020) example: 
+SPI at 488d, TCP at 488d
+[0m
+[0;32mI (36028) example: 
+SPI at 489d, TCP at 489d
+[0m
+[0;32mI (36036) example: 
+SPI at 490d, TCP at 490d
+[0m
+[0;32mI (36044) example: 
+SPI at 491d, TCP at 491d
+[0m
+[0;32mI (36052) example: 
+SPI at 492d, TCP at 492d
+[0m
+[0;32mI (36060) example: 
+SPI at 493d, TCP at 493d
+[0m
+[0;32mI (36068) example: 
+SPI at 494d, TCP at 494d
+[0m
+[0;32mI (36076) example: 
+SPI at 495d, TCP at 495d
+[0m
+[0;32mI (36084) example: 
+SPI at 496d, TCP at 496d
+[0m
+[0;32mI (36092) example: 
+SPI at 497d, TCP at 497d
+[0m
+[0;32mI (36100) example: 
+SPI at 498d, TCP at 498d
+[0m
+[0;32mI (36108) example: 
+SPI at 499d, TCP at 499d
+[0m
+[0;32mI (36116) example: 
+SPI at 0d, TCP at 0d
+[0m
+[0;32mI (36124) example: 
+SPI at 1d, TCP at 1d
+[0m
+[0;32mI (36132) example: 
+SPI at 2d, TCP at 2d
+[0m
+[0;32mI (36140) example: 
+SPI at 3d, TCP at 3d
+[0m
+[0;32mI (36148) example: 
+SPI at 4d, TCP at 4d
+[0m
+[0;32mI (36156) example: 
+SPI at 5d, TCP at 5d
+[0m
+[0;32mI (36164) example: 
+SPI at 6d, TCP at 6d
+[0m
+[0;32mI (36172) example: 
+SPI at 7d, TCP at 7d
+[0m
+[0;32mI (36180) example: 
+SPI at 8d, TCP at 8d
+[0m
+[0;32mI (36188) example: 
+SPI at 9d, TCP at 9d
+[0m
+[0;32mI (36196) example: 
+SPI at 10d, TCP at 10d
+[0m
+[0;32mI (36204) example: 
+SPI at 11d, TCP at 11d
+[0m
+[0;32mI (36212) example: 
+SPI at 12d, TCP at 12d
+[0m
+[0;32mI (36220) example: 
+SPI at 13d, TCP at 13d
+[0m
+[0;32mI (36228) example: 
+SPI at 14d, TCP at 14d
+[0m
+[0;32mI (36236) example: 
+SPI at 15d, TCP at 15d
+[0m
+[0;32mI (36244) example: 
+SPI at 16d, TCP at 16d
+[0m
+[0;32mI (36252) example: 
+SPI at 17d, TCP at 17d
+[0m
+[0;32mI (36260) example: 
+SPI at 18d, TCP at 18d
+[0m
+[0;32mI (36268) example: 
+SPI at 19d, TCP at 19d
+[0m
+[0;32mI (36276) example: 
+SPI at 20d, TCP at 20d
+[0m
+[0;32mI (36284) example: 
+SPI at 21d, TCP at 21d
+[0m
+[0;32mI (36292) example: 
+SPI at 22d, TCP at 22d
+[0m
+[0;32mI (36300) example: 
+SPI at 23d, TCP at 23d
+[0m
+[0;32mI (36308) example: 
+SPI at 24d, TCP at 24d
+[0m
+[0;32mI (36316) example: 
+SPI at 25d, TCP at 25d
+[0m
+[0;32mI (36324) example: 
+SPI at 26d, TCP at 26d
+[0m
+[0;32mI (36332) example: 
+SPI at 27d, TCP at 27d
+[0m
+[0;32mI (36340) example: 
+SPI at 28d, TCP at 28d
+[0m
+[0;32mI (36348) example: 
+SPI at 29d, TCP at 29d
+[0m
+[0;32mI (36356) example: 
+SPI at 30d, TCP at 30d
+[0m
+[0;32mI (36364) example: 
+SPI at 31d, TCP at 31d
+[0m
+[0;32mI (36372) example: 
+SPI at 32d, TCP at 32d
+[0m
+[0;32mI (36380) example: 
+SPI at 33d, TCP at 33d
+[0m
+[0;32mI (36388) example: 
+SPI at 34d, TCP at 34d
+[0m
+[0;32mI (36396) example: 
+SPI at 35d, TCP at 35d
+[0m
+[0;32mI (36404) example: 
+SPI at 36d, TCP at 36d
+[0m
+[0;32mI (36412) example: 
+SPI at 37d, TCP at 37d
+[0m
+[0;32mI (36420) example: 
+SPI at 38d, TCP at 38d
+[0m
+[0;32mI (36428) example: 
+SPI at 39d, TCP at 39d
+[0m
+[0;32mI (36436) example: 
+SPI at 40d, TCP at 40d
+[0m
+[0;32mI (36444) example: 
+SPI at 41d, TCP at 41d
+[0m
+[0;32mI (36452) example: 
+SPI at 42d, TCP at 42d
+[0m
+[0;32mI (36460) example: 
+SPI at 43d, TCP at 43d
+[0m
+[0;32mI (36468) example: 
+SPI at 44d, TCP at 44d
+[0m
+[0;32mI (36476) example: 
+SPI at 45d, TCP at 45d
+[0m
+[0;32mI (36484) example: 
+SPI at 46d, TCP at 46d
+[0m
+[0;32mI (36492) example: 
+SPI at 47d, TCP at 47d
+[0m
+[0;32mI (36500) example: 
+SPI at 48d, TCP at 48d
+[0m
+[0;32mI (36508) example: 
+SPI at 49d, TCP at 49d
+[0m
+[0;32mI (36516) example: 
+SPI at 50d, TCP at 50d
+[0m
+[0;32mI (36524) example: 
+SPI at 51d, TCP at 51d
+[0m
+[0;32mI (36532) example: 
+SPI at 52d, TCP at 52d
+[0m
+[0;32mI (36540) example: 
+SPI at 53d, TCP at 53d
+[0m
+[0;32mI (36548) example: 
+SPI at 54d, TCP at 54d
+[0m
+[0;32mI (36556) example: 
+SPI at 55d, TCP at 55d
+[0m
+[0;32mI (36564) example: 
+SPI at 56d, TCP at 56d
+[0m
+[0;32mI (36572) example: 
+SPI at 57d, TCP at 57d
+[0m
+[0;32mI (36580) example: 
+SPI at 58d, TCP at 58d
+[0m
+[0;32mI (36588) example: 
+SPI at 59d, TCP at 59d
+[0m
+[0;32mI (36596) example: 
+SPI at 60d, TCP at 60d
+[0m
+[0;32mI (36604) example: 
+SPI at 61d, TCP at 61d
+[0m
+[0;32mI (36612) example: 
+SPI at 62d, TCP at 62d
+[0m
+[0;32mI (36620) example: 
+SPI at 63d, TCP at 63d
+[0m
+[0;32mI (36628) example: 
+SPI at 64d, TCP at 64d
+[0m
+[0;32mI (36636) example: 
+SPI at 65d, TCP at 65d
+[0m
+[0;32mI (36644) example: 
+SPI at 66d, TCP at 66d
+[0m
+[0;32mI (36652) example: 
+SPI at 67d, TCP at 67d
+[0m
+[0;32mI (36660) example: 
+SPI at 68d, TCP at 68d
+[0m
+[0;32mI (36668) example: 
+SPI at 69d, TCP at 69d
+[0m
+[0;32mI (36676) example: 
+SPI at 70d, TCP at 70d
+[0m
+[0;32mI (36684) example: 
+SPI at 71d, TCP at 71d
+[0m
+[0;32mI (36692) example: 
+SPI at 72d, TCP at 72d
+[0m
+[0;32mI (36700) example: 
+SPI at 73d, TCP at 73d
+[0m
+[0;32mI (36708) example: 
+SPI at 74d, TCP at 74d
+[0m
+[0;32mI (36716) example: 
+SPI at 75d, TCP at 75d
+[0m
+[0;32mI (36724) example: 
+SPI at 76d, TCP at 76d
+[0m
+[0;32mI (36732) example: 
+SPI at 77d, TCP at 77d
+[0m
+[0;32mI (36740) example: 
+SPI at 78d, TCP at 78d
+[0m
+[0;32mI (36748) example: 
+SPI at 79d, TCP at 79d
+[0m
+[0;32mI (36756) example: 
+SPI at 80d, TCP at 80d
+[0m
+[0;32mI (36764) example: 
+SPI at 81d, TCP at 81d
+[0m
+[0;32mI (36772) example: 
+SPI at 82d, TCP at 82d
+[0m
+[0;32mI (36780) example: 
+SPI at 83d, TCP at 83d
+[0m
+[0;32mI (36788) example: 
+SPI at 84d, TCP at 84d
+[0m
+[0;32mI (36796) example: 
+SPI at 85d, TCP at 85d
+[0m
+[0;32mI (36804) example: 
+SPI at 86d, TCP at 86d
+[0m
+[0;32mI (36812) example: 
+SPI at 87d, TCP at 87d
+[0m
+[0;32mI (36820) example: 
+SPI at 88d, TCP at 88d
+[0m
+[0;32mI (36828) example: 
+SPI at 89d, TCP at 89d
+[0m
+[0;32mI (36837) example: 
+SPI at 90d, TCP at 90d
+[0m
+[0;32mI (36845) example: 
+SPI at 91d, TCP at 91d
+[0m
+[0;32mI (36853) example: 
+SPI at 92d, TCP at 92d
+[0m
+[0;32mI (36861) example: 
+SPI at 93d, TCP at 93d
+[0m
+[0;32mI (36869) example: 
+SPI at 94d, TCP at 94d
+[0m
+[0;32mI (36877) example: 
+SPI at 95d, TCP at 95d
+[0m
+[0;32mI (36885) example: 
+SPI at 96d, TCP at 96d
+[0m
+[0;32mI (36893) example: 
+SPI at 97d, TCP at 97d
+[0m
+[0;32mI (36901) example: 
+SPI at 98d, TCP at 98d
+[0m
+[0;32mI (36909) example: 
+SPI at 99d, TCP at 99d
+[0m
+[0;32mI (36917) example: 
+SPI at 100d, TCP at 100d
+[0m
+[0;32mI (36926) example: 
+SPI at 101d, TCP at 101d
+[0m
+[0;32mI (36934) example: 
+SPI at 102d, TCP at 102d
+[0m
+[0;32mI (36942) example: 
+SPI at 103d, TCP at 103d
+[0m
+[0;32mI (36950) example: 
+SPI at 104d, TCP at 104d
+[0m
+[0;32mI (36958) example: 
+SPI at 105d, TCP at 105d
+[0m
+[0;32mI (36966) example: 
+SPI at 106d, TCP at 106d
+[0m
+[0;32mI (36974) example: 
+SPI at 107d, TCP at 107d
+[0m
+[0;32mI (36982) example: 
+SPI at 108d, TCP at 108d
+[0m
+[0;32mI (36990) example: 
+SPI at 109d, TCP at 109d
+[0m
+[0;32mI (36998) example: 
+SPI at 110d, TCP at 110d
+[0m
+[0;32mI (37006) example: 
+SPI at 111d, TCP at 111d
+[0m
+[0;32mI (37014) example: 
+SPI at 112d, TCP at 112d
+[0m
+[0;32mI (37022) example: 
+SPI at 113d, TCP at 113d
+[0m
+[0;32mI (37030) example: 
+SPI at 114d, TCP at 114d
+[0m
+[0;32mI (37038) example: 
+SPI at 115d, TCP at 115d
+[0m
+[0;32mI (37046) example: 
+SPI at 116d, TCP at 116d
+[0m
+[0;32mI (37054) example: 
+SPI at 117d, TCP at 117d
+[0m
+[0;32mI (37062) example: 
+SPI at 118d, TCP at 118d
+[0m
+[0;32mI (37070) example: 
+SPI at 119d, TCP at 119d
+[0m
+[0;32mI (37078) example: 
+SPI at 120d, TCP at 120d
+[0m
+[0;32mI (37086) example: 
+SPI at 121d, TCP at 121d
+[0m
+[0;32mI (37094) example: 
+SPI at 122d, TCP at 122d
+[0m
+[0;32mI (37102) example: 
+SPI at 123d, TCP at 123d
+[0m
+[0;32mI (37110) example: 
+SPI at 124d, TCP at 124d
+[0m
+[0;32mI (37118) example: 
+SPI at 125d, TCP at 125d
+[0m
+[0;32mI (37126) example: 
+SPI at 126d, TCP at 126d
+[0m
+[0;32mI (37134) example: 
+SPI at 127d, TCP at 127d
+[0m
+[0;32mI (37143) example: 
+SPI at 128d, TCP at 128d
+[0m
+[0;32mI (37151) example: 
+SPI at 129d, TCP at 129d
+[0m
+[0;32mI (37159) example: 
+SPI at 130d, TCP at 130d
+[0m
+[0;32mI (37167) example: 
+SPI at 131d, TCP at 131d
+[0m
+[0;32mI (37175) example: 
+SPI at 132d, TCP at 132d
+[0m
+[0;32mI (37183) example: 
+SPI at 133d, TCP at 133d
+[0m
+[0;32mI (37191) example: 
+SPI at 134d, TCP at 134d
+[0m
+[0;32mI (37199) example: 
+SPI at 135d, TCP at 135d
+[0m
+[0;32mI (37207) example: 
+SPI at 136d, TCP at 136d
+[0m
+[0;32mI (37215) example: 
+SPI at 137d, TCP at 137d
+[0m
+[0;32mI (37223) example: 
+SPI at 138d, TCP at 138d
+[0m
+[0;32mI (37231) example: 
+SPI at 139d, TCP at 139d
+[0m
+[0;32mI (37239) example: 
+SPI at 140d, TCP at 140d
+[0m
+[0;32mI (37247) example: 
+SPI at 141d, TCP at 141d
+[0m
+[0;32mI (37255) example: 
+SPI at 142d, TCP at 142d
+[0m
+[0;32mI (37263) example: 
+SPI at 143d, TCP at 143d
+[0m
+[0;32mI (37271) example: 
+SPI at 144d, TCP at 144d
+[0m
+[0;32mI (37279) example: 
+SPI at 145d, TCP at 145d
+[0m
+[0;32mI (37287) example: 
+SPI at 146d, TCP at 146d
+[0m
+[0;32mI (37295) example: 
+SPI at 147d, TCP at 147d
+[0m
+[0;32mI (37303) example: 
+SPI at 148d, TCP at 148d
+[0m
+[0;32mI (37311) example: 
+SPI at 149d, TCP at 149d
+[0m
+[0;32mI (37319) example: 
+SPI at 150d, TCP at 150d
+[0m
+[0;32mI (37327) example: 
+SPI at 151d, TCP at 151d
+[0m
+[0;32mI (37336) example: 
+SPI at 152d, TCP at 152d
+[0m
+[0;32mI (37344) example: 
+SPI at 153d, TCP at 153d
+[0m
+[0;32mI (37352) example: 
+SPI at 154d, TCP at 154d
+[0m
+[0;32mI (37360) example: 
+SPI at 155d, TCP at 155d
+[0m
+[0;32mI (37368) example: 
+SPI at 156d, TCP at 156d
+[0m
+[0;32mI (37376) example: 
+SPI at 157d, TCP at 157d
+[0m
+[0;32mI (37384) example: 
+SPI at 158d, TCP at 158d
+[0m
+[0;32mI (37392) example: 
+SPI at 159d, TCP at 159d
+[0m
+[0;32mI (37400) example: 
+SPI at 160d, TCP at 160d
+[0m
+[0;32mI (37408) example: 
+SPI at 161d, TCP at 161d
+[0m
+[0;32mI (37416) example: 
+SPI at 162d, TCP at 162d
+[0m
+[0;32mI (37424) example: 
+SPI at 163d, TCP at 163d
+[0m
+[0;32mI (37432) example: 
+SPI at 164d, TCP at 164d
+[0m
+[0;32mI (37440) example: 
+SPI at 165d, TCP at 165d
+[0m
+[0;32mI (37449) example: 
+SPI at 166d, TCP at 166d
+[0m
+[0;32mI (37457) example: 
+SPI at 167d, TCP at 167d
+[0m
+[0;32mI (37465) example: 
+SPI at 168d, TCP at 168d
+[0m
+[0;32mI (37473) example: 
+SPI at 169d, TCP at 169d
+[0m
+[0;32mI (37481) example: 
+SPI at 170d, TCP at 170d
+[0m
+[0;32mI (37489) example: 
+SPI at 171d, TCP at 171d
+[0m
+[0;32mI (37497) example: 
+SPI at 172d, TCP at 172d
+[0m
+[0;32mI (37505) example: 
+SPI at 173d, TCP at 173d
+[0m
+[0;32mI (37513) example: 
+SPI at 174d, TCP at 174d
+[0m
+[0;32mI (37521) example: 
+SPI at 175d, TCP at 175d
+[0m
+[0;32mI (37529) example: 
+SPI at 176d, TCP at 176d
+[0m
+[0;32mI (37537) example: 
+SPI at 177d, TCP at 177d
+[0m
+[0;32mI (37546) example: 
+SPI at 178d, TCP at 178d
+[0m
+[0;32mI (37554) example: 
+SPI at 179d, TCP at 179d
+[0m
+[0;32mI (37562) example: 
+SPI at 180d, TCP at 180d
+[0m
+[0;32mI (37570) example: 
+SPI at 181d, TCP at 181d
+[0m
+[0;32mI (37578) example: 
+SPI at 182d, TCP at 182d
+[0m
+[0;32mI (37586) example: 
+SPI at 183d, TCP at 183d
+[0m
+[0;32mI (37594) example: 
+SPI at 184d, TCP at 184d
+[0m
+[0;32mI (37602) example: 
+SPI at 185d, TCP at 185d
+[0m
+[0;32mI (37610) example: 
+SPI at 186d, TCP at 186d
+[0m
+[0;32mI (37618) example: 
+SPI at 187d, TCP at 187d
+[0m
+[0;32mI (37626) example: 
+SPI at 188d, TCP at 188d
+[0m
+[0;32mI (37634) example: 
+SPI at 189d, TCP at 189d
+[0m
+[0;32mI (37643) example: 
+SPI at 190d, TCP at 190d
+[0m
+[0;32mI (37651) example: 
+SPI at 191d, TCP at 191d
+[0m
+[0;32mI (37659) example: 
+SPI at 192d, TCP at 192d
+[0m
+[0;32mI (37667) example: 
+SPI at 193d, TCP at 193d
+[0m
+[0;32mI (37675) example: 
+SPI at 194d, TCP at 194d
+[0m
+[0;32mI (37683) example: 
+SPI at 195d, TCP at 195d
+[0m
+[0;32mI (37691) example: 
+SPI at 196d, TCP at 196d
+[0m
+[0;32mI (37699) example: 
+SPI at 197d, TCP at 197d
+[0m
+[0;32mI (37707) example: 
+SPI at 198d, TCP at 198d
+[0m
+[0;32mI (37715) example: 
+SPI at 199d, TCP at 199d
+[0m
+[0;32mI (37723) example: 
+SPI at 200d, TCP at 200d
+[0m
+[0;32mI (37731) example: 
+SPI at 201d, TCP at 201d
+[0m
+[0;32mI (37739) example: 
+SPI at 202d, TCP at 202d
+[0m
+[0;32mI (37747) example: 
+SPI at 203d, TCP at 203d
+[0m
+[0;32mI (37755) example: 
+SPI at 204d, TCP at 204d
+[0m
+[0;32mI (37763) example: 
+SPI at 205d, TCP at 205d
+[0m
+[0;32mI (37772) example: 
+SPI at 206d, TCP at 206d
+[0m
+[0;32mI (37780) example: 
+SPI at 207d, TCP at 207d
+[0m
+[0;32mI (37788) example: 
+SPI at 208d, TCP at 208d
+[0m
+[0;32mI (37796) example: 
+SPI at 209d, TCP at 209d
+[0m
+[0;32mI (37804) example: 
+SPI at 210d, TCP at 210d
+[0m
+[0;32mI (37812) example: 
+SPI at 211d, TCP at 211d
+[0m
+[0;32mI (37820) example: 
+SPI at 212d, TCP at 212d
+[0m
+[0;32mI (37828) example: 
+SPI at 213d, TCP at 213d
+[0m
+[0;32mI (37836) example: 
+SPI at 214d, TCP at 214d
+[0m
+[0;32mI (37844) example: 
+SPI at 215d, TCP at 215d
+[0m
+[0;32mI (37853) example: 
+SPI at 216d, TCP at 216d
+[0m
+[0;32mI (37861) example: 
+SPI at 217d, TCP at 217d
+[0m
+[0;32mI (37869) example: 
+SPI at 218d, TCP at 218d
+[0m
+[0;32mI (37877) example: 
+SPI at 219d, TCP at 219d
+[0m
+[0;32mI (37885) example: 
+SPI at 220d, TCP at 220d
+[0m
+[0;32mI (37893) example: 
+SPI at 221d, TCP at 221d
+[0m
+[0;32mI (37901) example: 
+SPI at 222d, TCP at 222d
+[0m
+[0;32mI (37909) example: 
+SPI at 223d, TCP at 223d
+[0m
+[0;32mI (37917) example: 
+SPI at 224d, TCP at 224d
+[0m
+[0;32mI (37925) example: 
+SPI at 225d, TCP at 225d
+[0m
+[0;32mI (37933) example: 
+SPI at 226d, TCP at 226d
+[0m
+[0;32mI (37941) example: 
+SPI at 227d, TCP at 227d
+[0m
+[0;32mI (37950) example: 
+SPI at 228d, TCP at 228d
+[0m
+[0;32mI (37958) example: 
+SPI at 229d, TCP at 229d
+[0m
+[0;32mI (37966) example: 
+SPI at 230d, TCP at 230d
+[0m
+[0;32mI (37974) example: 
+SPI at 231d, TCP at 231d
+[0m
+[0;32mI (37982) example: 
+SPI at 232d, TCP at 232d
+[0m
+[0;32mI (37990) example: 
+SPI at 233d, TCP at 233d
+[0m
+[0;32mI (37998) example: 
+SPI at 234d, TCP at 234d
+[0m
+[0;32mI (38006) example: 
+SPI at 235d, TCP at 235d
+[0m
+[0;32mI (38014) example: 
+SPI at 236d, TCP at 236d
+[0m
+[0;32mI (38022) example: 
+SPI at 237d, TCP at 237d
+[0m
+[0;32mI (38030) example: 
+SPI at 238d, TCP at 238d
+[0m
+[0;32mI (38038) example: 
+SPI at 239d, TCP at 239d
+[0m
+[0;32mI (38046) example: 
+SPI at 240d, TCP at 240d
+[0m
+[0;32mI (38054) example: 
+SPI at 241d, TCP at 241d
+[0m
+[0;32mI (38062) example: 
+SPI at 242d, TCP at 242d
+[0m
+[0;32mI (38070) example: 
+SPI at 243d, TCP at 243d
+[0m
+[0;32mI (38078) example: 
+SPI at 244d, TCP at 244d
+[0m
+[0;32mI (38086) example: 
+SPI at 245d, TCP at 245d
+[0m
+[0;32mI (38094) example: 
+SPI at 246d, TCP at 246d
+[0m
+[0;32mI (38103) example: 
+SPI at 247d, TCP at 247d
+[0m
+[0;32mI (38111) example: 
+SPI at 248d, TCP at 248d
+[0m
+[0;32mI (38119) example: 
+SPI at 249d, TCP at 249d
+[0m
+[0;32mI (38127) example: 
+SPI at 250d, TCP at 250d
+[0m
+[0;32mI (38135) example: 
+SPI at 251d, TCP at 251d
+[0m
+[0;32mI (38143) example: 
+SPI at 252d, TCP at 252d
+[0m
+[0;32mI (38151) example: 
+SPI at 253d, TCP at 253d
+[0m
+[0;32mI (38159) example: 
+SPI at 254d, TCP at 254d
+[0m
+[0;32mI (38168) example: 
+SPI at 255d, TCP at 255d
+[0m
+[0;32mI (38176) example: 
+SPI at 256d, TCP at 256d
+[0m
+[0;32mI (38184) example: 
+SPI at 257d, TCP at 257d
+[0m
+[0;32mI (38192) example: 
+SPI at 258d, TCP at 258d
+[0m
+[0;32mI (38200) example: 
+SPI at 259d, TCP at 259d
+[0m
+[0;32mI (38208) example: 
+SPI at 260d, TCP at 260d
+[0m
+[0;32mI (38216) example: 
+SPI at 261d, TCP at 261d
+[0m
+[0;32mI (38224) example: 
+SPI at 262d, TCP at 262d
+[0m
+[0;32mI (38232) example: 
+SPI at 263d, TCP at 263d
+[0m
+[0;32mI (38240) example: 
+SPI at 264d, TCP at 264d
+[0m
+[0;32mI (38248) example: 
+SPI at 265d, TCP at 265d
+[0m
+[0;32mI (38255) example: 
+SPI at 266d, TCP at 266d
+[0m
+[0;32mI (38264) example: 
+SPI at 267d, TCP at 267d
+[0m
+[0;32mI (38272) example: 
+SPI at 268d, TCP at 268d
+[0m
+[0;32mI (38280) example: 
+SPI at 269d, TCP at 269d
+[0m
+[0;32mI (38288) example: 
+SPI at 270d, TCP at 270d
+[0m
+[0;32mI (38296) example: 
+SPI at 271d, TCP at 271d
+[0m
+[0;32mI (38304) example: 
+SPI at 272d, TCP at 272d
+[0m
+[0;32mI (38312) example: 
+SPI at 273d, TCP at 273d
+[0m
+[0;32mI (38320) example: 
+SPI at 274d, TCP at 274d
+[0m
+[0;32mI (38328) example: 
+SPI at 275d, TCP at 275d
+[0m
+[0;32mI (38336) example: 
+SPI at 276d, TCP at 276d
+[0m
+[0;32mI (38344) example: 
+SPI at 277d, TCP at 277d
+[0m
+[0;32mI (38352) example: 
+SPI at 278d, TCP at 278d
+[0m
+[0;32mI (38360) example: 
+SPI at 279d, TCP at 279d
+[0m
+[0;32mI (38368) example: 
+SPI at 280d, TCP at 280d
+[0m
+[0;32mI (38376) example: 
+SPI at 281d, TCP at 281d
+[0m
+[0;32mI (38384) example: 
+SPI at 282d, TCP at 282d
+[0m
+[0;32mI (38392) example: 
+SPI at 283d, TCP at 283d
+[0m
+[0;32mI (38400) example: 
+SPI at 284d, TCP at 284d
+[0m
+[0;32mI (38408) example: 
+SPI at 285d, TCP at 285d
+[0m
+[0;32mI (38416) example: 
+SPI at 286d, TCP at 286d
+[0m
+[0;32mI (38424) example: 
+SPI at 287d, TCP at 287d
+[0m
+[0;32mI (38432) example: 
+SPI at 288d, TCP at 288d
+[0m
+[0;32mI (38440) example: 
+SPI at 289d, TCP at 289d
+[0m
+[0;32mI (38448) example: 
+SPI at 290d, TCP at 290d
+[0m
+[0;32mI (38456) example: 
+SPI at 291d, TCP at 291d
+[0m
+[0;32mI (38464) example: 
+SPI at 292d, TCP at 292d
+[0m
+[0;32mI (38472) example: 
+SPI at 293d, TCP at 293d
+[0m
+[0;32mI (38480) example: 
+SPI at 294d, TCP at 294d
+[0m
+[0;32mI (38488) example: 
+SPI at 295d, TCP at 295d
+[0m
+[0;32mI (38496) example: 
+SPI at 296d, TCP at 296d
+[0m
+[0;32mI (38504) example: 
+SPI at 297d, TCP at 297d
+[0m
+[0;32mI (38513) example: 
+SPI at 298d, TCP at 298d
+[0m
+[0;32mI (38521) example: 
+SPI at 299d, TCP at 299d
+[0m
+[0;32mI (38529) example: 
+SPI at 300d, TCP at 300d
+[0m
+[0;32mI (38537) example: 
+SPI at 301d, TCP at 301d
+[0m
+[0;32mI (38545) example: 
+SPI at 302d, TCP at 302d
+[0m
+[0;32mI (38553) example: 
+SPI at 303d, TCP at 303d
+[0m
+[0;32mI (38561) example: 
+SPI at 304d, TCP at 304d
+[0m
+[0;32mI (38569) example: 
+SPI at 305d, TCP at 305d
+[0m
+[0;32mI (38577) example: 
+SPI at 306d, TCP at 306d
+[0m
+[0;32mI (38585) example: 
+SPI at 307d, TCP at 307d
+[0m
+[0;32mI (38593) example: 
+SPI at 308d, TCP at 308d
+[0m
+[0;32mI (38601) example: 
+SPI at 309d, TCP at 309d
+[0m
+[0;32mI (38609) example: 
+SPI at 310d, TCP at 310d
+[0m
+[0;32mI (38617) example: 
+SPI at 311d, TCP at 311d
+[0m
+[0;32mI (38625) example: 
+SPI at 312d, TCP at 312d
+[0m
+[0;32mI (38633) example: 
+SPI at 313d, TCP at 313d
+[0m
+[0;32mI (38641) example: 
+SPI at 314d, TCP at 314d
+[0m
+[0;32mI (38649) example: 
+SPI at 315d, TCP at 315d
+[0m
+[0;32mI (38657) example: 
+SPI at 316d, TCP at 316d
+[0m
+[0;32mI (38665) example: 
+SPI at 317d, TCP at 317d
+[0m
+[0;32mI (38673) example: 
+SPI at 318d, TCP at 318d
+[0m
+[0;32mI (38681) example: 
+SPI at 319d, TCP at 319d
+[0m
+[0;32mI (38689) example: 
+SPI at 320d, TCP at 320d
+[0m
+[0;32mI (38697) example: 
+SPI at 321d, TCP at 321d
+[0m
+[0;32mI (38705) example: 
+SPI at 322d, TCP at 322d
+[0m
+[0;32mI (38713) example: 
+SPI at 323d, TCP at 323d
+[0m
+[0;32mI (38721) example: 
+SPI at 324d, TCP at 324d
+[0m
+[0;32mI (38729) example: 
+SPI at 325d, TCP at 325d
+[0m
+[0;32mI (38737) example: 
+SPI at 326d, TCP at 326d
+[0m
+[0;32mI (38745) example: 
+SPI at 327d, TCP at 327d
+[0m
+[0;32mI (38753) example: 
+SPI at 328d, TCP at 328d
+[0m
+[0;32mI (38761) example: 
+SPI at 329d, TCP at 329d
+[0m
+[0;32mI (38770) example: 
+SPI at 330d, TCP at 330d
+[0m
+[0;32mI (38778) example: 
+SPI at 331d, TCP at 331d
+[0m
+[0;32mI (38786) example: 
+SPI at 332d, TCP at 332d
+[0m
+[0;32mI (38794) example: 
+SPI at 333d, TCP at 333d
+[0m
+[0;32mI (38802) example: 
+SPI at 334d, TCP at 334d
+[0m
+[0;32mI (38810) example: 
+SPI at 335d, TCP at 335d
+[0m
+[0;32mI (38818) example: 
+SPI at 336d, TCP at 336d
+[0m
+[0;32mI (38826) example: 
+SPI at 337d, TCP at 337d
+[0m
+[0;32mI (38834) example: 
+SPI at 338d, TCP at 338d
+[0m
+[0;32mI (38842) example: 
+SPI at 339d, TCP at 339d
+[0m
+[0;32mI (38850) example: 
+SPI at 340d, TCP at 340d
+[0m
+[0;32mI (38858) example: 
+SPI at 341d, TCP at 341d
+[0m
+[0;32mI (38866) example: 
+SPI at 342d, TCP at 342d
+[0m
+[0;32mI (38874) example: 
+SPI at 343d, TCP at 343d
+[0m
+[0;32mI (38883) example: 
+SPI at 344d, TCP at 344d
+[0m
+[0;32mI (38891) example: 
+SPI at 345d, TCP at 345d
+[0m
+[0;32mI (38899) example: 
+SPI at 346d, TCP at 346d
+[0m
+[0;32mI (38907) example: 
+SPI at 347d, TCP at 347d
+[0m
+[0;32mI (38915) example: 
+SPI at 348d, TCP at 348d
+[0m
+[0;32mI (38923) example: 
+SPI at 349d, TCP at 349d
+[0m
+[0;32mI (38931) example: 
+SPI at 350d, TCP at 350d
+[0m
+[0;32mI (38939) example: 
+SPI at 351d, TCP at 351d
+[0m
+[0;32mI (38947) example: 
+SPI at 352d, TCP at 352d
+[0m
+[0;32mI (38955) example: 
+SPI at 353d, TCP at 353d
+[0m
+[0;32mI (38963) example: 
+SPI at 354d, TCP at 354d
+[0m
+[0;32mI (38971) example: 
+SPI at 355d, TCP at 355d
+[0m
+[0;32mI (38979) example: 
+SPI at 356d, TCP at 356d
+[0m
+[0;32mI (38988) example: 
+SPI at 357d, TCP at 357d
+[0m
+[0;32mI (38996) example: 
+SPI at 358d, TCP at 358d
+[0m
+[0;32mI (39004) example: 
+SPI at 359d, TCP at 359d
+[0m
+[0;32mI (39012) example: 
+SPI at 360d, TCP at 360d
+[0m
+[0;32mI (39020) example: 
+SPI at 361d, TCP at 361d
+[0m
+[0;32mI (39028) example: 
+SPI at 362d, TCP at 362d
+[0m
+[0;32mI (39036) example: 
+SPI at 363d, TCP at 363d
+[0m
+[0;32mI (39044) example: 
+SPI at 364d, TCP at 364d
+[0m
+[0;32mI (39052) example: 
+SPI at 365d, TCP at 365d
+[0m
+[0;32mI (39060) example: 
+SPI at 366d, TCP at 366d
+[0m
+[0;32mI (39068) example: 
+SPI at 367d, TCP at 367d
+[0m
+[0;32mI (39076) example: 
+SPI at 368d, TCP at 368d
+[0m
+[0;32mI (39084) example: 
+SPI at 369d, TCP at 369d
+[0m
+[0;32mI (39092) example: 
+SPI at 370d, TCP at 370d
+[0m
+[0;32mI (39100) example: 
+SPI at 371d, TCP at 371d
+[0m
+[0;32mI (39108) example: 
+SPI at 372d, TCP at 372d
+[0m
+[0;32mI (39116) example: 
+SPI at 373d, TCP at 373d
+[0m
+[0;32mI (39124) example: 
+SPI at 374d, TCP at 374d
+[0m
+[0;32mI (39132) example: 
+SPI at 375d, TCP at 375d
+[0m
+[0;32mI (39140) example: 
+SPI at 376d, TCP at 376d
+[0m
+[0;32mI (39148) example: 
+SPI at 377d, TCP at 377d
+[0m
+[0;32mI (39156) example: 
+SPI at 378d, TCP at 378d
+[0m
+[0;32mI (39164) example: 
+SPI at 379d, TCP at 379d
+[0m
+[0;32mI (39172) example: 
+SPI at 380d, TCP at 380d
+[0m
+[0;32mI (39180) example: 
+SPI at 381d, TCP at 381d
+[0m
+[0;32mI (39188) example: 
+SPI at 382d, TCP at 382d
+[0m
+[0;32mI (39196) example: 
+SPI at 383d, TCP at 383d
+[0m
+[0;32mI (39204) example: 
+SPI at 384d, TCP at 384d
+[0m
+[0;32mI (39212) example: 
+SPI at 385d, TCP at 385d
+[0m
+[0;32mI (39220) example: 
+SPI at 386d, TCP at 386d
+[0m
+[0;32mI (39229) example: 
+SPI at 387d, TCP at 387d
+[0m
+[0;32mI (39237) example: 
+SPI at 388d, TCP at 388d
+[0m
+[0;32mI (39245) example: 
+SPI at 389d, TCP at 389d
+[0m
+[0;32mI (39253) example: 
+SPI at 390d, TCP at 390d
+[0m
+[0;31mE (39253) example: Error occurred during sending: errno 104[0m
+[0;31mE (39253) example: recv failed: errno 104[0m
+[0;31mE (39258) example: Shutting down socket and restarting...[0m
+[0;32mI (39265) example: Socket created[0m
+[0;31mE (39268) example: Socket unable to bind: errno 112[0m

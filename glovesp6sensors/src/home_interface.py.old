@@ -1,0 +1,141 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'home.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+from predicao_interface import Ui_MainWindow as winpre
+from dose_interface import Ui_MainWindow as windose
+from bluetooth_devices_interface import Ui_bluetooth_devices_window as windev
+import sys  
+#sys.path.insert(1, 'accpy-master/src/')
+from bt_connection import btConnection
+
+class Ui_MainWindow(object):
+
+    def treinamentoPressed(self):
+        print("TREINAR AGR")
+    
+    def predicaoPressed(self):
+        self.win = QtWidgets.QMainWindow()
+        self.actualwin = winpre()
+        self.actualwin.setupUi(self.win)
+        self.win.show()
+
+    def dosePressed(self):
+        self.win = QtWidgets.QMainWindow()
+        self.actualwin = windose()
+        self.actualwin.setupUi(self.win)
+        self.win.show()
+
+    def findDevices(self):
+        self.win = QtWidgets.QMainWindow()
+        self.devices = windev()
+        self.devices.setupUi(self.win)
+        self.win.show()
+
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(799, 599)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(20, 20, 751, 521))
+        self.gridLayoutWidget.setObjectName("gridLayoutWidget")
+        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setObjectName("gridLayout")
+        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem, 0, 1, 1, 1)
+        self.dose_label = QtWidgets.QLabel(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.dose_label.setFont(font)
+        self.dose_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.dose_label.setObjectName("dose_label")
+        self.gridLayout.addWidget(self.dose_label, 7, 1, 1, 1)
+        self.dose_btn = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.dose_btn.setObjectName("dose_btn")
+        self.dose_btn.clicked.connect(self.dosePressed)
+        self.gridLayout.addWidget(self.dose_btn, 9, 1, 1, 1)
+        spacerItem1 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem1, 8, 1, 1, 1)
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem2, 3, 2, 1, 1)
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem3, 3, 0, 1, 1)
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem4, 4, 1, 1, 1)
+        spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem5, 10, 1, 1, 1)
+        spacerItem6 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem6, 6, 1, 1, 1)
+        #self.treinamento_btn = QtWidgets.QPushButton(self.gridLayoutWidget)
+        #self.treinamento_btn.setObjectName("treinamento_btn")
+        #self.gridLayout.addWidget(self.treinamento_btn, 3, 1, 1, 1)
+        spacerItem7 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout.addItem(spacerItem7, 2, 1, 1, 1)
+        self.predidefeitos_label = QtWidgets.QLabel(self.gridLayoutWidget)
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        self.predidefeitos_label.setFont(font)
+        self.predidefeitos_label.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.predidefeitos_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.predidefeitos_label.setObjectName("predidefeitos_label")
+        self.gridLayout.addWidget(self.predidefeitos_label, 1, 1, 1, 1)
+        self.predicao_btn = QtWidgets.QPushButton(self.gridLayoutWidget)
+        self.predicao_btn.setObjectName("predicao_btn")
+        self.predicao_btn.clicked.connect(self.predicaoPressed)
+        self.gridLayout.addWidget(self.predicao_btn, 5, 1, 1, 1)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 799, 21))
+        self.menubar.setObjectName("menubar")
+        self.menuFECHAR = QtWidgets.QMenu(self.menubar)
+        self.menuFECHAR.setObjectName("menuFECHAR")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.actionConectar_Dispositivo = QtWidgets.QAction(MainWindow)
+        self.actionConectar_Dispositivo.setObjectName("actionConectar_Dispositivo")
+        self.actionConectar_Dispositivo.triggered.connect(self.findDevices)
+        #self.actionSAIR = QtWidgets.QAction(MainWindow)
+        #self.actionSAIR.setObjectName("actionSAIR")
+        self.menuFECHAR.addAction(self.actionConectar_Dispositivo)
+        #self.menuFECHAR.addAction(self.actionSAIR)
+        self.menubar.addAction(self.menuFECHAR.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "SensorsProject - HOME"))
+        self.dose_label.setText(_translate("MainWindow", "DOSE DE VIBRAÇÃO"))
+        self.dose_btn.setText(_translate("MainWindow", "Dose"))
+        #self.treinamento_btn.setText(_translate("MainWindow", "Treinamento"))
+        self.predidefeitos_label.setText(_translate("MainWindow", "PREDIÇÃO DE DEFEITOS"))
+        self.predicao_btn.setText(_translate("MainWindow", "Predição"))
+        self.menuFECHAR.setTitle(_translate("MainWindow", "MENU"))
+        self.actionConectar_Dispositivo.setText(_translate("MainWindow", "Conectar Dispositivo"))
+        #self.actionSAIR.setText(_translate("MainWindow", "SAIR"))
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
